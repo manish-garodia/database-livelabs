@@ -2,13 +2,14 @@
 
 ## Introduction
 
-In this lab we will review and startup all components required to successfully run this workshop.
+In this lab, you will review and startup all components required to successfully run this workshop.  
 
 Estimated time: 10 Minutes
 
 ### Objectives
 
-- Initialize the workshop environment.
+ - Initialize the workshop environment
+ - Log into Oracle EM in a web browser
 
 ### Prerequisites
 
@@ -303,5 +304,5 @@ You may now **proceed to the next lab**.
 ## Acknowledgements
 
   - **Author** - Rene Fontcha, LiveLabs Platform Lead, NA Technology
-  - **Contributors** - Ashish Kumar
+  - **Contributors** - Ashish Kumar, Manish Garodia
   - **Last Updated By/Date** - Rene Fontcha, LiveLabs Platform Lead, NA Technology, April 2022

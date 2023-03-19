@@ -2,15 +2,16 @@
 
 ## Introduction
 
-This lab walks you through the steps to access the container home page from Oracle Enterprise Manager Cloud Control (Oracle EMCC). You will also learn how to switch between containers and manage your favorites.
+This lab walks you through the steps to access the container home page from Oracle Enterprise Manager (Oracle EM). You will also learn how to switch between containers and manage your favorites.
 
-*Estimated Time:* 15 minutes
+Estimated time: 15 minutes
 
 ### Objectives
 
-- Access the container home page from Oracle EMCC.
-- Switch between the Container Database (CDB) home page and the Pluggable Database (PDB) home page.
-- Add pages to and remove pages from the favorites.
+ - Access the container home page from Oracle EM.
+ - Switch between home pages for Container Database (CDB), Pluggable Database (PDB), and the database instance.
+ - Check out the history
+ - Add pages to and remove pages from favorites.
 
 ### Prerequisites
 
@@ -20,244 +21,263 @@ This lab assumes you have -
  -   Completed all previous labs successfully
  -   Logged in to Oracle EM in a web browser as *sysman*
 
-## Task 1: Delete a PDB from the root container
+## Task 1: Access container home page
 
-Oracle EM provides an option to delete PDBs from the database instance home page. This option is not available on the CDB or the PDB home page. Along with the PDB, Oracle Database also deletes its associated data files.
+In this task, you will access the home page for the database instance, *orcl.us.oracle.com*.
 
-In this task, you will delete the PDB, namely *PDB1*, from the root container using Oracle EM. You can open the Databases page from the menu **Targets** &gt; **Databases**. 
+1.  From the **Targets** menu at the top, select **Databases** to open the Databases page.
 
-1.  On the Database pages, click on the Database Instance name, for example *orcl.us.oracle.com*, to open the instance home page.  
-    The values may differ depending on the system you are using.  
+    ![Databases menu](./images/em-dbhome-001-db-menu.png " ")
 
-	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-17-view-pdbs-db-list-02.png " ")
+    The Databases page displays all database systems added to Oracle EM as managed targets. The values may differ depending on the system you are using. 
 
-    The green upward arrow in the **Status** field indicates that the database instance is up and running.
+1.  Click the expand/collapse triangle next to the database instance name and then expand the Pluggable Databases. The list displays all PDBs under the selected container.   
+	The values may differ depending on the system you are using.  
 
-	[](include:n-db-page)
+    ![Databases list](./images/em-dbhome-002-db-list.png " ")
 
-1.  From the **Oracle Database** menu on the instance home page, select **Provisioning** &gt; **Provision Pluggable Databases**. The values may differ depending on the system you are using.  
+	You can click an item in the **Name** column to access the corresponding home page, that is, the database instance home page or PDB home page.
 
-	 ![Provision PDBs](./images/delete-pdb-01-provision-pdb.png " ")
+1.  For this task, click the database instance name, for example *orcl.us.oracle.com*, to access the instance home page.   
+	The values may differ depending on the system you are using.  
 
-1.  The Provision Pluggable Databases Console opens and displays the options for various PDB operations.  
-    Scroll down the page and select **Delete Pluggable Databases**.  
-    The values may differ depending on the system you are using.  
+    ![Database instance home page](./images/em-dbhome-003-instance-home.png " ")
 
-	 ![Delete PDBs](./images/delete-pdb-02-delete-pdb.png " ")
+	Similarly, if you click the PDB name, then it opens the PDB home page.
 
-    Click **Launch** to start the PDB delete operation. 
+You can perform various tasks depending on which home page you access. For example, from the database instance home page, you can monitor and administer your Oracle Database, such as start up and shut down the database instance, open and close PDBs, manage the memory, modify initialization parameters, and so on.
 
-	[](include:db-login)
+From the CDB and the PDB home page, you can perform administrative tasks on the CDB and the PDB respectively.
 
-    The values may differ depending on the system you are using.  
+## Task 2: Switch between containers
 
-	 ![Database Login](./../intro-pdb-mgmt-db/images/manage-pdb-13-dblogin.png " ")
+You can alter session and switch between containers in Oracle EM within the same login.
 
-1.  You can select one or more PDBs to delete. Click **Add** to search for the target PDB and add it to the delete list.   
+That is, from the database instance home page, you can switch to the CDB or PDB home page without logging out of Oracle EM. Similarly, from the PDB home page, you can switch to the CDB or to another PDB, if you have more target PDBs in Oracle EM.
 
-	 ![Select PDBs](./images/delete-pdb-03-add-pdb.png " ")
+In this task, you will switch between containers and open the CDB, the PDB, and the database instance homne page. 
 
-	[](include:n-buttons)
+1. On the container home page, click the down arrow next to the container name and select **All Containers**.   
+	The values may differ depending on the system you are using.  
 
-1.  Oracle EM opens a pop-up to search and select the target PDBs that you want to delete.    
-    The values may differ depending on the system you are using.  
+    ![All containers](./images/em-dbhome-004-all-containers.png " ")
 
-	 ![Search PDBs](./images/delete-pdb-04-search-pdb.png " ")
+1.  In the Switch Container dialog box, select the CDB, *CDB$ROOT*, from the containers list and click **OK**.   
+	The values may differ depending on the system you are using.  
 
-     This window allows multi-select, which means you can add more than one PDBs to the delete list. The green upward arrows in the **Status** field indicate that the PDBs are up and running.  
+	![Switch container - CDB](./images/em-dbhome-005-switch-container-cdb.png " ")
 
-     > **Note:** To delete multiple PDBs simultaneously, you can either select the PDBs in this pop-up or repeat this step to add each PDB individually.    
+	It brings up the CDB home page. The values may differ depending on the system you are using.  
 
-    For this lab, select *PDB1* from the target PDB list and click **Select** to add the PDB to the delete list. The window goes back to the Select PDBs page.  
+    ![CDB home page](./images/em-dbhome-006-cdb-home.png " ")
 
-1.  Verify that **Target Name** and **PDB Name** displays the PDB you selected.  
-    The snap clone information may show blank or n/a because it is not applicable for this lab.   
-    The values may differ depending on the system you are using.  
+	Similarly, follow the same steps to open the PDB home page.
 
-	 ![PDB1 Selected](./images/delete-pdb-05-pdb1-selected.png " ")
+1.  Click the down arrow next to the CDB name and select **All Containers**.   
+	The values may differ depending on the system you are using.  
 
-     > **Note:** If the PDB you selected for deletion is wrong, then select the PDB and click **Remove**. This does not delete the PDB but clears it from the delete list and leaves the PDB intact. Ignore this note if you have selected the correct PDB for deletion.  
+    ![All containers - CDB](./images/em-dbhome-007-all-containers-cdb.png " ")
 
-    You can also click **Add** to select more PDBs for deletion. For this lab, delete only one PDB, *PDB1*. 
+1. 	 In the Switch Container dialog box, select the PDB, for example *ORCLPDB*, from the containers list and click **OK**. The values may differ depending on the system you are using.  
 
-1.  Scroll down the page. Under **Container Database Host Credentials**, select the *Named* Credential option, if not already selected.   
-    The values may differ depending on the system you are using.  
+    ![Switch container - PDB](./images/em-dbhome-008-switch-container-pdb.png " ")
 
-	 ![CDB Host Credentials](./images/delete-pdb-06-host-credentials.png " ")
+	It brings up the PDB home page. The values may differ depending on the system you are using.  
 
-	[](include:n-host-creds)
+    ![PDB home page](./images/em-dbhome-009-pdb-home.png " ")
 
-    Leave the default value for **Temporary Working Directory** and click **Next** to proceed.  
+	> **Note:** The Switch Container option is useful if you have many containers in your database instance. However, you can move directly from one container to another instead of going though this option. 
 
-1.  Oracle EM takes a while to validate and prompts to schedule the delete operation.  
+1.	On the PDB home page, click the down arrow next to the PDB name and select the CDB, *CDB$ROOT*.    
+	The values may differ depending on the system you are using.  
 
-	 ![Schedule PDB1 Delete Operation](./images/delete-pdb-07-pdb1-schedule.png " ")
+    ![Select CDB$ROOT](./images/em-dbhome-010-pdb-select-cdb.png " ")
 
-    Specify the following:  
+	It opens the CDB home page. The values may differ depending on the system you are using.
 
-	 -  **Deployment Instance** - Delete the default text and enter a unique name, *delete pdb1*.  
-    The instance name you enter helps you identify and track the progress of this procedure on the Procedure Activity page.
+    ![CDB home page](./images/em-dbhome-006-cdb-home.png " ")
 
-		> **Note:** If the instance name already exists, then Oracle EM returns a validation error. You cannot create procedures in Oracle EM with duplicate names.   
+	> **Note:** From the CDB or the PDB home page, you cannot open the database instance home page directly. However, if you have opened the database instance home page recently, then you can access it again using the **History** menu. Alternatively, you can access the database instance home page from the Databases page. 
 
-	 - **Start** - Leave the default, *Immediately*, to run the procedure now.  
+1.	Click the **History** menu at the top and select the database instance name, *orcl.us.oracle.com*.   
+	The values may differ depending on the system you are using.
 
-	[](include:grace-period)
+    ![History menu](./images/em-dbhome-011-history.png " ")
 
-    Click **Next** to proceed.  
+	It opens the database instance home page. The values may differ depending on the system you are using.
 
-1.  The Review page displays a summary of the PDB delete operation. For example, the container database name, the PDB name which you entered, the target details, the data files, and so on. This page also displays the data files, which the database deletes along with the PDB.   
-    The values may differ depending on the system you are using.  
+    ![Database instance home page](./images/em-dbhome-003-instance-home.png " ")
 
-	 ![Delete PDB1 Review Summary](./images/delete-pdb-08-pdb1-review.png " ")
+	> **Note:** You can open a recently visited page from any location in Oracle EM using the **History** menu.
 
-	Verify that the **PDB for Delete** field displays *PDB1*.   
-    Review the details and click **Submit** to start deleting the PDB.  
+## Task 3: View target information
 
-1.  Oracle EM displays a confirmation pop-up.   
+To view information about a target or to monitor a target, open the target home page. From the home page, you can view details about the target, such as the Oracle home location, agent details, host system, listener information, and so on. 
 
-	 ![Confirm Deleting PDB1](./images/delete-pdb-09-pdb1-delete-confirm.png " ")
+In this task, you will view target information for the database instance, the CDB, and the PDB.
 
-    Click **Submit** again to start deleting the PDB.   
+1.  On the container home page, from the **Oracle Database** menu, select **Target Information** to view details of the database instance.   
+	The values may differ depending on the system you are using.
 
-    Oracle EM goes to the Provision Pluggable Databases page and displays the status of the procedure. This page contains the detailed steps of the PDB operation. After the PDB is deleted, the **Status** field changes from *Running* to *Succeeded*.  
-    The values may differ depending on the system you are using.  
+    ![Target information - database instance](./images/em-dbhome-012-container-target-menu.png " ")
 
-	 ![Delete PDB1 Procedure Activity](./images/delete-pdb-10-procedure-activity.png " ")
+    Alternatively, you can also click the target information icon (the circle with an 'i' in it) next to the container name. The values may differ depending on the system you are using.
 
-	[](include:provision)
+    ![Container information](./images/em-dbhome-013-container-target-info.png " ")
 
-You have deleted *PDB1* from the root container. Now, try unplugging a PDB from the root container. 
+	Press **Esc** on your keyboard or click the cross (x) icon on the Target Information window to close it. 
 
-## Task 2: Unplug a PDB from the root container
+1.  Click the down arrow next to the database instance name and select the CDB, *CDB$ROOT* to go to the CDB home page.    
+	The values may differ depending on the system you are using.
 
-Oracle EM provides an option to unplug PDBs from the database instance home page. This option is not available on the CDB or the PDB home page. 
+    ![Select CDB$ROOT](./images/em-dbhome-014-orcl-select-cdb.png " ")
 
-In this task, you will unplug the PDB, namely *PDB2*, from the root container using Oracle EM.
+1.  On the CDB home page, from the **Oracle Database** menu, select **Target Information** to view details of the CDB.  
+	The values may differ depending on the system you are using.
 
-1.  From the **Targets** menu, select **Databases** to open the Databases page.  
+    ![Target information - CDB](./images/em-dbhome-015-cdb-target-menu.png " ")
 
-	 ![Target menu - Databases](./images/delete-pdb-11-target-menu.png " ")
+    Alternatively, you can click the target information icon (the circle with an 'i' in it) next to the CDB name, *CDB$ROOT*. The values may differ depending on the system you are using.  
 
-1.  The Databases page displays the discovered database system targets, that is, the Database Instances on the host and the PDBs in each instance.  
-    The values may differ depending on the system you are using.  
+    ![CDB information](./images/em-dbhome-016-cdb-target-info.png " ")
 
-	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-11-dbhome.png " ")
+	Press **Esc** on your keyboard or click the cross (x) icon on the Target Information window to close it. 
 
-    Click on the Database Instance name, for example *orcl.us.oracle.com*, to open the instance home page. 
+1.  Click the down arrow next to the CDB name and select the PDB, *ORCLPDB* to go to the PDB home page.   
+	The values may differ depending on the system you are using.
 
-1.  From the **Oracle Database** menu on the instance home page, select **Provisioning** &gt; **Provision Pluggable Databases**. The values may differ depending on the system you are using.  
+    ![Select ORCLPDB](./images/em-dbhome-017-cdp-select-pdb.png " ")
 
-	 ![Provision PDBs](./../intro-pdb-mgmt-db/images/manage-pdb-14-provision-pdb2.png " ")
+1.  On the PDB home page, from the **Oracle Database** menu, select **Target Information** to view details of the target PDB.    
+	The values may differ depending on the system you are using.
 
-1.  The Provision Pluggable Databases Console opens and displays the options for various PDB operations.  
-    Scroll down the page and select **Unplug Pluggable Databases**.  
-    The values may differ depending on the system you are using.  
+    ![Target information - PDB](./images/em-dbhome-018-pdb-target-menu.png " ")
 
-	 ![Unplug PDBs](./images/unplug-pdb-02-unplug-pdb.png " ")
+    Alternatively, you can click the target information icon (the circle with an 'i' in it) next to the PDB name, *ORCLPDB*. The values may differ depending on the system you are using.
 
-    Click **Launch** to start the PDB unplug operation.  
+    ![PDB information](./images/em-dbhome-019-pdb-target-info.png " ")
 
-	[](include:n-db-login-opt)
+	Press **Esc** on your keyboard or click the cross (x) icon on the Target Information window to close it. 
 
-1.  You need to select the PDB that you want to unplug. Click on the magnifier icon next to the **Pluggable Database** field to search for the target PDB.   
-    The values may differ depending on the system you are using.  
+## Task 4: Manage favorites
 
-	 ![Select PDB](./images/unplug-pdb-03-select-pdb.png " ")
+Using the favorites option, you can bookmark pages in Oracle EM for quick access. 
 
-     > **Note:** Though you can type the PDB name in this field, Oracle recommends using the search and select PDB option.   
+> **Note:** Go to the page that you want to add to or remove from favorites. 
 
-1.  Oracle EM opens a pop-up to search and select the PDB that you want to unplug.   
-    The values may differ depending on the system you are using.  
+In this task, you will add the CDB home page and the PDB home page to favorites and then remove the CDB home from favorites. Currently, you are on the PDB home page. 
 
-	 ![Search PDB2](./images/unplug-pdb-04-search-pdb2.png " ")
+1. Add the PDB home page to favorites. Click the **Favorites** menu (star icon) at the top and select **Add Page to Favorites**. 
 
-    This window allows single-select, which means you can select only one target PDB.   
-    For this task, select *PDB2* and click **Select** to proceed. The window goes back to the Select PDB page.  
+    ![Add page to Favorites](./images/em-dbhome-020-add-page-to-fav.png " ")
 
-1.  Verify that the **Pluggable Database** field displays the PDB name you selected.  
+    The window displays a confirmation message indicating that you have added the current page to favorites.   
 
-	 ![CDB Host Credentials](./images/unplug-pdb-05-host-credentials.png " ")
+1.  Go to the CDB home page. Click the down arrow next to the PDB name and select the CDB, *CDB$ROOT*.    
+	The values may differ depending on the system you are using.
 
-    Scroll down the page. Under **Container Database Host Credentials**, select the *Named* Credential option, if not already selected. Click **Next** to proceed.  
+    ![Select CDB$ROOT](./images/em-dbhome-010-pdb-select-cdb.png " ")
 
-1.  In the Unplug PDB Destination page, select the type of PDB template you want to generate for unplugging the PDB, and the location where you want to store it. The PDB template consists of all data files and the metadata XML file.  
+1. Add the CDB home page to favorites. Click the **Favorites** menu (star icon) and select **Add Page to Favorites**.   
+	The values may differ depending on the system you are using.
 
-	 ![PDB Template Location](./images/unplug-pdb-06-template-location.png " ")
+    ![Add page to Favorites](./images/em-dbhome-020-add-page-to-fav.png " ")
 
-    The page displays the default options *Target Host File System* and *Generate PDB Archive* selected. Oracle recommends selecting these options if the source and the target CDBs are using File System for storage.  
+1.	Click the **History** menu at the top and select the database instance name, *orcl.us.oracle.com*.   
+	The values may differ depending on the system you are using.
 
-     - **Target Host File System** - stores the PDB template on the CDB host from where you are unplugging the PDB  
-     - **Generate PDB Archive** - creates a single archive (*TAR*) file with the data files and the metadata XML file  
+    ![History menu](./images/em-dbhome-011-history.png " ")
 
-    For this lab, leave the defaults and click **Next** to proceed.   
+	It opens the database instance home page. The values may differ depending on the system you are using.
 
-	 ![PDB Temporary Storage Location](./images/unplug-pdb-07-tmp-dir.png " ")
+1. Add the database instance home page to favorites. Click the **Favorites** menu (star icon) and select **Add Page to Favorites**.   
+	The values may differ depending on the system you are using.
 
-     > **Note:** The PDB unplug operation generates a PDB template, which can be a PDB archive, a PDB file set, or a PDB Metadata file. You can select the location to store the PDB template as File System or Software Library. The Software Library option allows plugging in PDBs from a central location.  
+    ![Add page to Favorites](./images/em-dbhome-020-add-page-to-fav.png " ")
 
-1.  Oracle EM takes a while to validate and prompts to schedule the unplug operation.  
+    You have added the PDB, the CDB, and database isntance home pages to favorites. Similarly, you can remove pages from favorites. Currently, you are on the database instance page. 
 
-	 ![Schedule PDB2 Unplug Operation](./images/unplug-pdb-08-pdb2-schedule.png " ")
+1.  Remove the database instance home page from favorites. Click the **Favorites** menu (star icon) and select **Remove Page from Favorites**.  
+	You will notice that the menu displays the CDB, the PDB, and the database instance as favorites.    
 
-    Specify the following:
+	The values may differ depending on the system you are using.  
 
-     - **Deployment Instance** - Delete the default text and enter a unique name, *unplug pdb2*.  
-    The instance name you enter helps you identify and track the progress of this procedure on the Procedure Activity page.  
+    ![Remove database instance from Favorites](./images/em-dbhome-021-remove-fav-instance.png " ")
 
-     - **Start** - Leave the default, *Immediately*, to run the procedure now.  
+    The window displays a confirmation message indicating that you have removed the page from favorites. You can also remove favorites using the **Manage Favorites** option. 
 
-    For this lab, do not select the grace period option.   
-    Click **Next** to proceed.  
+1.	Click the **Favorites** menu (star icon) and select **Manage Favorites**.   
+	The values may differ depending on the system you are using.  
 
-1.  The Review page displays a summary of the PDB unplug operation. For example, the container database name, the PDB name you selected, and the host details.   
-    The values may differ depending on the system you are using.  
+    ![Manage Favorites menu](./images/em-dbhome-022-manage-favs-menu.png " ")
 
-	 ![Unplug PDB2 Review Summary](./images/unplug-pdb-09-pdb2-review.png " ")
+1.  In the **Manage Favorites** dialog box, select the page that you want to remove. For example *CDBROOT*, and click **Remove Selected**.    
+	The values may differ depending on the system you are using.  
 
-	Verify that the **PDB Archive** field displays the *full path and location of the file system*.   
-    Review the details and click **Submit** to start unplugging the PDB from the root container.  
+    ![Remove CDB from Favorites](./images/em-dbhome-023-manage-fav-remove-cdb.png " ")
 
-1.  Oracle EM displays a confirmation pop-up.   
+	Click **OK** to remove the CDB home page from favorites.
 
-	 ![Confirm Unplugging PDB2](./images/unplug-pdb-10-pdb2-submit-confirm.png " ")
+	> **Note:** In the **Manage Favorites** dialog box, you can select pages one-by-one and then click **Remove Selected**. Finally, when you click **OK**, it removes the pages from favorites.
 
-    Click **View Execution Details** to open the Procedure Activity page and view the status of the procedure.   
+Congratulations! You have successfully completed of this workshop on *Oracle EM Database Administration (DBA)*.
 
-     > **Note:** If you click **OK**, Oracle EM goes to the Provision Pluggable Databases page.  
-
-    The Procedure Activity page contains the detailed steps of the PDB operation. After the PDB is unplugged, the **Status** field changes from *Running* to *Succeeded*.  
-    The values may differ depending on the system you are using.  
-
-	 ![Unplug PDB2 Procedure Activity](./images/unplug-pdb-11-procedure-activity.png " ")
-
-You have unplugged *PDB2* from the CDB. Now, verify that the PDBs you removed are no longer available in the database instance. 
-
-## Task 3: Verify the removal of PDBs
-
-After deleting and unplugging the PDBs in the above tasks, you can check that Oracle Database has removed the PDBs.
-
-In this task, you will verify that you have removed the PDBs, namely *PDB1* and *PDB2*, from the database.
-
-1.  From the **Targets** menu, select **Databases** to open the Databases page.   
-    The values may differ depending on the system you are using.  
-
-	 ![Target menu - Databases](./images/unplug-pdb-12-target-menu.png " ")
-
-1.  The Databases page displays the discovered database system targets. 
-
-	Click on the expand/collapse triangle next to the instance name, for example *orcl.us.oracle.com*, from where you removed the PDBs. The values may differ depending on the system you are using.  
-
-	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-18-view-pdbs-db-list-03.png " ")
-
-    Note that the database instance does not display *PDB1* and *PDB2* that you removed. The list now displays only one PDB, *ORCLPDB*.  
-
-In this lab, you learned how to remove PDBs from your Oracle Database. You deleted a PDB and unplugged another PDB from the root container. You also verified that you removed these PDBs from the Oracle Database. 
-
-You may now **proceed to the next lab**.
+In this workshop, you performed some basic administration of Oracle Database from Oracle EM.
+ - Viewed container details from the SQL command line
+ - Administered managed targets in Oracle EM 
+ - Learned how to add and remove Oracle Database and Listener as targets
+ - Accessed the database instance, CDB, and PDB home pages 
+ - Learned how to switch between containers 
+ - Added and removed favorites in Oracle EM 
+ - Learned how to check the recent history
 
 ## Acknowledgements
 
- -   **Author**: Manish Garodia, Database User Assistance Development team
- -   **Contributors**: Suresh Rajan, Ashwini R, Jayaprakash Subramanian
- -   **Last Updated By/Date**: Manish Garodia, November 2022
+ - **Author**: Manish Garodia, Database User Assistance Development team
+ - **Contributors**: <if type="hidden">Suresh Rajan, Ashwini R, Jayaprakash Subramanian, Steven Lemme</if>
+ -   **Last Updated By/Date**: Manish Garodia, March 2023
+
+<!--
+
+ - Lab: Manage Targets - Oracle Database and Listener (Re-add the Oracle Database 21c and the listener managed targets removed at the end of this lab before proceeding).
+
+
+1.  From the **Targets** menu, select **Databases**. Select the Oracle Database, and click **View** &gt; **Expand All Below** to view the PDBs.
+
+1.  Click the PDB name, for example *ORCLPDB*, to access the PDB home page.   
+	The values may differ depending on the system you are using.  
+
+    ![PDB home page](./images/em-dbhome-004-pdbhome.png " ")
+
+
+1.  On the container home page, if you are on some other page.   
+	From the **Targets** menu, select **Databases** to open the Databases page. Click the container name, for example *orcl.us.oracle.com*, to access the container home page as explained in *Task 1* of this lab.   
+	The values may differ depending on the system you are using.  
+
+    ![Database instance home page](./images/em-dbhome-003-instancehome.png " ")
+
+1.  click the down arrow next to the container and select **All Containers**.   
+	The values may differ depending on the system you are using.  
+
+
+1.  Open the container home page, if you are on some other page.   
+	From the **Targets** menu, select **Databases** to open the Databases page. Click the container name, for example *orcl.us.oracle.com*, to open the container home page as explained in *Task 1* of this lab.   
+	The values may differ depending on the system you are using.  
+
+    ![Oracle Database Instance Home page](./images/em-dbhome-003-instancehome.png " ")
+
+
+Ensure that you have the CDB home page open. Otherwise, follow the steps as explained in *Task 1* of this lab to open the CDB home page.
+
+ - To add a page to favorites, open that page, and use the **Favorites** menu (star icon).
+ - To remove a page from favorites, open that page, and use the **Favorites** menu (star icon).
+ - To remove one or more pages from favorites, use the **Manage Favorites** menu.
+
+
+1.  To do that, add the CDB home page to favorites again. Select **Favorites** &gt; **Add Page to Favorites**. The window displays a confirmation message indicating that you have added the current page to favorites.
+
+
+In this workshop, you performed some basic administration of Oracle Database from Oracle EM. You viewed container details from the SQL command line. You administered managed targets in Oracle EM and learned how to add and remove Oracle Database and Listener as targets. You accessed the database instance, CDB, and PDB home pages and learned how to switch between containers. You also added and removed favorites in Oracle EM and learned how to check the recent history. 
+
+
+-->
