@@ -2,10 +2,11 @@
   "workshoptitle": "DBA Essentials - Install Oracle Database 23c software and create a database",
   "help": "livelabs-help-db_us@oracle.com",
   "include": {
-        "admin-users": "./../../intro-install/files/admin-users.txt", 
+        "adm-users": "./../../intro-install/files/adm-users.txt", 
         "char-set": "./../../intro-install/files/char-set.txt", 
         "dbca-adv": "./../../intro-install/files/dbca-adv.txt", 
         "global-dbname": "./../../intro-install/files/global-dbname.txt",
+        "oracle-home": "./../../intro-install/files/oracle-home.txt", 
         "oracle-sid": "./../../intro-install/files/oracle-sid.txt", 
         "oracle-user": "./../../intro-install/files/oracle-user.txt", 
         "prereq-check": "./../../intro-install/files/prereq-check.txt", 

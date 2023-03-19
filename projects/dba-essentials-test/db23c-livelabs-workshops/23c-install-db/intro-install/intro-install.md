@@ -48,9 +48,11 @@ For database installation, the installer offers two system classes -
  - *Desktop class* with minimal configuration
  - *Server class* with advanced configuration
 
-In a single Oracle home, you install the database software only once but can create multiple databases. Hence, to install both the system classes on the same host, you require different Oracle home locations. 
+In a single Oracle home, you install the database software only one time but can create multiple databases. Hence, to install both the system classes on the same host, you require different Oracle home locations. 
 
-> **Note:** In this workshop, you will install Oracle Database with Desktop class in one Oracle home and with Server class in another Oracle home. 
+In this workshop, you will install Oracle Database with Desktop class in one Oracle home and with Server class in another Oracle home.
+
+> **Note:**  [](include:oracle-home)
 
 **Types of database installation**
 
@@ -63,7 +65,7 @@ Depending on the type of installation, the installer can run Oracle DBCA interna
 
 Consider the scenarios
 
- - **Case#1**: You have installed only the database software with the database installer. Then, you need to run Oracle DBCA to create a database.
+ - **Case#1**: You have installed only the database software with the database installer. Then, you must run Oracle DBCA to create a database.
 
  - **Case#2**: Along with installing the database software, you have also created a starter database with the installer. You can still run Oracle DBCA to create additional databases.
 
@@ -88,7 +90,7 @@ Before installing the Oracle Database software, the installer performs several a
 ### Minimum recommendations
 
  - 2 GB RAM
- - Oracle Enterprise Linux 8.4 and above or Red Hat Enterprise Linux 8.4
+ - Oracle Enterprise Linux 8.4, Red Hat Enterprise Linux 8.4 or later
  - Sufficient paging space
  - Installation of service packages and/or patches
  - Use the correct file system format
@@ -97,9 +99,9 @@ Before installing the Oracle Database software, the installer performs several a
 
 Oracle Database Enterprise Edition requires *8.3 GB* of local disk storage space to install the Oracle Database software.
 
-Oracle recommends that you allocate approximately *100 GB* to allow additional space for applying any future patches on top of the existing Oracle home.
+Oracle recommends that you allocate approximately *100 GB* to provide additional space for applying any future patches on top of the existing Oracle home.
 
-Click on the next lab to **Get Started**.
+Click the next lab to **Get Started**.
 
 ## Learn More
 
@@ -110,5 +112,5 @@ Click on the next lab to **Get Started**.
 ## Acknowledgements
 
  - **Author**: Manish Garodia, Database User Assistance Development team
- - **Contributors**: 
- - **Last Updated By/Date**: Manish Garodia, February 2023
+ - **Contributors**: <if type="hidden">Suresh Rajan, Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru, Dharma Sirnapalli </if>
+ - **Last Updated By/Date**: Manish Garodia, March 2023

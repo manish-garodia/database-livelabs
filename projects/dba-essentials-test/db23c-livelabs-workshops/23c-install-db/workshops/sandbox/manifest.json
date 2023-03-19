@@ -1,25 +1,22 @@
 {
-  "workshoptitle": "DBA Essentials - Manage PDBs in Oracle Database 21c from Oracle Enterprise Manager (Oracle EM)",
-  "help": "livelabs-help-em_us_grp@oracle.com",
+  "workshoptitle": "DBA Essentials - Install Oracle Database 23c software and create a database",
+  "help": "livelabs-help-db_us@oracle.com",
   "include": {
-        "n-db-page": "./../../intro-pdb-mgmt-db/files/n-db-page.txt", 
-        "db-login": "./../../intro-pdb-mgmt-db/files/db-login.txt", 
-        "n-host-creds": "./../../intro-pdb-mgmt-db/files/n-host-creds.txt", 
-        "n-pdb-name": "./../../intro-pdb-mgmt-db/files/n-pdb-name.txt", 
-        "n-pdb-admin": "./../../intro-pdb-mgmt-db/files/n-pdb-admin.txt", 
-        "deploy-name": "./../../intro-pdb-mgmt-db/files/deploy-name.txt", 
-        "grace-period": "./../../intro-pdb-mgmt-db/files/grace-period.txt", 
-        "provision": "./../../intro-pdb-mgmt-db/files/provision.txt", 
-        "n-db-login-opt": "./../../intro-pdb-mgmt-db/files/n-db-login-opt.txt", 
-        "n-buttons": "./../../intro-pdb-mgmt-db/files/n-buttons.txt", 
-        "storage": "./../../intro-pdb-mgmt-db/files/storage.txt"
+        "adm-users": "./../../intro-install/files/adm-users.txt", 
+        "char-set": "./../../intro-install/files/char-set.txt", 
+        "dbca-adv": "./../../intro-install/files/dbca-adv.txt", 
+        "global-dbname": "./../../intro-install/files/global-dbname.txt",
+        "oracle-sid": "./../../intro-install/files/oracle-sid.txt", 
+        "oracle-user": "./../../intro-install/files/oracle-user.txt", 
+        "prereq-check": "./../../intro-install/files/prereq-check.txt", 
+        "register-em": "./../../intro-install/files/register-em.txt"
     },
   "tutorials": [
     {
       "title": "Introduction",
-      "description": "The workshop on PDB management in Oracle Database 21c.",
-      "publisheddate": "11/24/2022",
-      "filename": "../../intro-pdb-mgmt-db/intro-pdb-mgmt-db.md"
+      "description": "The workshop on Oracle Database Installation.",
+      "publisheddate": "02/21/2023",
+      "filename": "./../../intro-install/intro-install.md"
     },
     {
       "title": "Lab 1: Verify compute instance setup",
@@ -28,34 +25,16 @@
       "filename": "https://oracle-livelabs.github.io/common/labs/verify-compute/verify-compute-novnc.md"
     },
     {
-      "title": "Lab 2: Initialize environment",
-      "description": "How to initialize and start all the workshop components.",
-      "publisheddate": "11/24/2022",
-      "filename": "./../../initialize-environment/initialize-environment.md"
+      "title": "Lab 2: Install Oracle Database",
+      "description": "How to install the Oracle Database software and create a database with Desktop class (minimal configuration) and Server class (advanced configuration).",
+      "publisheddate": "02/21/2023",
+      "filename": "./../../install-desktop-server/install-desktop-server.md"
     },
     {
-      "title": "Lab 3: Provision a Pluggable Database (PDB)",
-      "description": "How to provision PDBs in a multitenant CDB from Oracle EM.",
-      "publisheddate": "11/24/2022",
-      "filename": "../../provision-pdb/provision-pdb.md"
-    },
-    {
-      "title": "Lab 4: Remove PDBs from CDB",
-      "description": "How to remove PDBs from CDB using Oracle EM.",
-      "publisheddate": "11/24/2022",
-      "filename": "../../remove-pdb/remove-pdb.md"
-    },
-    {
-      "title": "Lab 5: Plug PDBs into CDB",
-      "description": "How to plug in an unplugged PDB into the CDB from Oracle EM.",
-      "publisheddate": "11/24/2022",
-      "filename": "../../plug-pdb/plug-pdb.md"
-    },
-    {
-      "title": "Lab 6: Close and open PDBs",
-      "description": "How to administer PDBs in a multitenant CDB from Oracle EM.",
-      "publisheddate": "11/24/2022",
-      "filename": "../../close-open-pdb/close-open-pdb.md"
+      "title": "Lab 3: Create Container Database",
+      "description": "How to create databases using Oracle DBCA with typical configuration and advanced configuration. It does not install the Oracle Database software.",
+      "publisheddate": "02/21/2023",
+      "filename": "./../../dbca-typical-advanced/dbca-typical-advanced.md"
     },
     {
       "title": "Need help?",

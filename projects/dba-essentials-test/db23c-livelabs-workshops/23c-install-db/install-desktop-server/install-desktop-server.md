@@ -14,6 +14,8 @@ Using the database installer -
 
 To install both system classes on the same host, you require different Oracle home locations.
 
+> **Note:**  [](include:oracle-home)
+
 ### Prerequisites
 
 This lab assumes you have -
@@ -29,7 +31,7 @@ To install Oracle Database, the first step is to access and run the database ins
 In this task, you will launch the installer from Oracle home 1.
 
 1.  Open a terminal window and change the current working directory to Oracle home 1.  
-    This is the directory where the database installer is located.  
+    This is the directory where the installer is located.  
 
     ```
 	$ <copy>cd /u01/app/oracle/product/23.0.0/dbhome_1</copy>
@@ -45,7 +47,7 @@ In this task, you will launch the installer from Oracle home 1.
 
 The installer launches the wizard to start Oracle Database installation.
 
-> **Note:** To run the installer, ensure that the `xdpyinfo` program is installed on your host. If the `oracle` user does not have executable privileges, then log in as `root` and execute this command.    
+> **Note:** To run the installer, ensure that the `xdpyinfo` program is installed on your host. If the `oracle` user does not have executable privileges, then log in as `root` and run this command.    
 `xhost +SI:localuser:oracle`
 
 ## Task 2: Install Oracle Database with Desktop class
@@ -74,7 +76,7 @@ In this task, you will select *Desktop class* to install the database software a
     For this task, specify the following.
      - **OSDBA group** - *dba*
      - **Global database name** - Enter a unique name, for example *orcl.us.oracle.com*
-     - **Password** - Set the password for database admin users, for example *We!come1*   
+     - **Password** - Set the password for database administrators, for example *We!come1*   
 		The password must conform to the Oracle recommended standards.
      - **Pluggable database name** - Leave the default name, *orclpdb*
 
@@ -85,20 +87,20 @@ In this task, you will select *Desktop class* to install the database software a
 
 	[](include:global-dbname)
 
-	[](include:admin-users)
+	[](include:adm-users)
 
-    The installer internally runs Oracle DBCA to create an Oracle Database. Along with the Container Database (CDB), it also creates a Pluggable Database (PDB) as per the name you specify in this window.
+    The installer internally runs Oracle DBCA to create an Oracle Database. Along with the Container Database (CDB), it also creates a Pluggable Database (PDB) with the name you specify in this window.
 
 1.  The installer prompts you to specify the location for *`oraInventory`*. This is the centralized inventory for all Oracle software products installed on the host.  
 
     ![Set Inventory location](./images/db23c-desk-004-inventory.png " ")
 
-    > **Note:** The first time you install Oracle Database, the installer offers you to specify the inventory location. If Oracle Database is already installed on your host, then the next time you run the database installer, it does not display the Create Inventory window. The inventory location for your database is already set.   
+    > **Note:** The first time you install Oracle Database, the installer offers you to specify the inventory location. If Oracle Database is already installed on your host, then the next time you run the database installer, it does not prompt to configure inventory. The inventory location for your database is already set.   
 
     For this lab, do not change the **Inventory Directory**. Select the operating system group for Oracle inventory as *dba* and click **Next**.  
 
 1.  The installer requires you to run scripts as the `root` user to configure the database software.   
-    Leave the checkbox **Automatically run configuration scripts** unselected and click **Next**.   
+    Leave the check box **Automatically run configuration scripts** unselected and click **Next**.   
 
     ![Check Root scripts](./images/db23c-desk-005-root-script.png " ")
 
@@ -124,7 +126,7 @@ In this task, you will select *Desktop class* to install the database software a
 
     ![Run root scripts](./images/db23c-desk-007c-root-script.png " ")
 
-    The installer displays this window because you opted to run the scripts manually in a previous step. Note that the window displays two scripts, of which *`orainstRoot.sh`* is to configure the inventory. The next time you run the database installer, it displays only one script, *`root.sh`*.
+    The installer displays this window because you opted to run the scripts manually in a previous step. Note that the window displays two scripts, of which *`orainstRoot.sh`* is to configure the inventory. The next time you run the database installer on the same host, it displays only one script, *`root.sh`*.
 
 1.  Open a new terminal window and run the script *`orainstRoot.sh`* located in the `oraInventory` folder.  
 
@@ -134,7 +136,7 @@ In this task, you will select *Desktop class* to install the database software a
 
     > **Note:** You can run this script as `root` if you have the privileges. For this lab, use the `sudo` command.  
 
-    It returns the following output.
+    It returns the following.
 
     ```
 	Changing permissions of /u01/app/oraInventory.
@@ -145,7 +147,7 @@ In this task, you will select *Desktop class* to install the database software a
     The execution of the script is complete.
 	```
 
-1.  In the same terminal, run another script *`root.sh`* located in Oracle home.  
+1.  In the same terminal, run another script *`root.sh`* located in Oracle home 1.  
 
     ```
 	$ <copy>sudo /u01/app/oracle/product/23.0.0/dbhome_1/root.sh</copy>
@@ -153,7 +155,7 @@ In this task, you will select *Desktop class* to install the database software a
 
     > **Note:** You can run this script as `root` if you have the privileges. For this lab, use the `sudo` command.  
 
-    It returns the following output.  
+    It returns the following.  
 
 	```
     The following environment variables are set as:
@@ -185,7 +187,7 @@ In this task, you will select *Desktop class* to install the database software a
 
     You can close the terminal window. Running scripts are applicable for Linux and UNIX operating systems only.
 
-1.  Return to the Execute Configuration Scripts window and click **OK** to continue. The installer proceeds with creating the database as per your configuration.
+1.  Return to the Execute Configuration Scripts window and click **OK** to continue. The installer proceeds with creating the database according to your configuration.
 
     On completion, the installer displays the Finish window  
 
@@ -217,7 +219,7 @@ The installer launches the wizard to start Oracle Database installation.
 
 ## Task 4: Install and configure Oracle Database with Server class
 
-The Server class option allows you to perform advanced installation with detailed configuration. 
+Using the Server class option, you can perform advanced database installation with detailed configuration. 
 
 In this task, you will select *Server class* to install the database software and create a database, *orcl1*, in Oracle home 2. 
 
@@ -272,12 +274,12 @@ In this task, you will select *Server class* to install the database software an
 
     > [](include:oracle-sid)
 
-    The installer internally runs Oracle DBCA to create an Oracle Database. Along with the CDB, it also creates a PDB as per the name you specify in this window.  
+    The installer internally runs Oracle DBCA to create an Oracle Database. Along with the CDB, it also creates a PDB with the name you specify in this window.  
 
 1.  In the Configuration Options window, you can allocate memory and select character sets for your database. 
 
      - **Memory** - Specify the memory you want to allocate for your database, for example *6347* MB.  
-        For optimum use of disk space, you can move the slider next to **Allocate memory** to the left and decrease the size of the SGA and PGA values. 
+        For optimum use of disk space, you can move the indicator next to **Allocate memory** to the left and decrease the size of the SGA and PGA values.
 
 		For this task, do not enable automatic memory management. To learn more about memory management, see [About Automatic Memory Management Installation Options](https://docs.oracle.com/en/database/oracle/oracle-database/21/ladbi/about-automatic-memory-management-installation-options.html#GUID-38F46564-B167-4A78-A974-8C7CEE34EDFE).  
         Go to the next tab.   
@@ -297,36 +299,36 @@ In this task, you will select *Server class* to install the database software an
 
     ![Select Storage file system](./images/db23c-srv-008-storage-filesys.png " ")
 
-    Oracle Automatic Storage Management (Oracle ASM) allows you to store your data files in ASM disk groups. For this lab, do not select this option.
+    Using Oracle Automatic Storage Management (Oracle ASM), you can store your data files in ASM disk groups. For this lab, do not select this option.
 
-1.  The Management Options window allows you to register your database with Oracle Enterprise Manager (Oracle EM).   
-    For this lab, do not select the checkbox and click **Next**.  
+1.  In the Management Options window, you can register your database with Oracle Enterprise Manager (Oracle EM).   
+    For this lab, do not select the check box and click **Next**.  
 
-    ![Regiter with EM](./images/db23c-srv-009-em.png " ")
+    ![Register with EM](./images/db23c-srv-009-em.png " ")
 
 	> **Tip:** [](include:register-em)
 
-1.  Select **Enable Recovery** in the Recovery Options window to allow restoration of Oracle Database in event of a failure.  
+1.  Select **Enable Recovery** in the Recovery Options window for restoration of Oracle Database in event of a failure.  
     The recovery information will be stored as File System in the specified location. Click **Next**.  
 
     ![Enable Recovery](./images/db23c-srv-010-recovery.png " ")
 
-1.  Set the password for the database admin users. Though you can specify different passwords for each admin user, for this lab, select **Use the same password for all accounts**.
+1.  Set the password for the database administrators. Though you can specify different passwords for each user, for this lab, select **Use the same password for all accounts**.
 
     Enter the password, for example *We!come1*, and click **Next**.  
-    The password must conform to the Oracle recommended standards.   
+    The password must conform to the Oracle recommended standards.
 
-    ![Set admin password](./images/db23c-srv-011-admin-pwd.png " ")
+    ![Set administrative password](./images/db23c-srv-011-adm-pwd.png " ")
 
-	[](include:admin-users)
+	[](include:adm-users)
 
-1.  You can select specific OS groups to grant the corresponding SYS privileges to the admin users in your database. The drop-down menu displays the values to which your user belong.   
+1.  You can select specific OS groups to grant the corresponding SYS privileges to database administrators. The drop-down menu displays the values to which your user belong.   
     For this lab, select *dba* for all groups and click **Next**.  
 
     ![Select OS groups](./images/db23c-srv-012-os-groups.png " ")
 
 1.  The installer requires you to run scripts as the root user to configure the database software.   
-    Leave the checkbox **Automatically run configuration scripts** unselected and click **Next**.   
+    Leave the check box **Automatically run configuration scripts** unselected and click **Next**.   
 
     ![Check Root scripts](./images/db23c-srv-013-root-script.png " ")
 
@@ -354,7 +356,7 @@ In this task, you will select *Server class* to install the database software an
 
     The installer displays this window because you opted to run the scripts manually in a previous step. Note that the window displays only one script, *`root.sh`*. It does not display any script to configure the inventory. As you have installed Oracle Database in the previous task, inventory on your host is already configured.  
 
-1.  Open a new terminal window and run another script *`root.sh`* located in Oracle home.  
+1.  Open a new terminal window and run another script *`root.sh`* located in Oracle home 2.  
 
     ```
 	$ <copy>sudo /u01/app/oracle/product/23.0.0/dbhome_2/root.sh</copy>
@@ -362,7 +364,7 @@ In this task, you will select *Server class* to install the database software an
 
     > **Note:** You can run this script as `root` if you have the privileges. For this lab, use the `sudo` command.  
 
-    It returns the following output.  
+    It returns the following.  
 
     ```
 	The following environment variables are set as:
@@ -394,7 +396,7 @@ In this task, you will select *Server class* to install the database software an
 
     You can close the terminal window. Running scripts are applicable for Linux and UNIX operating systems only. 
 
-1.  Return to the Execute Configuration Scripts window and click **OK** to continue. The installer proceeds with creating the database as per your configuration.
+1.  Return to the Execute Configuration Scripts window and click **OK** to continue. The installer proceeds with creating the database according to your configuration.
 
     On completion, the installer displays the Finish window.  
 
@@ -409,5 +411,5 @@ You may now **proceed to the next lab**.
 ## Acknowledgements
 
  - **Author**: Manish Garodia, Database User Assistance Development team
- - **Contributors**: 
- - **Last Updated By/Date**: Manish Garodia, February 2023
+ - **Contributors**: <if type="hidden">Suresh Rajan, Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru, Dharma Sirnapalli, Malai Stalin</if>
+ - **Last Updated By/Date**: Manish Garodia, March 2023

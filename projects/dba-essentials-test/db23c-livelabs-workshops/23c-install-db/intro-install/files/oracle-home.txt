@@ -1,0 +1,1 @@
+This workshop uses two Oracle homes for demonstration purposes. It is not a requirement for Oracle Database to have two homes. A single Oracle home is sufficient to install and manage a single instance multitenant container database.
