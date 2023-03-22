@@ -41,7 +41,7 @@ In this task, you will view the existing targets in Oracle EM.
 
 	Click a target name to open its home page. From the target's home page, you can view the target information and manage the target.
 
-To perform administrative tasks on your Oracle Database and Listener from Oracle EM, add them as targets. 
+To perform administrative tasks on your Oracle Database and Listener from Oracle EM, add them as targets.
 
 ## Task 2: Add Oracle Database and Listener as targets
 
@@ -59,7 +59,7 @@ In this task, you will add an Oracle Database and a Listener as targets using th
 
     ![Guided discovery process](./images/em-target-005-guideddiscovery.png " ")
 
-1.  The dialog box displays the options under Guided Discovery. 
+1.  The dialog box displays the options under Guided Discovery.
 
 	For this task, select *Oracle Database, Listener and Automatic Storage Management*, if not already selected.
 
@@ -73,7 +73,7 @@ In this task, you will add an Oracle Database and a Listener as targets using th
 
     ![Specify Host](./images/em-target-007-discover-host.png " ")
 
-	It opens the **Search Target** diaglog box.
+	It opens the **Search Target** dialog box.
 
 1.  In the **Select Targets** dialog box under the status section, locate your host system, for example *localhost.example.com*.   
     The values may differ depending on the system you are using.  
@@ -125,7 +125,7 @@ Congratulations! You have successfully added Oracle Database and Listener as tar
 
 ## Task 3: View newly added target Oracle Database
 
-After adding Oracle Database, Oracle EM displays it as managed target. 
+After adding Oracle Database, Oracle EM displays it as managed target.
 
 In this task, you will view the newly added target Oracle Database, *orcl*, and its PDBs.
 
@@ -136,9 +136,9 @@ In this task, you will view the newly added target Oracle Database, *orcl*, and 
 1. The Databases page displays all discovered target database systems on your host.   
 	The values may differ depending on the system you are using.
 
-    ![Databases list](./images/em-dbhome-014-db-list.png " ")	
+    ![Databases list](./images/em-dbhome-014-db-list.png " ")
 
-	Verify that the list displays *orcl*, the target Oracle Database that you added. If you have other target databases, then the page displays them all. 
+	Verify that the list displays *orcl*, the target Oracle Database that you added. If you have other target databases, then the page displays them all.
 
 1.  Select a database instance name, for example *orcl.us.oracle.com*, and click **View** &gt; **Expand All Below** to view the PDBs in that container.    
 	The values may differ depending on the system you are using.
@@ -158,11 +158,11 @@ You can add more Oracle Databases as targets or remove target databases from the
 
 ## Task 4: Remove Oracle Database from managed targets
 
-You can remove targets, such as database instances, database systems, CDBs, PDBs, and so on from Oracle EM. After removing a target, you cannot manage it from Oracle EM anymore. Oracle EM allows you to remove Oracle Databases or PDBs one at a time. You cannot remove multiple Oracle Databases together in a single step. 
+You can remove targets, such as database instances, database systems, CDBs, PDBs, and so on from Oracle EM. After removing a target, you cannot manage it from Oracle EM anymore. Oracle EM allows you to remove Oracle Databases or PDBs one at a time. You cannot remove multiple Oracle Databases together in a single step.
 
 In this task, you will remove the target database instance, *orcl1*, from Oracle EM including the CDB and PDB.
 
-> **Note:** Removing a target Oracle Database from Oracle EM does not delete or deinstall the database from the host system. 
+> **Note:** Removing a target Oracle Database from Oracle EM does not delete or deinstall the database from the host system.
 
 1.  On the Databases page, select the target Oracle Database that you want to remove.   
 	The values may differ depending on the system you are using.
@@ -179,7 +179,7 @@ In this task, you will remove the target database instance, *orcl1*, from Oracle
 
 	> Clicking **No** will cancel the delete operation and take you back to the Databases page. If you remove all target databases from Oracle EM, the Databases page displays a message `No Databases found`.
 
-	Oracle EM redirects to the Databases page. You will notice that the Oracle Database you removed, *orcl1*, is no longer listed as a managed target. 
+	Oracle EM redirects to the Databases page. You will notice that the Oracle Database you removed, *orcl1*, is no longer listed as a managed target.
 
     ![Target database removed](./images/em-target-019-target-db-removed.png " ")
 
@@ -216,7 +216,7 @@ Oracle EM allows you to remove listeners one at a time. You cannot remove multip
 
 You have successfully removed the listener from managed targets in Oracle EM. When you remove a listener, Oracle EM does not delete the target Oracle Database automatically.
 
-In this lab, you learned how to view targets in Oracle EM. You also added Oracle Database and Listener as managed targets and then removed them from managed targets. After adding targets, you can manage them from their home page. 
+In this lab, you learned how to view targets in Oracle EM. You also added Oracle Database and Listener as managed targets and then removed them from managed targets. After adding targets, you can manage them from their home page.
 
 You may now **proceed to the next lab**.
 
@@ -233,11 +233,11 @@ You may now **proceed to the next lab**.
 
 
 
-	Alternatively, . 
+	Alternatively, .
 
-    
 
-    On the Databases page, click **Add** > **Oracle Database**. 
+
+    On the Databases page, click **Add** > **Oracle Database**.
 
     ![Add Oracle Database](./images/em-target-006-targetadd.png " ")
 

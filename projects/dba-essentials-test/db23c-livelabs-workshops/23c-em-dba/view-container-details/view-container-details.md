@@ -5,7 +5,7 @@
 This lab walks you through the steps to log in to SQL prompt and explore Container Database (CDB) and Pluggable Database (PDB) with basic SQL commands.
 
 > **Note:** For connecting to Oracle Database, you do not require a password in the following scenarios.
- - Oracle Database resides on the local host. 
+ - Oracle Database resides on the local host.
  - The current user (for this lab, it is *oracle* user) is a member of the OSDBA group.   
  The *oracle* user has the privileges required to perform tasks for database administration.
 
@@ -13,7 +13,7 @@ Estimated time: 10 minutes
 
 ### Objectives
 
- - Set the environment variables 
+ - Set environment variables
  - Log in to CDB (root container) with *SYSDBA* privileges
  - Run SQL commands to view details of CDB and PDB
 
@@ -27,16 +27,16 @@ This lab assumes you have -
 
 ## Task 1: Set environment variables
 
-To connect to your Oracle Database from a terminal, you must set the environment variables first. These variables remain in the terminal until you close the terminal window. 
+To connect to your Oracle Database from a terminal, you must set the environment variables first. These variables remain in the terminal until you close the terminal window.
 
 > Note that environment variables set in one terminal do not apply automatically to other terminals you may have. If you open a new terminal or have a terminal window already open, then you must set these variables in that terminal to connect to Oracle Database.
 
-In this task, you will set the following environment variables for your Oracle Database. 
+In this task, you will set the following environment variables for your Oracle Database.
  - *`$ORACLE_SID`*
  - *`$ORACLE_HOME`*
  - *`$ORACLE_BASE`*
 
-1. Open a terminal window and go to the `bin` directory in Oracle home. 
+1. Open a terminal window and go to the `bin` directory in Oracle home.
 
 	```
 	$ <copy>cd /u01/app/oracle/product/23.0.0/dbhome_1/bin</copy>
@@ -59,9 +59,11 @@ In this task, you will set the following environment variables for your Oracle D
 
 You have set the environment variables for your Oracle Database in the currently active terminal. You can now connect to Oracle Database and run SQL commands.
 
-> **Tip:** If you have reserved a Livelabs sandbox environment, then you can run the script `.set-env-db.sh` from the home location and enter the corresponding number for `ORACLE_SID`, for example *3* for `orcl`. It sets the environment variables automatically. 
+> **Tip:** If you have reserved a Livelabs sandbox environment, then you can run the script `.set-env-db.sh` from the home location and enter the corresponding number for the `ORACLE_SID`, *orcl*. It sets the environment variables automatically.
 
 ## Task 2: Connect to SQL prompt and explore the container
+
+In this task, you will view some basic details of the container, such as current user, container name, container ID, PDBs, database version, instance name, and its current status.
 
 1.  From `$ORACLE_HOME/bin`, log in to the SQL command line as *SYSDBA*. 
 
@@ -80,7 +82,7 @@ You have set the environment variables for your Oracle Database in the currently
 	Oracle Database 23c Enterprise Edition Release 23.0.0.0.0 - Beta
 	Version 23.1.0.0.0
 
-	SQL> 
+	SQL>
 	```
 
 1.  Check the current user connected to the database.  
@@ -115,7 +117,7 @@ You have set the environment variables for your Oracle Database in the currently
     SQL> <copy>show pdbs</copy>
     ```
 
-	``` 
+	```
 		CON_ID CON_NAME                  OPEN MODE  RESTRICTED
 	---------- ------------------------- ---------- ----------
 			 2 PDB$SEED                  READ ONLY  NO
@@ -157,7 +159,7 @@ You have set the environment variables for your Oracle Database in the currently
     orcl             OPEN                  0
     ```
 
-In this lab, you connected to the SQL command line of your Oracle Database and viewed container details, such as current user, container name, container ID, PDBs, and so on. 
+In this lab, you connected to the SQL command line of your Oracle Database and checked container details, such as current user, container name, container ID, PDBs, and so on.
 
 You may now **proceed to the next lab**.
 

@@ -21,7 +21,7 @@ In this workshop, you will do the following.
 
  - Connect to SQL prompt and view container details
  - Manage the targets in Oracle EM
- - Access the container home page and manage the favorites
+ - Access container home pages, view history, and manage favorites
 
 ### Prerequisites
 
