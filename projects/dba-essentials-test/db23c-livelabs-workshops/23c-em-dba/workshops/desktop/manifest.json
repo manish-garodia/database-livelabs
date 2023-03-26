@@ -1,25 +1,12 @@
 {
-  "workshoptitle": "DBA Essentials - Manage PDBs in Oracle Database 21c from Oracle Enterprise Manager (Oracle EM)",
+  "workshoptitle": "DBA Essentials - Administer Oracle Database 23c with Oracle Enterprise Manager",
   "help": "livelabs-help-em_us_grp@oracle.com",
-  "include": {
-        "n-db-page": "./../../intro-pdb-mgmt-db/files/n-db-page.txt", 
-        "db-login": "./../../intro-pdb-mgmt-db/files/db-login.txt", 
-        "n-host-creds": "./../../intro-pdb-mgmt-db/files/n-host-creds.txt", 
-        "n-pdb-name": "./../../intro-pdb-mgmt-db/files/n-pdb-name.txt", 
-        "n-pdb-admin": "./../../intro-pdb-mgmt-db/files/n-pdb-admin.txt", 
-        "deploy-name": "./../../intro-pdb-mgmt-db/files/deploy-name.txt", 
-        "grace-period": "./../../intro-pdb-mgmt-db/files/grace-period.txt", 
-        "provision": "./../../intro-pdb-mgmt-db/files/provision.txt", 
-        "n-db-login-opt": "./../../intro-pdb-mgmt-db/files/n-db-login-opt.txt", 
-        "n-buttons": "./../../intro-pdb-mgmt-db/files/n-buttons.txt", 
-        "storage": "./../../intro-pdb-mgmt-db/files/storage.txt"
-    },
   "tutorials": [
     {
       "title": "Introduction",
-      "description": "The workshop on PDB management in Oracle Database 21c.",
-      "publisheddate": "11/24/2022",
-      "filename": "./../../intro-pdb-mgmt-db/intro-pdb-mgmt-db.md"
+      "description": "The workshop on administering Oracle Database from Oracle Enterprise Manager (Oracle EM).",
+      "publisheddate": "03/24/2023",
+      "filename": "./../../intro-em/intro-em.md"
     },
     {
       "title": "Use noVNC remote desktop",
@@ -34,28 +21,22 @@
       "filename": "./../../initialize-environment/initialize-environment.md"
     },
     {
-      "title": "Lab 2: Provision a Pluggable Database (PDB)",
-      "description": "How to provision PDBs in a multitenant CDB from Oracle EM.",
-      "publisheddate": "11/24/2022",
-      "filename": "./../../provision-pdb/provision-pdb.md"
+      "title": "Lab 2: View container details from SQL command line",
+      "description": "How to view container details from SQL command line.",
+      "publisheddate": "03/21/2023",
+      "filename": "./../../view-container-details/view-container-details.md"
     },
     {
-      "title": "Lab 3: Remove PDBs from CDB",
-      "description": "How to remove PDBs from CDB using Oracle EM.",
-      "publisheddate": "11/24/2022",
-      "filename": "./../../remove-pdb/remove-pdb.md"
+      "title": "Lab 3: Manage targets - Oracle Database and Listener",
+      "description": "How to manage targets, Oracle Database and Listener, using Oracle EM.",
+      "publisheddate": "03/24/2023",
+      "filename": "./../../manage-targets/manage-targets.md"
     },
     {
-      "title": "Lab 4: Plug PDBs into CDB",
-      "description": "How to plug in an unplugged PDB into the CDB from Oracle EM.",
-      "publisheddate": "11/24/2022",
-      "filename": "./../../plug-pdb/plug-pdb.md"
-    },
-    {
-      "title": "Lab 5: Close and open PDBs",
-      "description": "How to administer PDBs in a multitenant CDB from Oracle EM.",
-      "publisheddate": "11/24/2022",
-      "filename": "./../../close-open-pdb/close-open-pdb.md"
+      "title": "Lab 4: Access container home page",
+      "description": "How to access container home page from Oracle EM.",
+      "publisheddate": "03/24/2023",
+      "filename": "./../../access-homepage/access-homepage.md"
     },
     {
       "title": "Need help?",

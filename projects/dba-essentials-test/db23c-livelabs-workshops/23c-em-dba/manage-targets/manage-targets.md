@@ -119,7 +119,7 @@ The values may differ depending on the system you are using.
 
     ![Confirm adding targets](./images/em-target-012-confirm-add.png " ")
 
-	Click **Close** to go back to the target discovery page.
+	Click **Close** to close the confirmation window. Oracle EM redirects to the target discovery page.
 
 Congratulations! You have successfully added Oracle Database and Listener as targets in Oracle EM. You can now view the targets, monitor and manage them from Oracle EM.
 

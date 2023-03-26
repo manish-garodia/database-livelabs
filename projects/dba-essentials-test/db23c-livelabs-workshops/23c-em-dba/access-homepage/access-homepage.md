@@ -8,10 +8,10 @@ Estimated time: 15 minutes
 
 ### Objectives
 
- - Access the container home page from Oracle EM.
- - Switch between home pages for Container Database (CDB), Pluggable Database (PDB), and the database instance.
+ - Access container home page from Oracle EM
+ - Switch between home pages for Container Database (CDB), Pluggable Database (PDB), and the database instance
  - Check out the history
- - Add pages to and remove pages from favorites.
+ - Add pages to and remove pages from favorites
 
 ### Prerequisites
 
@@ -36,7 +36,7 @@ In this task, you will access the home page for the database instance, *orcl.us.
 
     ![Databases list](./images/em-dbhome-002-db-list.png " ")
 
-	You can click an item in the **Name** column to access the corresponding home page, that is, the database instance home page or PDB home page.
+	You can click an item in the **Name** column to access the corresponding home page, that is, the database instance home page or the PDB home page.
 
 1.  For this task, click the database instance name, for example *orcl.us.oracle.com*, to access the instance home page.   
 	The values may differ depending on the system you are using.  
@@ -55,7 +55,7 @@ You can alter session and switch between containers in Oracle EM within the same
 
 That is, from the database instance home page, you can switch to the CDB or PDB home page without logging out of Oracle EM. Similarly, from the PDB home page, you can switch to the CDB or to another PDB, if you have more target PDBs in Oracle EM.
 
-In this task, you will switch between containers and open the CDB, the PDB, and the database instance homne page.
+In this task, you will switch between containers and open the CDB, the PDB, and the database instance home page.
 
 1. On the container home page, click the down arrow next to the container name and select **All Containers**.   
 	The values may differ depending on the system you are using.  
@@ -146,7 +146,7 @@ In this task, you will view target information for the database instance, the CD
 1.  Click the down arrow next to the CDB name and select the PDB, *ORCLPDB* to go to the PDB home page.   
 	The values may differ depending on the system you are using.
 
-    ![Select ORCLPDB](./images/em-dbhome-017-cdp-select-pdb.png " ")
+    ![Select ORCLPDB](./images/em-dbhome-017-cdb-select-pdb.png " ")
 
 1.  On the PDB home page, from the **Oracle Database** menu, select **Target Information** to view details of the target PDB.    
 	The values may differ depending on the system you are using.
@@ -195,7 +195,7 @@ In this task, you will add the CDB home page and the PDB home page to favorites 
 
     ![Add page to Favorites](./images/em-dbhome-020-add-page-to-fav.png " ")
 
-    You have added the PDB, the CDB, and database isntance home pages to favorites. Similarly, you can remove pages from favorites. Currently, you are on the database instance page.
+    You have added the PDB, the CDB, and database instance home pages to favorites. Similarly, you can remove pages from favorites. Currently, you are on the database instance page.
 
 1.  Remove the database instance home page from favorites. Click the **Favorites** menu (star icon) and select **Remove Page from Favorites**.  
 	You will notice that the menu displays the CDB, the PDB, and the database instance as favorites.    
@@ -211,7 +211,7 @@ In this task, you will add the CDB home page and the PDB home page to favorites 
 
     ![Manage Favorites menu](./images/em-dbhome-022-manage-favs-menu.png " ")
 
-1.  In the **Manage Favorites** dialog box, select the page that you want to remove. For example *CDBROOT*, and click **Remove Selected**.    
+1.  In the **Manage Favorites** dialog box, select the page that you want to remove, for example *CDBROOT*, and click **Remove Selected**.    
 	The values may differ depending on the system you are using.  
 
     ![Remove CDB from Favorites](./images/em-dbhome-023-manage-fav-remove-cdb.png " ")

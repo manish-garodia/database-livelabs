@@ -4,7 +4,7 @@
 
 This workshop provides detailed steps for installing a new *Oracle Database 23c* on your host. It helps users who wants to install the database software for Oracle Database and create a single-instance container database. It demonstrates different ways of installing the software and creating additional databases.
 
-> **Note:** Upgrading an existing Oracle Database to a higher version is not within the scope of this workshop. 
+> **Note:** Upgrading an existing Oracle Database to a later version is not within the scope of this workshop. 
 
 Estimated workshop time: 2 hours 45 minutes
 
@@ -61,7 +61,7 @@ When you run the installer, you can select from the following options.
  - **Create and configure a single instance database** - to install the Oracle Database software and create a starter database.
  - **Set Up Software Only** - to install only the database software but not create any database. You can create the database later using Oracle DBCA.
 
-Depending on the type of installation, the installer can run Oracle DBCA internally or you can launch Oracle DBCA after the installation.
+Depending on the type of installation, the installer can run Oracle DBCA internally or you can start Oracle DBCA after the installation.
 
 Consider the scenarios
 
@@ -92,7 +92,7 @@ Before installing the Oracle Database software, the installer performs several a
  - 2 GB RAM
  - Oracle Enterprise Linux 8.4, Red Hat Enterprise Linux 8.4 or later
  - Sufficient paging space
- - Installation of service packages and/or patches
+ - Installation of service packages and patches
  - Use the correct file system format
  - Access to the database installer
  - General knowledge about product installation

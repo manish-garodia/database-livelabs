@@ -31,7 +31,7 @@ This lab assumes you have -
 
 You can run Oracle DBCA only after you install the Oracle Database software using the database installer. 
 
-In this task, you will launch Oracle DBCA from Oracle home 1.
+In this task, you will start Oracle DBCA from Oracle home 1.
 
 1.  Open a terminal window and go to the `bin` directory in Oracle home 1.  
     This is the directory where Oracle DBCA is located.  
@@ -119,7 +119,7 @@ Next, you will create a database with Advanced configuration. Though you can cre
 
 ## Task 3: Start Oracle DBCA from Oracle home 2
 
-In this task, you will launch Oracle DBCA from Oracle home 2.
+In this task, you will start Oracle DBCA from Oracle home 2.
 
 1.  Open a terminal window and go to the `bin` directory in Oracle home 2.  
     This is the directory where Oracle DBCA is located.  

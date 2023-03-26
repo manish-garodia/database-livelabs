@@ -28,7 +28,7 @@ In this workshop, you will do the following.
 This lab assumes you have -
  -   An Oracle Cloud account
 
-## Oracle EM Architecture
+## Oracle EM architecture
 
 The following figure shows a sample Oracle EM configuration and illustrates how the core components interact with each other in the architecture.
 
@@ -38,7 +38,7 @@ The following figure shows a sample Oracle EM configuration and illustrates how 
 
 If you do not have the load balancer, the Management Agents communicate directly with the OMS instances.
 
-### Oracle EM Components
+### Oracle EM components
 
 Oracle EM includes the following components:
 
