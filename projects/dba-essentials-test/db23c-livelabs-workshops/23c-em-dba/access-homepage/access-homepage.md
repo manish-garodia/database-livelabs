@@ -123,7 +123,7 @@ In this task, you will view target information for the database instance, the CD
 
     Alternatively, you can also click the target information icon (the circle with an 'i' in it) next to the container name. The values may differ depending on the system you are using.
 
-    ![Container information](./images/em-dbhome-013-container-target-info.png " ")
+    ![Container information](./images/em-dbhome-013-container-target-inf.png " ")
 
 	Press **Esc** on your keyboard or click the cross (x) icon on the Target Information window to close it.
 
@@ -139,7 +139,7 @@ In this task, you will view target information for the database instance, the CD
 
     Alternatively, you can click the target information icon (the circle with an 'i' in it) next to the CDB name, *CDB$ROOT*. The values may differ depending on the system you are using.  
 
-    ![CDB information](./images/em-dbhome-016-cdb-target-info.png " ")
+    ![CDB information](./images/em-dbhome-016-cdb-target-inf.png " ")
 
 	Press **Esc** on your keyboard or click the cross (x) icon on the Target Information window to close it.
 
@@ -155,7 +155,7 @@ In this task, you will view target information for the database instance, the CD
 
     Alternatively, you can click the target information icon (the circle with an 'i' in it) next to the PDB name, *ORCLPDB*. The values may differ depending on the system you are using.
 
-    ![PDB information](./images/em-dbhome-019-pdb-target-info.png " ")
+    ![PDB information](./images/em-dbhome-019-pdb-target-inf.png " ")
 
 	Press **Esc** on your keyboard or click the cross (x) icon on the Target Information window to close it.
 

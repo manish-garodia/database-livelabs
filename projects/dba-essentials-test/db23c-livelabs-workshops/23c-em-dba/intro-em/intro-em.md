@@ -7,7 +7,7 @@ After you install Oracle Database on your host, you can connect to the database 
 **What is Oracle EM?**   
 Oracle EM is Oracle’s on-premises management solution providing centralized monitoring, administration, and lifecycle management functionality for the complete IT infrastructure. It offers a single dashboard to monitor and manage your entire computing environment from a web-based console.
 
-Oracle EM offers a comprehensive set of performance and health metrics that allows unattended monitoring of key components in your environment. These key components include but are not limited to applications, application servers, Oracle Databases, and the back-end components on which they rely, such as hosts, operating systems, storage, and so on.
+Oracle EM offers a comprehensive set of performance and health metrics to facilitate unattended monitoring of key components in your environment. These key components include but are not limited to applications, application servers, Oracle Databases, and the back-end components on which they rely, such as hosts, operating systems, storage, and so on.
 
 Estimated workshop time: 1 hour 45 minutes
 
@@ -78,7 +78,7 @@ Oracle EM includes the following components:
 
 ## What are managed targets and managed hosts?
 
-Oracle EM allows you to discover entities and add them as *targets*. 
+You can discover entities and add them to Oracle EM as *targets*. 
 
 For adding targets, Oracle EM provides various options, such as installing an agent, using the guided discovery process, or adding targets manually.
 

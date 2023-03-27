@@ -48,7 +48,7 @@ For database installation, the installer offers two system classes -
  - *Desktop class* with minimal configuration
  - *Server class* with advanced configuration
 
-In a single Oracle home, you install the database software only one time but can create multiple databases. Hence, to install both the system classes on the same host, you require different Oracle home locations. 
+In a single Oracle home, you install the database software only one-time but can create multiple databases. Hence, to install both the system classes on the same host, you require different Oracle home locations. 
 
 In this workshop, you will install Oracle Database with Desktop class in one Oracle home and with Server class in another Oracle home.
 

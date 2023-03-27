@@ -206,7 +206,7 @@ In this task, you will select *Advanced configuration* to create an Oracle Datab
 
     > **Tip:** The **Enable archiving** check box is for archiving the online redo log files. These files are useful during Oracle Database recovery. For this task, do not select this option.  
 
-1.  In the Network Configuration window, you can view the existing listener and select it for your database or create a new listener. For this task, de-select the existing listener if already selected.  
+1.  In the Network Configuration window, you can view the existing listener and select it for your database or create a new listener. For this task, deselect the existing listener if already selected.  
 
     Select the check box **Create a new listener** and enter the following:
      - **Listener name** - *LISTENER1*
@@ -233,7 +233,7 @@ In this task, you will select *Advanced configuration* to create an Oracle Datab
      - **Memory** - The *Use Automatic Shared Memory Management* method enables you to allocate specific volume of memory to SGA and aggregate PGA. For optimum use of disk space, you can move the indicator to the left and decrease the size of the SGA and PGA values.
 
 		Oracle Database enables automatic shared memory for SGA, and distributes the remaining memory among individual PGAs as needed.  
-        For more information on memory management, see [About Automatic Shared Memory Management](https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-memory.html#GUID-B8B8923C-4213-42A9-8ED3-4ABE48C23914).  
+        For more information about memory management, see [About Automatic Shared Memory Management](https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-memory.html#GUID-B8B8923C-4213-42A9-8ED3-4ABE48C23914).  
 
 		![Specify memory](./images/dbca23c-adv-009a-memory.png " ")
 
