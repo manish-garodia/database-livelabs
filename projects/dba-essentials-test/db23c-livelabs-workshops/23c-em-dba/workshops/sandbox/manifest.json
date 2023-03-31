@@ -1,6 +1,9 @@
 {
   "workshoptitle": "DBA Essentials - Administer Oracle Database 23c with Oracle Enterprise Manager",
   "help": "livelabs-help-em_us_grp@oracle.com",
+  "include": {
+        "set-env-var": "./../../intro-em/files/set-env-var.txt"
+    },
   "tutorials": [
     {
       "title": "Introduction",

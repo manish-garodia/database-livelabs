@@ -103,7 +103,7 @@ Oracle recommends that you allocate approximately *100 GB* to provide addition
 
 Click the next lab to **Get Started**.
 
-## Learn More
+## Learn more
 
  - [Oracle Database documentation](https://docs.oracle.com/database/oracle/oracle-database/index.html)
  - [Oracle Database announcement](https://www.oracle.com/in/news/announcement/ocw-database-innovations-simplify-development-enhance-protection-2022-10-18/)

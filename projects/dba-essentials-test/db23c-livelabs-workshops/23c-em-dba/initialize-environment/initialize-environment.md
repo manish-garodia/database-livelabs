@@ -4,7 +4,7 @@
 
 In this lab, you will review and startup all components required to successfully run this workshop.  
 
-Estimated time: 10 Minutes
+Estimated time: 10 minutes
 
 ### Objectives
 

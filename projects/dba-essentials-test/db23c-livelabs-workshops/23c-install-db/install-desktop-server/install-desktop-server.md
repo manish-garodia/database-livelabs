@@ -71,7 +71,7 @@ In this task, you will select *Desktop class* to install the database software a
 
     Click **Next**.      
 
-1.  The Typical Install Configuration window displays pre-filled names and values with configuration parameters.  
+1.  The Typical Install Configuration window displays prefilled names and values with configuration parameters.  
 
     For this task, specify the following.
      - **OSDBA group** - *dba*
@@ -187,7 +187,7 @@ In this task, you will select *Desktop class* to install the database software a
 
     You can close the terminal window. Running scripts are applicable for Linux and UNIX operating systems only.
 
-1.  Return to the Execute Configuration Scripts window and click **OK** to continue. The installer proceeds with creating the database according to your configuration.
+1.  Return to the Run Configuration Scripts window and click **OK** to continue. The installer proceeds with creating the database according to your configuration.
 
     On completion, the installer displays the Finish window  
 
@@ -261,7 +261,7 @@ In this task, you will select *Server class* to install the database software an
 
     Leave the default template and click **Next**.  
 
-1.  The Database Identifiers window displays pre-filled names and Oracle System Identifier (SID) for your database.  
+1.  The Database Identifiers window displays prefilled names and Oracle System Identifier (SID) for your database.  
 
     The values may differ depending on the system you are using.   
 
@@ -396,7 +396,7 @@ In this task, you will select *Server class* to install the database software an
 
     You can close the terminal window. Running scripts are applicable for Linux and UNIX operating systems only. 
 
-1.  Return to the Execute Configuration Scripts window and click **OK** to continue. The installer proceeds with creating the database according to your configuration.
+1.  Return to the Run Configuration Scripts window and click **OK** to continue. The installer proceeds with creating the database according to your configuration.
 
     On completion, the installer displays the Finish window.  
 

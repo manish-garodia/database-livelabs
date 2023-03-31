@@ -62,7 +62,7 @@ In this task, you will select *Typical configuration* to create an Oracle Databa
 
     > **Tip:** With Oracle DBCA, you can perform other administrative tasks, such as configure or delete an existing database and manage PDBs and templates. These are not included in this workshop.  
 
-1.  The window displays the default creation mode, **Typical configuration**, selected with pre-filled basic configuration. 
+1.  The window displays the default creation mode, **Typical configuration**, selected with prefilled basic configuration. 
 
     For this task, specify the following.
 
@@ -164,7 +164,7 @@ In this task, you will select *Advanced configuration* to create an Oracle Datab
 
     > **Tip:** For environments that are more complex, you can select the Custom Database option. This option does not use any templates and it usually increases the time taken to create an Oracle Database. For this lab, do not select this option.  
 
-1.  The Database Identification window displays pre-filled names and Oracle System Identifier (SID) for your database.
+1.  The Database Identification window displays prefilled names and Oracle System Identifier (SID) for your database.
 
     The values may differ depending on the system you are using.
 
@@ -196,7 +196,7 @@ In this task, you will select *Advanced configuration* to create an Oracle Datab
 
     ![Enable Recovery](./images/dbca23c-adv-006-recovery.png " ")
 
-    The Fast Recovery Option window displays the default parameters pre-filled.
+    The Fast Recovery Option window displays the default parameters prefilled.
 
      - **Recovery files storage type** - *File System*
      - **Fast Recovery Area** - the directory for recovery-related files

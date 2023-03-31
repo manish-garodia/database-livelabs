@@ -97,9 +97,9 @@ After adding a target, for example Oracle Database, you can monitor and managed 
 
 *Managed hosts* are the host systems where manageable entities reside. Examples of manageable entities are Oracle Databases, Oracle homes, listeners, agents, OMS, Fusion Middleware components, and server targets (hardware) to name a few.
 
-Click the next lab to **Get Started**.
+Click the next lab to **Get started**.
 
-## Learn More
+## Learn more
 
  - [Oracle EM documentation](https://docs.oracle.com/en/enterprise-manager/index.html)
  - [Oracle EM Release Notes](https://docs.oracle.com/en/enterprise-manager/cloud-control/enterprise-manager-cloud-control/13.5/emrel/cloud-control-release-notes-emrel.html#GUID-42C87BBB-CA6D-4A5E-8B59-AA94755724E0)
