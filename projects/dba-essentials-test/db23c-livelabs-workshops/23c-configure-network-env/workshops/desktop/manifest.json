@@ -8,7 +8,7 @@
     {
       "title": "Introduction",
       "description": "The workshop on network environment for Oracle Database which includes listener operation and administration.",
-      "publisheddate": "03/27/2023",
+      "publisheddate": "03/31/2023",
       "filename": "./../../intro-configure-network/intro-configure-network.md"
     },
     {
@@ -18,10 +18,10 @@
       "filename": "https://oracle-livelabs.github.io/common/labs/remote-desktop/using-novnc-remote-desktop.md"
     },
     {
-      "title": "Lab 1: Listener operations",
+      "title": "Lab 1: Administer listener operations",
       "description": "How to perform listener operations, such as starting and stopping the listener, checking the listener status, and so on, using the listener control utility.",
-      "publisheddate": "03/27/2023",
-      "filename": "./../../listener-ops/listener-ops.md"
+      "publisheddate": "03/31/2023",
+      "filename": "./../../administer-listener-ops/administer-listener-ops.md"
     },
     {
       "title": "Need help?",

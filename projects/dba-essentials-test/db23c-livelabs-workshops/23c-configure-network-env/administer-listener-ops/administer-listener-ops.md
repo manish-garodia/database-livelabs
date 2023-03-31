@@ -1,4 +1,4 @@
-# Listener operations
+# Administer listener operations
 
 ## Introduction
 

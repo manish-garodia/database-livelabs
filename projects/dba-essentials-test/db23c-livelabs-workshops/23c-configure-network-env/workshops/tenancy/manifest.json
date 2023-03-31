@@ -8,7 +8,7 @@
     {
       "title": "Introduction",
       "description": "The workshop on network environment for Oracle Database which includes listener operation and administration.",
-      "publisheddate": "03/27/2023",
+      "publisheddate": "03/31/2023",
       "filename": "./../../intro-configure-network/intro-configure-network.md"
     },
     {
@@ -20,7 +20,7 @@
     {
       "title": "Lab 1: Prepare setup",
       "description": "How to download your ORM stack and update security rules for an existing VCN.",
-      "publisheddate": "10/13/2021",
+      "publisheddate": "10/31/2021",
       "filename": "./../../prepare-setup/prepare-setup.md",
       "type": "default"
     },
@@ -31,10 +31,10 @@
       "filename": "https://oracle-livelabs.github.io/common/labs/setup-compute-generic/setup-compute-novnc.md"
     },
     {
-      "title": "Lab 3: Listener operations",
+      "title": "Lab 3: Administer listener operations",
       "description": "How to perform listener operations, such as starting and stopping the listener, checking the listener status, and so on, using the listener control utility.",
-      "publisheddate": "03/27/2023",
-      "filename": "./../../listener-ops/listener-ops.md"
+      "publisheddate": "03/31/2023",
+      "filename": "./../../administer-listener-ops/administer-listener-ops.md"
     },
     {
       "title": "Need help?",
