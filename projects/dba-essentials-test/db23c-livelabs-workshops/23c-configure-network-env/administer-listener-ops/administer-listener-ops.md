@@ -222,7 +222,7 @@ Congratulations! You have successfully completed this workshop on *Network envir
 
 In this workshop, you learned how to check listener status, start and stop the listener, and view network configuration of Oracle Database. 
 
-## Acknowledgements
+## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
  - **Contributors**: <if type="hidden">Suresh Rajan, Prakash Jashnani, Malai Stalin, Subhash Chandra, Dharma Sirnapalli, Subrahmanyam Kodavaluru, Manisha Mati</if>

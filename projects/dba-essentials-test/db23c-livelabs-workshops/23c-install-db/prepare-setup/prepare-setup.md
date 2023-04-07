@@ -54,7 +54,7 @@ Using the details from the previous two tasks, proceed to the lab **Setup comput
 
 You may now **proceed to the next lab**.
 
-## Acknowledgements
+## Acknowledgments
 
  - **Author** - Rene Fontcha, LiveLabs Platform Lead, NA Technology
  - **Contributors** - Meghana Banka, Manish Garodia

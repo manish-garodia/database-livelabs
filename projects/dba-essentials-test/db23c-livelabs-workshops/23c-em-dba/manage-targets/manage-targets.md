@@ -220,7 +220,7 @@ In this lab, you learned how to view targets in Oracle EM. You also added Oracle
 
 You may now **proceed to the next lab**.
 
-## Acknowledgements
+## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
  - **Contributors** - <if type="hidden">Suresh Rajan, Subhash Chandra, Steven Lemme, Ashwini R</if>

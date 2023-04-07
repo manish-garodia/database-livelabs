@@ -109,7 +109,7 @@ Click the next lab to **Get Started**.
  - [Oracle Database announcement](https://www.oracle.com/in/news/announcement/ocw-database-innovations-simplify-development-enhance-protection-2022-10-18/)
  - [Oracle Cloud Infrastructure documentation](https://docs.oracle.com/iaas/Content/home.htm)
 
-## Acknowledgements
+## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
  - **Contributors**: <if type="hidden">Suresh Rajan, Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru, Dharma Sirnapalli </if>

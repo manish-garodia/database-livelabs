@@ -302,7 +302,7 @@ You have successfully created an Oracle Database using Oracle DBCA in Oracle hom
 Congratulations! You have reached the end of this workshop on *Oracle Database installation*.   
 In this workshop, you learned how to install the Oracle Database software on your host using the database installer and configure a database with Desktop class and Server class. You also created additional databases using Oracle DBCA with both Typical configuration and Advanced configuration. You can now manage and administer your Oracle Database.
 
-## Acknowledgements  
+## Acknowledgments  
 
  - **Author**: Manish Garodia, Database User Assistance Development team
  - **Contributors**: <if type="hidden">Suresh Rajan, Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru, Dharma Sirnapalli, Malai Stalin</if>

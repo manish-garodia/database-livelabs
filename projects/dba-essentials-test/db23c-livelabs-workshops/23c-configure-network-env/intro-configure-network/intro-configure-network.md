@@ -32,9 +32,9 @@ This lab assumes you have -
 
 ## About listener configuration
 
-After installing Oracle Database, you have a fully functional database with a client/server network environment. *Oracle Net* is a software layer that resides on the client and the database. It establishes and maintains the connection between client applications and the database over a network, and exchanges messages between them using industry standard protocols.
+After installing Oracle Database, you have a fully functional database with a client/server network environment. *Oracle Net* is a software layer that resides on the client and the database. It establishes and maintains the connection between client applications and the database over a network. 
 
-To view a list of all supported protocols, see [Learn more] (?lab=intro-configure-network#LearnMore).
+> **Note**: Oracle Database connections use Oracle propriety SQLNet protocol that runs over industry standard TCP/IP. To view a list of all supported protocols, see [Learn more] (?lab=intro-configure-network#Learnmore).
 
 ![Client/server application connection](./../intro-configure-network/images/client-server-application-connection.png " ") **Figure: Client/server application connection**
 
@@ -142,7 +142,7 @@ Click the next lab to **Get started**.
 
  - [Oracle Database Component Port Numbers and Protocols](https://docs.oracle.com/en/database/oracle/oracle-database/21/ladbi/oracle-database-component-port-numbers-and-protocols.html)
 
-## Acknowledgements
+## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
  - **Contributors**: <if type="hidden">Suresh Rajan, Prakash Jashnani, Malai Stalin, Subhash Chandra, Dharma Sirnapalli, Subrahmanyam Kodavaluru, Manisha Mati</if>

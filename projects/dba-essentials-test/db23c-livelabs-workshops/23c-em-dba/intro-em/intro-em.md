@@ -105,7 +105,7 @@ Click the next lab to **Get started**.
  - [Oracle EM Release Notes](https://docs.oracle.com/en/enterprise-manager/cloud-control/enterprise-manager-cloud-control/13.5/emrel/cloud-control-release-notes-emrel.html#GUID-42C87BBB-CA6D-4A5E-8B59-AA94755724E0)
  - [Oracle Database documentation](https://docs.oracle.com/database/oracle/oracle-database/index.html)
 
-## Acknowledgements
+## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
  - **Contributors** - <if type="hidden">Suresh Rajan, Steven Lemme, Ashwini R</if>

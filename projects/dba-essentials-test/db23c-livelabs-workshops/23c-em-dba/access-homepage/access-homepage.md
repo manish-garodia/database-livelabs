@@ -231,7 +231,7 @@ In this workshop, you performed some basic administration of Oracle Database fro
  - Added and removed favorites in Oracle EM
  - Learned how to check the recent history
 
-## Acknowledgements
+## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
  - **Contributors**: <if type="hidden">Suresh Rajan, Ashwini R, Jayaprakash Subramanian, Steven Lemme</if>

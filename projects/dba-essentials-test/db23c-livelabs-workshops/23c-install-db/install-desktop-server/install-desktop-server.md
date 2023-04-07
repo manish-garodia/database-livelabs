@@ -45,7 +45,7 @@ In this task, you will start the installer from Oracle home 1.
 	$ <copy>./runInstaller</copy>
 	```
 
-The installer launches the wizard to start Oracle Database installation.
+The installer displays the wizard to start Oracle Database installation.
 
 > **Note:** To run the installer, ensure that the `xdpyinfo` program is installed on your host. If the `oracle` user does not have executable privileges, then log in as `root` and run this command.    
 `xhost +SI:localuser:oracle`
@@ -215,7 +215,7 @@ In this task, you will start the database installer on the same host but from a 
 	$ <copy>./runInstaller</copy>
 	```
 
-The installer launches the wizard to start Oracle Database installation.
+The installer displays the wizard to start Oracle Database installation.
 
 ## Task 4: Install and configure Oracle Database with Server class
 
@@ -408,7 +408,7 @@ In this lab, you installed Oracle Database with Desktop class in Oracle home 1 l
 
 You may now **proceed to the next lab**.
 
-## Acknowledgements
+## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
  - **Contributors**: <if type="hidden">Suresh Rajan, Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru, Dharma Sirnapalli, Malai Stalin</if>

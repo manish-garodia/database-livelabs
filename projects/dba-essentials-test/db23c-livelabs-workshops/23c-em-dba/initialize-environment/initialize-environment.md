@@ -301,7 +301,7 @@ While you will only need the browser to perform all tasks included in this works
 
 You may now **proceed to the next lab**.
 
-## Acknowledgements
+## Acknowledgments
 
   - **Author** - Rene Fontcha, LiveLabs Platform Lead, NA Technology
   - **Contributors** - Ashish Kumar, Manish Garodia

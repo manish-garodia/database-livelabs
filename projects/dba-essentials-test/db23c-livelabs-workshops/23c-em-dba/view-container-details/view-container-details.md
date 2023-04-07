@@ -23,7 +23,7 @@ This lab assumes you have -
 
  -   An Oracle Cloud account
  -   Completed all previous labs successfully
- -   Logged into your host as the *oracle* user
+ -   Logged in to your host as the *oracle* user
 
 ## Task 1: Set environment variables
 
@@ -133,7 +133,7 @@ In this lab, you connected to the SQL command line of your Oracle Database and c
 
 You may now **proceed to the next lab**.
 
-## Acknowledgements
+## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
  - **Contributors** - <if type="hidden">Suresh Rajan, Dharma Sirnapalli, Subhash Chandra, Steven Lemme</if>
