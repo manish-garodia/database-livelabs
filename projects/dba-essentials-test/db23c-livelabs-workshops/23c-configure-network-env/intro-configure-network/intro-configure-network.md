@@ -21,14 +21,16 @@ The default name of an Oracle listener is *LISTENER*.
 ### Objectives
 
 This workshop helps you learn how to perform listener operations, such as: 
-- start and stop a listener 
 - view listener status and configuration
+- start and stop the listener 
+- access listener control utility
 
 ### Prerequisites
 
 This lab assumes you have -
 
  - An Oracle Cloud account
+ - Oracle Database installed
 
 ## About listener configuration
 
@@ -119,7 +121,7 @@ Oracle Net Services provide user interface tools and command-line utilities to c
  - **Oracle Net Configuration Assistant (NETCA)**
  - **Oracle Net Manager**
 
-Oracle Enterprise Manager (Oracle EM) combines configuration functionality across multiple file systems, along with listener administrative control to provide an integrated environment for configuring and managing Oracle Net Services.
+Oracle Enterprise Manager Cloud Control (EM) combines configuration functionality across multiple file systems, along with listener administrative control to provide an integrated environment for configuring and managing Oracle Net Services.
 
 **About Oracle Net Configuration Assistant (NETCA)**   
 Oracle Net Configuration Assistant (NETCA) is a standalone tool that helps you configure listeners and naming methods. 
@@ -134,19 +136,29 @@ Use NETCA for initial network configuration right after the database installatio
 **About Oracle Net Manager**   
 Oracle Net Manager provides configuration functionality for Oracle home on a local client or a server host. It offers built-in wizards and utilities to test connectivity, migrate data from one naming method to another, and create additional network components.
 
+### Listener control utilty
+
+The Listener control utility enables you to administer listeners.
+
+While running listener commands, specify the listener name as an argument. 
+ - If you omit the listener name in the command, then the listener set with the command `SET CURRENT_LISTENER` is used. 
+ - If you have not set the listener with that command, then the command uses the default listener, `LISTENER`.
+
+When you administer a listener remotely, you can run all listener commands except `START`. However, listener control utility only starts the listener on the same system where the utility runs.
+
 Click the next lab to **Get started**.
 
 ## Learn more
 
- - [Understanding Oracle Net Services](https://docs.oracle.com/en/database/oracle/oracle-database/21/netag/part-I-understanding-oracle-net-services.html#GUID-A436DD5C-DF46-45E0-8F9B-54C7EFE40BA6)
+ - [Understanding Oracle Net Services](https://docs.oracle.com/en/database/oracle/oracle-database/23/netag/part-I-understanding-oracle-net-services.html)
 
- - [Oracle Database Component Port Numbers and Protocols](https://docs.oracle.com/en/database/oracle/oracle-database/21/ladbi/oracle-database-component-port-numbers-and-protocols.html)
+ - [Oracle Database Component Port Numbers and Protocols](https://docs.oracle.com/en/database/oracle/oracle-database/23/ladbi/oracle-database-component-port-numbers-and-protocols.html)
 
 ## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
- - **Contributors**: <if type="hidden">Suresh Rajan, Prakash Jashnani, Malai Stalin, Subhash Chandra, Dharma Sirnapalli, Subrahmanyam Kodavaluru, Manisha Mati</if>
- - **Last Updated By/Date**: Manish Garodia, March 2023
+ - **Contributors**: Binika Kumar, Bhaskar Mathur, Malai Stalin<if type="hidden">Suresh Rajan, Subhash Chandra, Dharma Sirnapalli, Subrahmanyam Kodavaluru, Manisha Mati</if>
+ - **Last Updated By/Date**: Manish Garodia, April 2023
 
 <!--
 

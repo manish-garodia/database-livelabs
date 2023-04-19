@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This lab shows how to perform listener operations, such as starting and stopping the listener, checking listener status, and so on, using the listener control utility.
+This lab shows how to perform listener operations, such as starting and stopping the listener, checking listener status, and so on. It also shows how to access listener control utility and view details of the listener.
 
 Estimated time: 10 minutes
 
@@ -12,6 +12,7 @@ Estimated time: 10 minutes
  - View listener configuration and status
  - Stop the listener
  - Start the listener
+ - Access listener control utility
 
 ### Prerequisites
 
@@ -61,20 +62,20 @@ In this task, you will check whether the listener is up and running and view lis
 	  (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost.example.com)(PORT=1523)))
 	  (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC1523)))
 	Services Summary...
-	Service "f41450abd5c34d62e053a12f466429aa.us.oracle.com" has 1 instance(s).
+	Service "f41450abd5c34d62e053a12f466429aa.localhost.example.com" has 1 instance(s).
 	  Instance "orcl", status READY, has 1 handler(s) for this service...
-	Service "f78ebbfe030b3885e0538e08466494f2.us.oracle.com" has 1 instance(s).
+	Service "f78ebbfe030b3885e0538e08466494f2.localhost.example.com" has 1 instance(s).
 	  Instance "orcl", status READY, has 1 handler(s) for this service...
-	Service "orcl.us.oracle.com" has 1 instance(s).
+	Service "orcl.localhost.example.com" has 1 instance(s).
 	  Instance "orcl", status READY, has 1 handler(s) for this service...
-	Service "orclXDB.us.oracle.com" has 1 instance(s).
+	Service "orclXDB.localhost.example.com" has 1 instance(s).
 	  Instance "orcl", status READY, has 1 handler(s) for this service...
-	Service "orclpdb.us.oracle.com" has 1 instance(s).
+	Service "orclpdb.localhost.example.com" has 1 instance(s).
 	  Instance "orcl", status READY, has 1 handler(s) for this service...
 	The command completed successfully
 	```
 
-	> The Listener Control Utility displays a summary of listener configuration settings, listening protocol addresses, and the services registered with the listener.
+	> The listener control utility displays a summary of listener configuration settings, listening protocol addresses, and the services registered with the listener.
 
 If your Oracle Database contains PDBs, then the status displays a service for each PDB running on the database instance.
 
@@ -216,21 +217,163 @@ In this task, you will learn how to stop and start the listener.
 	SQL> 
 	```
 
-You can now connect to Oracle Database.
+	You are connected to Oracle Database.
+
+1. Exit from the SQL Prompt.
+
+	```
+	SQL> <copy>exit</copy>
+	```
+
+You can also access the listener control utility and perform basic management functions on the listener.
+
+## Task 4: Access listener control utility
+
+Listener control utility enables you to administer the listener.
+
+In this task, you will access listener control utility and check out the listener commands.
+
+1. From `$ORACLE_HOME/bin`, enter the `LSNRCTL` prompt.
+
+	```
+	$ <copy>./lsnrctl</copy>
+	```
+
+	```
+	LSNRCTL for Linux: Version 23.0.0.0.0 - Development on 16-APR-2023 07:50:25
+
+	Copyright (c) 1991, 2023, Oracle.  All rights reserved.
+
+	Welcome to LSNRCTL, type "help" for information.
+
+	LSNRCTL> 
+	```
+
+1. View the commands that you can run from the `LSNRCTL` prompt. 
+
+	```
+	LSNRCTL> <copy>HELP</copy>
+	```
+
+	```
+	The following operations are available
+	An asterisk (*) denotes a modifier or extended command:
+
+	start           stop            status          services        
+	servacls        version         reload          save_config     
+	trace           spawn           quit            exit            
+	set*            show*           
+	```
+
+	You can run these commands from listener control utility to view details and to manage the listener.
+
+1. Enter `HELP` with a command name to view the complete syntax and additional information about the listener control utility command, for example `trace`.
+
+	```
+	LSNRCTL> <copy>HELP trace</copy>
+	```
+
+	```
+	trace OFF | USER | ADMIN | SUPPORT [<listener_name>] : set tracing to the specified level
+	```
+
+1. View the parameters of the listener. 
+
+	```
+	LSNRCTL> <copy>SHOW</copy>
+	```
+
+	```
+	The following operations are available after show
+	An asterisk (*) denotes a modifier or extended command:
+
+	rawmode                              displaymode                          
+	rules                                trc_file                             
+	trc_directory                        trc_level                            
+	log_file                             log_directory                        
+	log_status                           stats                                
+	current_listener                     inbound_connect_timeout              
+	startup_waittime                     snmp_visible                         
+	save_config_on_stop                  dynamic_registration                 
+	enable_global_dynamic_endpoint       oracle_home                          
+	pid                                  connection_rate_limit                
+	valid_node_checking_registration     registration_invited_nodes           
+	registration_excluded_nodes          remote_registration_address          
+	allow_multiple_redirects             all                                  
+	```
+
+1. Check the name of the current listener. 
+
+	```
+	LSNRCTL> <copy>SHOW CURRENT_LISTENER</copy>
+	```
+
+	```
+	Current Listener is LISTENER
+	```
+
+1. Check the version of listener control utility. 
+
+	```
+	LSNRCTL> <copy>VERSION</copy>
+	```
+
+	```
+	Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost.example.com)(PORT=1523)))
+	TNSLSNR for Linux: Version 23.0.0.0.0 - Development
+		TNS for Linux: Version 23.0.0.0.0 - Development
+		Unix Domain Socket IPC NT Protocol Adaptor for Linux: Version 23.0.0.0.0 - Development
+		Oracle Bequeath NT Protocol Adapter for Linux: Version 23.0.0.0.0 - Development
+		TCP/IP NT Protocol Adapter for Linux: Version 23.0.0.0.0 - Development,,
+	The command completed successfully
+	```
+
+1. View statistics about the number of registration commands that the listener receives while handling client connection requests.
+
+	```
+	LSNRCTL> <copy>SHOW STATS -REG</copy>
+	```
+
+	```
+	Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost.example.com)(PORT=1523)))
+	------------------------
+	Global Level:
+										 Recent
+	Recent Duration: 15 days 23 hr. 9 min. 13 sec
+	Command        Instance    Service     ENDP    Handler     INF
+	Registration          2         10        2          4       0
+	Updates            4246          0        0       6543       0
+	Re-Register           0          0        0          0       0
+	Un-Register           0          0        0          0       0
+										Cumulative
+	Registration          2         10        2          4       0
+	Updates            4246          0        0       6543       0
+	Re-Register           0          0        0          0       0
+	Un-Register           0          0        0          0       0
+	The command completed successfully
+	```
+
+1. Exit from the listener control utility.
+
+	```
+	LSNRCTL> <copy>EXIT</copy>
+	```
+
+	> **Note:** You can use either `EXIT` or `QUIT` to exit from listener control utility.
 
 Congratulations! You have successfully completed this workshop on *Network environment configuration for Oracle Database*. 
 
-In this workshop, you learned how to check listener status, start and stop the listener, and view network configuration of Oracle Database. 
+In this workshop, you learned how to check listener status, start and stop the listener, and view the commands of listener control utility for your Oracle Database. 
 
 ## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
- - **Contributors**: <if type="hidden">Suresh Rajan, Prakash Jashnani, Malai Stalin, Subhash Chandra, Dharma Sirnapalli, Subrahmanyam Kodavaluru, Manisha Mati</if>
- - **Last Updated By/Date**: Manish Garodia, March 2023
+ - **Contributors**: Binika Kumar, Bhaskar Mathur, Malai Stalin<if type="hidden">Suresh Rajan, Prakash Jashnani, Subhash Chandra, Dharma Sirnapalli, Subrahmanyam Kodavaluru, Manisha Mati</if>
+ - **Last Updated By/Date**: Manish Garodia, April 2023
 
 <!--
 
-## Task 1: Set the environment -- OLD
+Task 1: Set the environment -- OLD
 
 To connect to Oracle Database and run SQL commands, set the environment first.
 
@@ -264,8 +407,6 @@ You have set the environment variables for the active terminal session. You can 
 > **Note:** Every time you open a new terminal window, you must set the environment variables to connect to Oracle 	Database from that terminal. Environment variables from one terminal do not apply automatically to other terminals.
 
 Alternatively, you may run the script file `.set-env-db.sh` from the home location and enter the number for `ORACLE_SID`. It sets the environment variables automatically.
-
-
 
 
 -->
