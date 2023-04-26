@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This lab walks you through the steps to access the container home page from Oracle Enterprise Manager (Oracle EM). You will also learn how to switch between containers and manage your favorites.
+This lab walks you through the steps to access the container home page from Oracle Enterprise Manager Cloud Control (EM). You will also learn how to switch between containers and manage your favorites.
 
 Estimated time: 15 minutes
 
 ### Objectives
 
- - Access container home page from Oracle EM
+ - Access container home page from Oracle Enterprise Manager
  - Switch between home pages for Container Database (CDB), Pluggable Database (PDB), and the database instance
  - Check out the history
  - Add pages to and remove pages from favorites
@@ -19,7 +19,7 @@ This lab assumes you have -
 
  -   An Oracle Cloud account
  -   Completed all previous labs successfully
- -   Logged in to Oracle EM in a web browser as *sysman*
+ -   Logged in to Oracle Enterprise Manager in a web browser as *sysman*
 
 ## Task 1: Access container home page
 
@@ -29,7 +29,7 @@ In this task, you will access the home page for the database instance, *orcl.us.
 
     ![Databases menu](./images/em-dbhome-001-db-menu.png " ")
 
-    The Databases page displays all database systems added to Oracle EM as managed targets. The values may differ depending on the system you are using.
+	The Databases page displays all database systems added to Oracle Enterprise Manager as managed targets. 
 
 1.  Click the expand/collapse triangle next to the database instance name and then expand the Pluggable Databases. The list displays all PDBs under the selected container.   
 	The values may differ depending on the system you are using.  
@@ -51,9 +51,9 @@ From the CDB and the PDB home page, you can perform administrative tasks on the 
 
 ## Task 2: Switch between containers
 
-You can alter session and switch between containers in Oracle EM within the same login.
+You can alter session and switch between containers in Oracle Enterprise Manager within the same login.
 
-That is, from the database instance home page, you can switch to the CDB or PDB home page without logging out of Oracle EM. Similarly, from the PDB home page, you can switch to the CDB or to another PDB, if you have more target PDBs in Oracle EM.
+That is, from the database instance home page, you can switch to the CDB or PDB home page without logging out of Oracle Enterprise Manager. Similarly, from the PDB home page, you can switch to the CDB or to another PDB, if you have more target PDBs in Oracle Enterprise Manager.
 
 In this task, you will switch between containers and open the CDB, the PDB, and the database instance home page.
 
@@ -108,7 +108,7 @@ In this task, you will switch between containers and open the CDB, the PDB, and 
 
     ![Database instance home page](./images/em-dbhome-003-instance-home.png " ")
 
-	> **Note:** You can open a recently visited page from any location in Oracle EM using the **History** menu.
+	> **Note:** You can open a recently visited page from any location in Oracle Enterprise Manager using the **History** menu.
 
 ## Task 3: View target information
 
@@ -161,7 +161,7 @@ In this task, you will view target information for the database instance, the CD
 
 ## Task 4: Manage favorites
 
-Using the favorites option, you can bookmark pages in Oracle EM for quick access.
+Using the favorites option, you can bookmark pages in Oracle Enterprise Manager for quick access.
 
 > **Note:** Go to the page that you want to add to or remove from favorites.
 
@@ -220,15 +220,15 @@ In this task, you will add the CDB home page and the PDB home page to favorites 
 
 	> **Note:** In the **Manage Favorites** dialog box, you can select pages one-by-one and then click **Remove Selected**. Finally, when you click **OK**, it removes the pages from favorites.
 
-Congratulations! You have successfully completed of this workshop on *Oracle EM Database Administration (DBA)*.
+Congratulations! You have successfully completed of this workshop on *Database administration with Oracle Enterprise Manager*.
 
-In this workshop, you performed some basic administration of Oracle Database from Oracle EM.
+In this workshop, you performed some basic administration of Oracle Database from Oracle Enterprise Manager.
  - Viewed container details from the SQL command line
- - Administered managed targets in Oracle EM
+ - Administered managed targets in Oracle Enterprise Manager
  - Learned how to add and remove Oracle Database and Listener as targets
  - Accessed the database instance, CDB, and PDB home pages
  - Learned how to switch between containers
- - Added and removed favorites in Oracle EM
+ - Added and removed favorites in Oracle Enterprise Manager
  - Learned how to check the recent history
 
 ## Acknowledgments
@@ -277,7 +277,7 @@ Ensure that you have the CDB home page open. Otherwise, follow the steps as expl
 1.  To do that, add the CDB home page to favorites again. Select **Favorites** &gt; **Add Page to Favorites**. The window displays a confirmation message indicating that you have added the current page to favorites.
 
 
-In this workshop, you performed some basic administration of Oracle Database from Oracle EM. You viewed container details from the SQL command line. You administered managed targets in Oracle EM and learned how to add and remove Oracle Database and Listener as targets. You accessed the database instance, CDB, and PDB home pages and learned how to switch between containers. You also added and removed favorites in Oracle EM and learned how to check the recent history.
+In this workshop, you performed some basic administration of Oracle Database from EM. You viewed container details from the SQL command line. You administered managed targets in EM and learned how to add and remove Oracle Database and Listener as targets. You accessed the database instance, CDB, and PDB home pages and learned how to switch between containers. You also added and removed favorites in EM and learned how to check the recent history.
 
 
 -->

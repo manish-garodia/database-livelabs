@@ -2,14 +2,14 @@
 
 ## Introduction
 
-In this lab, you will review and startup all components required to successfully run this workshop.  
+In this lab, you will review and startup all components required to successfully run this workshop.
 
 Estimated time: 10 minutes
 
 ### Objectives
 
  - Initialize the workshop environment
- - Log into Oracle EM in a web browser
+ - Log into Oracle Enterprise Manager in a web browser
 
 ### Prerequisites
 
@@ -276,7 +276,7 @@ If for any reason you want to login from a location that is external to your rem
      > **Note:** You may see an error on the browser while accessing the web console - “*Your connection is not private*” as shown below. Ignore and add the exception to proceed.
 
     ![Privacy Error](images/login-em-external-1.png " ")
-    ![Oracle EM Login](images/login-em-external-2.png " ")
+    ![EM Login](images/login-em-external-2.png " ")
 
 <!-- ## Appendix 3: External Terminal Access (using SSH Key Based Authentication)
 

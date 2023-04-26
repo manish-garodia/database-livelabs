@@ -7,8 +7,8 @@
   "tutorials": [
     {
       "title": "Introduction",
-      "description": "The workshop on administering Oracle Database from Oracle Enterprise Manager (Oracle EM).",
-      "publisheddate": "03/24/2023",
+      "description": "The workshop on administering Oracle Database from Oracle Enterprise Manager (EM).",
+      "publisheddate": "04/17/2023",
       "filename": "./../../intro-em/intro-em.md"
     },
     {
@@ -44,14 +44,14 @@
     },
     {
       "title": "Lab 5: Manage targets - Oracle Database and Listener",
-      "description": "How to manage targets, Oracle Database and Listener, using Oracle EM.",
-      "publisheddate": "03/24/2023",
+      "description": "How to manage targets, Oracle Database and Listener, using EM.",
+      "publisheddate": "04/17/2023",
       "filename": "./../../manage-targets/manage-targets.md"
     },
     {
       "title": "Lab 6: Access container home page",
-      "description": "How to access container home page from Oracle EM.",
-      "publisheddate": "03/24/2023",
+      "description": "How to access container home page from EM.",
+      "publisheddate": "04/17/2023",
       "filename": "./../../access-homepage/access-homepage.md"
     },
     {

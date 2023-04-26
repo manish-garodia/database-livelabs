@@ -4,11 +4,6 @@
 
 This lab walks you through the steps to log in to SQL prompt and explore Container Database (CDB) and Pluggable Database (PDB) with basic SQL commands.
 
-> **Note:** For connecting to Oracle Database, you do not require a password in the following scenarios.
- - Oracle Database resides on the local host.
- - The current user (for this lab, it is *oracle* user) is a member of the OSDBA group.   
- The *oracle* user has the privileges required to perform tasks for database administration.
-
 Estimated time: 10 minutes
 
 ### Objectives

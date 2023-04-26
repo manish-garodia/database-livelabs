@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This lab shows how to manage the targets discovered by Oracle EM. You can view details of Oracle Database and Listener and administer them from Oracle EM as managed targets.
+This lab shows how to manage the targets discovered by Oracle Enterprise Manager Cloud Control (EM). You can view details of Oracle Database and Listener and administer them from Oracle Enterprise Manager as managed targets.
 
 Estimated time: 15 minutes
 
 ### Objectives
 
- - View existing targets in Oracle EM
+ - View existing targets in Oracle Enterprise Manager
  - Add Oracle Database and Listener as targets
  - View newly added target Oracle Database
  - Remove Oracle Database from managed targets
@@ -20,17 +20,17 @@ This lab assumes you have -
 
  -   An Oracle Cloud account
  -   Completed all previous labs successfully
- -   Logged in to Oracle EM in a web browser as *sysman* 
+ -   Logged in to Oracle Enterprise Manager in a web browser as *sysman* 
 
-## Task 1: View targets in Oracle EM
+## Task 1: View targets in EM
 
-In this task, you will view the existing targets in Oracle EM.
+In this task, you will view the existing targets in Oracle Enterprise Manager.
 
 1.	From the **Targets** menu at the top, select **All Targets**.
 
     ![All targets](./images/em-target-001-alltargetsmenu.png " ")
 
-	The All Targets page displays a complete list of targets discovered by Oracle EM, such as hosts, Oracle homes, listeners, PDBs, and so on.   
+	The All Targets page displays a complete list of targets discovered by Oracle Enterprise Manager, such as hosts, Oracle homes, listeners, PDBs, and so on.   
     The values may differ depending on the system you are using.  
 
     ![Targets home](./images/em-target-002-targethome.png " ")
@@ -41,11 +41,11 @@ In this task, you will view the existing targets in Oracle EM.
 
 	Click a target name to open its home page. From the target's home page, you can view the target information and manage the target.
 
-To perform administrative tasks on your Oracle Database and Listener from Oracle EM, add them as targets.
+To perform administrative tasks on your Oracle Database and Listener from Oracle Enterprise Manager, add them as targets.
 
 ## Task 2: Add Oracle Database and Listener as targets
 
-When you add a target, such as Oracle Database or Listener, it remains in Oracle EM until you remove from managed targets. You can add Oracle Database and Listener as targets together in the same steps.
+When you add a target, such as Oracle Database or Listener, it remains in Oracle Enterprise Manager until you remove from managed targets. You can add Oracle Database and Listener as targets together in the same steps.
 
 In this task, you will add an Oracle Database and a Listener as targets using the *guided discovery* process.
 
@@ -91,8 +91,8 @@ The values may differ depending on the system you are using.
 
     ![Specify host or cluster](./images/em-target-009-specify-host.png " ")
 
-	Oracle EM provides options to add discovery hints to customize the discovery process. For this task, ignore this field and click **Next** to proceed.   
-	The window displays a progress bar indicating target discovery as Oracle EM searches for targets on your host.
+	Oracle Enterprise Manager provides options to add discovery hints to customize the discovery process. For this task, ignore this field and click **Next** to proceed.   
+	The window displays a progress bar indicating target discovery as EM searches for targets on your host.
 
 1.  The Results page displays all Oracle Databases, including CDBs, PDBs, and listeners discovered on the selected host. The values may differ depending on the system you are using. 	  
 
@@ -105,8 +105,8 @@ The values may differ depending on the system you are using.
      - **Monitoring Password** - Enter the password for database administrator, for example *We!come1*  
      - **Listeners** – Select the check box for the listener, for example, *Listener_localhost.example.com*.  
 
-    > **Note:** Oracle EM displays all associated PDBs discovered on your host. If you have more PDBs or CDBs, then you can manually add or remove them as targets.    
-	For more information, see [Oracle EM documentation](https://docs.oracle.com/en/enterprise-manager/index.html).
+    > **Note:** Oracle Enterprise Manager displays all associated PDBs discovered on your host. If you have more PDBs or CDBs, then you can manually add or remove them as targets.    
+	For more information, see [Oracle Enterprise Manager documentation](https://docs.oracle.com/en/enterprise-manager/cloud-control/enterprise-manager-cloud-control/13.5/index.html).
 
     Leave the defaults for the remaining options and click **Next** to proceed.
 
@@ -119,13 +119,13 @@ The values may differ depending on the system you are using.
 
     ![Confirm adding targets](./images/em-target-012-confirm-add.png " ")
 
-	Click **Close** to close the confirmation window. Oracle EM redirects to the target discovery page.
+	Click **Close** to close the confirmation window. EM redirects to the target discovery page.
 
-Congratulations! You have successfully added Oracle Database and Listener as targets in Oracle EM. You can now view the targets, monitor and manage them from Oracle EM.
+Congratulations! You have successfully added Oracle Database and Listener as targets in EM. You can now view the targets, monitor and manage them from EM.
 
 ## Task 3: View newly added target Oracle Database
 
-After adding Oracle Database, Oracle EM displays it as managed target.
+After adding Oracle Database, Oracle Enterprise Manager displays it as managed target.
 
 In this task, you will view the newly added target Oracle Database, *orcl*, and its PDBs.
 
@@ -158,11 +158,11 @@ You can add more Oracle Databases as targets or remove target databases from the
 
 ## Task 4: Remove Oracle Database from managed targets
 
-You can remove targets, such as database instances, database systems, CDBs, PDBs, and so on from Oracle EM. After removing a target, you cannot manage it from Oracle EM anymore. You can remove Oracle Databases or PDBs one at a time. You cannot remove multiple Oracle Databases together in a single step.
+You can remove targets, such as database instances, database systems, CDBs, PDBs, and so on from EM. After removing a target, you cannot manage it from Oracle Enterprise Manager anymore. You can remove Oracle Databases or PDBs one at a time. You cannot remove multiple Oracle Databases together in a single step.
 
-In this task, you will remove the target database instance, *orcl1*, from Oracle EM including the CDB and PDB.
+In this task, you will remove the target database instance, *orcl1*, from EM including the CDB and PDB.
 
-> **Note:** Removing a target Oracle Database from Oracle EM does not delete or deinstall the database from the host system.
+> **Note:** Removing a target Oracle Database from EM does not delete or deinstall the database from the host system.
 
 1.  On the Databases page, select the target Oracle Database that you want to remove.   
 	The values may differ depending on the system you are using.
@@ -177,19 +177,19 @@ In this task, you will remove the target database instance, *orcl1*, from Oracle
 
 	Click **Yes** to confirm the removal.
 
-	> Clicking **No** will cancel the delete operation and take you back to the Databases page. If you remove all target databases from Oracle EM, the Databases page displays a message `No Databases found`.
+	> Clicking **No** will cancel the delete operation and take you back to the Databases page. If you remove all target databases from EM, the Databases page displays a message `No Databases found`.
 
-	Oracle EM redirects to the Databases page. You will notice that the Oracle Database you removed, *orcl1*, is no longer listed as a managed target.
+	EM redirects to the Databases page. You will notice that the Oracle Database you removed, *orcl1*, is no longer listed as a managed target.
 
     ![Target database removed](./images/em-target-019-target-db-removed.png " ")
 
-You have successfully removed Oracle Database as managed targets from Oracle EM. Removing a database from Oracle EM does not remove the listener from managed targets automatically.  
+You have successfully removed Oracle Database as managed targets from EM. Removing a database from EM does not remove the listener from managed targets automatically.  
 
 ## Task 5: Remove Listener from managed targets
 
-You to remove listeners one at a time. You cannot remove multiple listeners together in a single step. In this task, you will remove the target listener, *LISTENER1*, from Oracle EM.
+You to remove listeners one at a time. You cannot remove multiple listeners together in a single step. In this task, you will remove the target listener, *LISTENER1*, from EM.
 
-> **Note:** Removing a target listener from Oracle EM does not delete the listener from the host system.
+> **Note:** Removing a target listener from EM does not delete the listener from the host system.
 
 1.  From the **Targets** menu, select **All Targets** to open the All Targets page.
 
@@ -214,9 +214,9 @@ You to remove listeners one at a time. You cannot remove multiple listeners toge
 
 	Click **OK** to continue. The listener you removed is no longer listed as a managed target.
 
-You have successfully removed the listener from managed targets in Oracle EM. When you remove a listener, Oracle EM does not delete the target Oracle Database automatically.
+You have successfully removed the listener from managed targets in EM. When you remove a listener, EM does not delete the target Oracle Database automatically.
 
-In this lab, you learned how to view targets in Oracle EM. You also added Oracle Database and Listener as managed targets and then removed them from managed targets. After adding targets, you can manage them from their home page.
+In this lab, you learned how to view targets in EM. You also added Oracle Database and Listener as managed targets and then removed them from managed targets. After adding targets, you can manage them from their home page.
 
 You may now **proceed to the next lab**.
 
@@ -265,7 +265,7 @@ The screenshot gives an example of removing a target CDB, *CDB$ROOT*. The values
 
 ![Warning CDB Removal](./images/em-target-020-warningcdbremove.png " ")
 
-> **Note:** To run the labs and tasks related to Oracle EM, you require Oracle Database and the listener as managed targets in Oracle EM. If you have removed the Oracle Database and the listener from Oracle EM from the previous tasks, add them again as managed targets as explained in *Task 2* of this lab.
+> **Note:** To run the labs and tasks related to EM, you require Oracle Database and the listener as managed targets in EM. If you have removed the Oracle Database and the listener from EM from the previous tasks, add them again as managed targets as explained in *Task 2* of this lab.
 
 
 
