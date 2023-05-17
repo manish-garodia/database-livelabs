@@ -99,7 +99,7 @@ The roles that exist in the database by default are common roles. However, you c
 
      > **Note:** Different PDBs in the same multitenant CDB may have local roles with the exact same name, for example `pdbadmin`. Though they are local, the roles are completely independent of each other.
 
-In Oracle Database, you create roles, grant system and object privileges to roles, and then grant roles to users. You can also grant roles to other roles. Unlike schema objects, roles are not contained in any schema.
+In Oracle Database, you create roles, grant system privileges and object privileges to roles, and then grant roles to users. You can also grant roles to other roles. Unlike schema objects, roles are not contained in any schema.
 
 ### Privileges in Oracle Database
 
@@ -173,4 +173,4 @@ Click the next lab to **Get started**. 
 
  -   **Author** - Manish Garodia, Database User Assistance Development team
  -   **Contributors** - <if type="hidden">Team Database UAD</if>
- -   **Last Updated By/Date** - Manish Garodia, April 2023
+ -   **Last Updated By/Date** - Manish Garodia, May 2023

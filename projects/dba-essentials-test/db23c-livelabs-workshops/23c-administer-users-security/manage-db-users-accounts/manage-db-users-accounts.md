@@ -33,7 +33,7 @@ In this task, you will view the details of the user account *DBUSER* in the PDB.
 
     ![Target menu](./../manage-db-roles/images/pdb-roles-01-db-menu.png " ")  
 
-	The Databases page displays all database systems added to Oracle Enterprise Manager as managed targets. The values may differ depending on the system you are using.
+	The Databases page displays all database systems added to Oracle Enterprise Manager as managed targets.
 
 1.  Click the expand/collapse triangle next to the database instance name, for example *orcl.us.oracle.com*, and then expand Pluggable Databases. The list displays all PDBs under the selected container.
 	The values may differ depending on the system you are using.

@@ -47,7 +47,7 @@ In this task, you will view the details of the role *CONNECT* in the PDB. 
 
     Oracle Enterprise Manager redirects to the Database Login page.  
 
-1.  Select the *Named* Credential option, if not already selected, and click **Login** to connect to the Oracle Database. The values may differ depending on the system you are using.  
+1.  Select the *Named* Credential option, if not already selected, and click **Login** to connect to the database. The values may differ depending on the system you are using.  
 
     ![Database login](./images/pdb-roles-04-pdb-login.png " ")
 
@@ -190,7 +190,7 @@ In this task, you will modify the role *APPDEV* in the PDB that you created in t
 
      > **Note:** The roles table displays no records because Oracle Database does not grant any default roles automatically. The other buttons and options are not relevant for this lab.  
 
-1.  The Modify Roles page displays the **Available Roles** that you can grant to your role. The values may differ depending on the system you are using.  
+1.  The Modify Roles page displays **Available Roles** that you can grant to your role. The values may differ depending on the system you are using.  
 
      > **Note:** You can double-click an available role to add it to the selected roles list. Similarly, double-click a role to remove it from the selected roles list. To select multiple items, press the **ctrl** button on your keyboard and select the roles.  
 
@@ -248,4 +248,4 @@ You may now **proceed to the next lab**.
 
  -   **Author**: Manish Garodia, Database User Assistance Development team
  -   **Contributors**: <if type="hidden">Ashwini R, Jayaprakash Subramanian</if>
- -   **Last Updated By/Date**: Manish Garodia, April 2023
+ -   **Last Updated By/Date**: Manish Garodia, May 2023
