@@ -14,8 +14,9 @@ Estimated time: 1 hour
 
 ### Objectives
 
-Using Oracle DBCA -
+ - Start Oracle DBCA from Oracle home 1
  - Create an Oracle Database with *Typical configuration* in Oracle home 1
+ - Start Oracle DBCA from Oracle home 2
  - Create an Oracle Database with *Advanced configuration* in Oracle home 2
 
 > **Note:**  [](include:oracle-home)
@@ -263,7 +264,7 @@ In this task, you will select *Advanced configuration* to create an Oracle Datab
 
 1.  In the Management Options window, you can register your database with Oracle Enterprise Manager (Oracle EM). 
 
-	For this lab, do not select the check box and click **Next**
+	For this lab, do not select the check box and click **Next**.
 
     ![Register with EM](./images/dbca23c-adv-010-em.png " ")
 
@@ -299,7 +300,8 @@ You have successfully created an Oracle Database using Oracle DBCA in Oracle hom
 
 > **Note:** The Password Management window functions the same as explained in the previous task. You can administer the user accounts in your database, such as unlock a user or set the passwords. However, you can do these tasks later.
 
-Congratulations! You have reached the end of this workshop on *Oracle Database installation*.   
+Congratulations! You have reached the end of this workshop on *Oracle Database installation*.
+
 In this workshop, you learned how to install the Oracle Database software on your host using the database installer and configure a database with Desktop class and Server class. You also created additional databases using Oracle DBCA with both Typical configuration and Advanced configuration. You can now manage and administer your Oracle Database.
 
 ## Acknowledgments  

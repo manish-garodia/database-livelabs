@@ -40,7 +40,7 @@ For this purpose, Oracle provides the following tools:
 
 ### About database installer
 
-The database installer is a graphical user interface utility to systematically install Oracle Database through a wizard. Using the installer, you can install the database software, set the Oracle home, and create an Oracle Database.
+The database installer is a graphical user interface utility to systematically install Oracle Database through a wizard. Using the installer, you can install the database software, set Oracle home, and create an Oracle Database.
 
 The installer has the ability to verify whether Oracle home is already configured on your host. When you install Oracle Database for the first time, the installer provides option to configure the inventory location. Whereas if Oracle home is already configured on your host, then the installer uses the existing centralized inventory for additional software installation and database creation. In such case, the installer does not prompt you to run the root script for setting up database inventory.
 
