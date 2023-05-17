@@ -36,7 +36,7 @@ In this task, you will access the home page for the database instance, *orcl.us.
 
     ![Databases list](./images/em-dbhome-002-db-list.png " ")
 
-	You can click an item in the **Name** column to access the corresponding home page, that is, the database instance home page or the PDB home page.
+	You can click a database name link to access the corresponding home page, that is, the database instance home page or the PDB home page.
 
 1.  For this task, click the database instance name, for example *orcl.us.oracle.com*, to access the instance home page.   
 	The values may differ depending on the system you are using.  
@@ -234,7 +234,7 @@ In this workshop, you performed some basic administration of Oracle Database fro
 ## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
- - **Contributors**: <if type="hidden">Suresh Rajan, Ashwini R, Jayaprakash Subramanian, Steven Lemme</if>
+ - **Contributors**: Daniela Hansell, Ashwini R, Jayaprakash Subramanian <if type="hidden">Suresh Rajan, Steven Lemme</if>
  -   **Last Updated By/Date**: Manish Garodia, March 2023
 
 <!--

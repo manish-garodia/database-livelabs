@@ -39,11 +39,11 @@ In this task, you will view the existing targets in Oracle Enterprise Manager.
 
     ![Refine search](./images/em-target-003-refinesearch.png " ")
 
-	Click a target name to open its home page. From the target's home page, you can view the target information and manage the target.
-
-To perform administrative tasks on your Oracle Database and Listener from Oracle Enterprise Manager, add them as targets.
+Click a target name to open its home page. From the target's home page, you can view the target information and manage the target.
 
 ## Task 2: Add Oracle Database and Listener as targets
+
+To perform administrative tasks on your Oracle Database and Listener from Oracle Enterprise Manager, add them as targets.
 
 When you add a target, such as Oracle Database or Listener, it remains in Oracle Enterprise Manager until you remove from managed targets. You can add Oracle Database and Listener as targets together in the same steps.
 
@@ -223,7 +223,7 @@ You may now **proceed to the next lab**.
 ## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
- - **Contributors** - <if type="hidden">Suresh Rajan, Subhash Chandra, Steven Lemme, Ashwini R</if>
+ - **Contributors** - Daniela Hansell, Ashwini R, Jayaprakash Subramanian <if type="hidden">Suresh Rajan, Subhash Chandra, Steven Lemme</if>
  - **Last Updated By/Date** - Manish Garodia, March 2023
 
 

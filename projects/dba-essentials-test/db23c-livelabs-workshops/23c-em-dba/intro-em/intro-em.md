@@ -48,7 +48,7 @@ The following figure shows a sample EM configuration and illustrates how the cor
 
 > **Note:** This figure depicts a load balancer and multiple Oracle Management Service (OMS) instances only to indicate how to deploy Oracle Enterprise Manager in a large organization. They are not prerequisites for an Oracle Enterprise Manager system installation.
 
-If you do not have the load balancer, the Management Agents communicate directly with the OMS instances.
+If you do not have the load balancer, then Management Agents communicate directly with the OMS instances.
 
 ### EM components
 
@@ -66,7 +66,7 @@ Oracle Enterprise Manager includes the following components:
 
 - **Oracle Management Repository**
 
-    A storage location for the information, which the Management Agent collects. It consists of objects such as database jobs, packages, procedures, views, and tablespaces. It organizes the data so that OMS can retrieve and display it on the EM console.
+    A storage location for the information, which Management Agent collects. It consists of objects such as database jobs, packages, procedures, views, and tablespaces. It organizes the data so that OMS can retrieve and display it on the EM console.
 
 - **Plug-ins**
 
@@ -105,7 +105,7 @@ For adding targets, Oracle Enterprise Manager provides various options, such as 
 
 	> The manual process is useful if both autodiscovery and the guided process failed to discover a target.
 
-After adding a target, for example Oracle Database, you can access the target home page of the target. From the target home page, you can monitor and manage it in Oracle Enterprise Manager and perform administrative tasks. Besides, you can view the history of pages you visited and bookmark pages as favorites in Oracle Enterprise Manager.
+After adding a target, for example Oracle Database, you can access the home page of the target. From the target home page, you can monitor and manage it in Oracle Enterprise Manager or perform administrative tasks. Besides, you can view the history of pages you visited and bookmark pages as favorites in Oracle Enterprise Manager.
 
 Removing a target database instance or database system deletes the entire Oracle Database, including the CDB and PDBs from Oracle Enterprise Manager. Whereas, if you remove a specific CDB or a PDB, then Oracle Enterprise Manager deletes only that target container and leaves the database instance, database system, and other components intact. 
 
@@ -123,5 +123,5 @@ Click the next lab to **Get started**.
 ## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
- - **Contributors** - Daniela Hansell <if type="hidden">Suresh Rajan, Steven Lemme, Ashwini R</if>
- - **Last Updated By/Date** - Manish Garodia, April 2023
+ - **Contributors** - Daniela Hansell, Ashwini R, Jayaprakash Subramanian<if type="hidden">Suresh Rajan, Steven Lemme</if>
+ - **Last Updated By/Date** - Manish Garodia, May 2023

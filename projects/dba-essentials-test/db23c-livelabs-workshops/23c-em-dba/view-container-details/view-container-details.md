@@ -131,7 +131,7 @@ You may now **proceed to the next lab**.
 ## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
- - **Contributors** - <if type="hidden">Suresh Rajan, Dharma Sirnapalli, Subhash Chandra, Steven Lemme</if>
+ - **Contributors** - Daniela Hansell, Ashwini R, Jayaprakash Subramanian <if type="hidden">Suresh Rajan, Dharma Sirnapalli, Subhash Chandra, Steven Lemme</if>
  - **Last Updated By/Date** - Manish Garodia, March 2023
 
 <!--
