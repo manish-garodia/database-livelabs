@@ -158,7 +158,7 @@ You can add more Oracle Databases as targets or remove target databases from the
 
 ## Task 4: Remove Oracle Database from managed targets
 
-You can remove targets, such as database instances, database systems, CDBs, PDBs, and so on from EM. After removing a target, you cannot manage it from Oracle Enterprise Manager anymore. You can remove Oracle Databases or PDBs one at a time. You cannot remove multiple Oracle Databases together in a single step.
+You can remove targets, such as database instances, database systems, CDBs, PDBs, and so on from Oracle Enterprise Manager. After removing a target, you cannot manage it from EM anymore. You can remove Oracle Databases or PDBs one at a time. You cannot remove multiple Oracle Databases together in a single step.
 
 In this task, you will remove the target database instance, *orcl1*, from EM including the CDB and PDB.
 
@@ -187,7 +187,7 @@ You have successfully removed Oracle Database as managed targets from EM. Removi
 
 ## Task 5: Remove Listener from managed targets
 
-You to remove listeners one at a time. You cannot remove multiple listeners together in a single step. In this task, you will remove the target listener, *LISTENER1*, from EM.
+You can remove listeners one at a time. You cannot remove multiple listeners together in a single step. In this task, you will remove the target listener, *LISTENER1*, from EM.
 
 > **Note:** Removing a target listener from EM does not delete the listener from the host system.
 
@@ -224,7 +224,7 @@ You may now **proceed to the next lab**.
 
  - **Author**: Manish Garodia, Database User Assistance Development team
  - **Contributors** - Daniela Hansell, Ashwini R, Jayaprakash Subramanian <if type="hidden">Suresh Rajan, Subhash Chandra, Steven Lemme</if>
- - **Last Updated By/Date** - Manish Garodia, March 2023
+ - **Last Updated By/Date** - Manish Garodia, May 2023
 
 
 

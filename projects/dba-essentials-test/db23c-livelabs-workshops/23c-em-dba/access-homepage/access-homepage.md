@@ -222,20 +222,20 @@ In this task, you will add the CDB home page and the PDB home page to favorites 
 
 Congratulations! You have successfully completed of this workshop on *Database administration with Oracle Enterprise Manager*.
 
-In this workshop, you performed some basic administration of Oracle Database from Oracle Enterprise Manager.
+In this workshop, you performed some basic administration of Oracle Database from Oracle Enterprise Manager, such as:
  - Viewed container details from the SQL command line
  - Administered managed targets in Oracle Enterprise Manager
  - Learned how to add and remove Oracle Database and Listener as targets
  - Accessed the database instance, CDB, and PDB home pages
  - Learned how to switch between containers
  - Added and removed favorites in Oracle Enterprise Manager
- - Learned how to check the recent history
+ - Learned how to check recent history
 
 ## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
  - **Contributors**: Daniela Hansell, Ashwini R, Jayaprakash Subramanian <if type="hidden">Suresh Rajan, Steven Lemme</if>
- -   **Last Updated By/Date**: Manish Garodia, March 2023
+ -   **Last Updated By/Date**: Manish Garodia, May 2023
 
 <!--
 
