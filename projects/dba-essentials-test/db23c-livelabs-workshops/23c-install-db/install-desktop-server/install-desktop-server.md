@@ -2,16 +2,15 @@
 
 ## Introduction
 
-This lab walks you through the steps for installing the Oracle Database software, setting up Oracle home, and creating a starter database on your host using Oracle Database Setup Wizard (Database Installer).
+This lab walks you through the steps for installing the Oracle Database software, setting up Oracle home, and creating a database on your host using Oracle Database Setup Wizard (Database Installer).
 
 Estimated time: 1 hour
 
 ### Objectives
 
-Using the database installer -
- - Run the database installer from Oracle home 1
+ - Run database installer from Oracle home 1
  - Install Oracle Database with *Desktop class* in Oracle home 1
- - Run the database installer from Oracle home 2
+ - Run database installer from Oracle home 2
  - Install Oracle Database with *Server class* in Oracle home 2
 
 To install both system classes on the same host, you require different Oracle home locations.
@@ -23,17 +22,18 @@ To install both system classes on the same host, you require different Oracle ho
 This lab assumes you have -
  - An Oracle Cloud account
  - Completed all previous labs successfully
+ - Downloaded the database installer
+
+	> **Tip**: You can get the database installer from Oracle's [download site](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html). If you have reserved a Livelabs environment, then it has the installer already.
 
 Besides, you are installing Oracle Database for the first time and do not have Oracle home already configured on your host.
 
 ## Task 1: Run the database installer from Oracle home 1
 
-To install Oracle Database, the first step is to access and run the database installer.
+To install Oracle Database, the first step is to access and run the database installer. For this task, you require an installer in Oracle home 1. 
 
-In this task, you will start the installer from Oracle home 1.
-
-1.  Open a terminal window and change the current working directory to Oracle home 1.  
-    This is the directory where the installer is located.  
+1.  Open a terminal window and go to Oracle home 1 where the database installer resides.   
+	In the Livelabs environment, an installer is located in the following directory.
 
     ```
 	$ <copy>cd /u01/app/oracle/product/23.0.0/dbhome_1</copy>
@@ -56,13 +56,13 @@ The installer displays the wizard to start Oracle Database installation.
 
 With Desktop class, you can install Oracle Database in few steps with basic configuration.
 
-In this task, you will select *Desktop class* to install the database software and create a starter database, *orcl*, in Oracle home 1.
+In this task, you will select *Desktop class* to install the database software and create a database, *orcl*, in Oracle home 1.
 
-1.  The Configuration Option window opens with the default option **Create and configure a single instance database** selected. This option helps you create a starter database. 
+1.  The Configuration Option window opens with the default option **Create and configure a single instance database** selected. This option helps you create a database. 
 
     ![Create a single instance database](./../intro-install/images/db23c-common-001-create-db.png " ")
 
-    > **Note:** The *Set Up Software Only* option installs only the database software but does not create any database. You can create a container database later with Oracle DBCA. For this lab, do not select this option.  
+    > **Note:** The *Set Up Software Only* option installs only the database software but does not create any database. You can create a container database later with Oracle DBCA. For this lab, do not select this option.
 
     Click **Next**.
 
@@ -99,7 +99,8 @@ In this task, you will select *Desktop class* to install the database software a
 
     > **Note:** The first time you install Oracle Database, the installer offers you to specify the inventory location. If Oracle Database is already installed on your host, then the next time you run the database installer, it does not prompt to configure inventory. The inventory location for your database is already set.   
 
-    For this lab, do not change the default **Inventory Directory**. Select the operating system group for Oracle inventory as *dba* and click **Next**.  
+    For this lab, do not change the default **Inventory Directory**. Select the operating system group for Oracle inventory as *dba* and click **Next**.   
+	Note that *dba* is the primary group of the user who is installing the database. 
 
 1.  The installer requires you to run scripts as the `root` user to configure the database software.   
     Leave the check box **Automatically run configuration scripts** unselected and click **Next**.   
@@ -130,7 +131,7 @@ In this task, you will select *Desktop class* to install the database software a
 
     The installer displays this window because you opted to run the scripts manually in a previous step. Note that the window displays two scripts, of which *`orainstRoot.sh`* is to configure the inventory. The next time you run the database installer on the same host, it displays only one script, *`root.sh`*.
 
-1.  Open a new terminal window and run the script *`orainstRoot.sh`* located in the `oraInventory` folder.  
+1.  Open a new terminal window and run the script *`orainstRoot.sh`* located in the `oraInventory` directory.  
 
     ```
 	$ <copy>sudo /u01/app/oraInventory/orainstRoot.sh</copy>
@@ -201,10 +202,10 @@ Next, you will install Oracle Database with *Server class*. To install Oracle Da
 
 ## Task 3: Run the database installer from Oracle home 2
 
-In this task, you will start the database installer on the same host but from a different location, Oracle home 2.
+For this task, you require another database installer on the same host but in a different location, Oracle home 2. 
 
-1.  Open a terminal window and change the current working directory to Oracle home 2.  
-    This is the directory where this database installer is located.  
+1.  Open a terminal window and go to Oracle home 2 where another installer resides.   
+	In the Livelabs environment, the installer is located in the following directory.
 
     ```
 	$ <copy>cd /u01/app/oracle/product/23.0.0/dbhome_2</copy>
@@ -403,12 +404,12 @@ In this task, you will select *Server class* to install the database software an
 
 You have successfully installed and configured your Oracle Database, *orcl1*, in Oracle home 2. Click **Close** in the Finish window to exit the database installer. 
 
-In this lab, you installed Oracle Database with Desktop class in Oracle home 1 location and with Server class in Oracle home 2. You used the database installer for configuring the database software and creating databases, *orcl* and *orcl1*. You now have Oracle homes configured on your host. Next, you can create additional databases using Oracle DBCA. 
+In this lab, you installed Oracle Database with Desktop class in Oracle home 1 location and with Server class in Oracle home 2. You used the database installer for configuring the database software and creating databases, *orcl* and *orcl1*. You now have two Oracle homes configured on your host. Next, you can create additional databases using Oracle DBCA. 
 
 You may now **proceed to the next lab**.
 
 ## Acknowledgments
 
  - **Author**: Manish Garodia, Database User Assistance Development team
- - **Contributors**: <if type="hidden">Suresh Rajan, Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru, Dharma Sirnapalli, Malai Stalin</if>
- - **Last Updated By/Date**: Manish Garodia, March 2023
+ - **Contributors**: Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru
+ - **Last Updated By/Date**: Manish Garodia, July 2023

@@ -4,7 +4,7 @@
 
 This lab shows how to create an Oracle Database using Oracle Database Configuration Assistant (Oracle DBCA).
 
-If your host has only the database software, then you run Oracle DBCA and create a database. Along the database software if you have created a starter database and want to create additional databases, then you can use Oracle DBCA. Oracle DBCA helps you create databases, but it does not install the database software.
+If your host has only the database software, then you run Oracle DBCA and create a database. Along the database software if you have created an Oracle Database and want to create additional databases, then you can use Oracle DBCA. Oracle DBCA helps you create databases, but it does not install the database software.
 
 With Oracle DBCA, you can create a database in the following modes.
  - *Typical*
@@ -26,7 +26,7 @@ Estimated time: 1 hour
 This lab assumes you have -
  - An Oracle Cloud account
  - Completed all previous labs successfully
- - Installed the Oracle Database software, configured Oracle home, and created a starter database on the host
+ - Installed the Oracle Database software, configured Oracle homes, and created databases on the host
 
 ## Task 1: Start Oracle DBCA from Oracle home 1
 
@@ -307,5 +307,5 @@ In this workshop, you learned how to install the Oracle Database software on you
 ## Acknowledgments  
 
  - **Author**: Manish Garodia, Database User Assistance Development team
- - **Contributors**: <if type="hidden">Suresh Rajan, Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru, Dharma Sirnapalli, Malai Stalin</if>
- - **Last Updated By/Date**: Manish Garodia, March 2023
+ - **Contributors**: Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru
+ - **Last Updated By/Date**: Manish Garodia, July 2023
