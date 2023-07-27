@@ -30,7 +30,7 @@ Besides, you are installing Oracle Database for the first time and do not have O
 
 ## Task 1: Run the database installer from Oracle home 1
 
-To install Oracle Database, the first step is to access and run the database installer. For this task, you require an installer in Oracle home 1. 
+To install Oracle Database, the first step is to access and run the database installer. For this task, you require an installer in Oracle home 1.
 
 1.  Open a terminal window and go to Oracle home 1 where the database installer resides.   
 	In the Livelabs environment, an installer is located in the following directory.
@@ -202,7 +202,7 @@ Next, you will install Oracle Database with *Server class*. To install Oracle Da
 
 ## Task 3: Run the database installer from Oracle home 2
 
-For this task, you require another database installer on the same host but in a different location, Oracle home 2. 
+For this task, you require another database installer on the same host but in a different location, Oracle home 2.
 
 1.  Open a terminal window and go to Oracle home 2 where another installer resides.   
 	In the Livelabs environment, the installer is located in the following directory.
