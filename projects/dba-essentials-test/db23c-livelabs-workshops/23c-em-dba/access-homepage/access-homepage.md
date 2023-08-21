@@ -97,8 +97,6 @@ In this task, you will switch between containers and open the CDB, the PDB, and 
 
     ![CDB home page](./images/em-dbhome-006-cdb-home.png " ")
 
-	> **Note:** From the CDB or the PDB home page, you cannot open the database instance home page directly. However, if you have opened the database instance home page recently, then you can access it again using the **History** menu. Alternatively, you can access the database instance home page from the Databases page.
-
 1.	Click the **History** menu at the top and select the database instance name, *orcl.us.oracle.com*.   
 	The values may differ depending on the system you are using.
 
@@ -238,6 +236,9 @@ In this workshop, you performed some basic administration of Oracle Database fro
  -   **Last Updated By/Date**: Manish Garodia, May 2023
 
 <!--
+this note is incorrect. Users can open the instance home page from both PDB and CDB home pages.
+
+	> **Note:** From the CDB or the PDB home page, you cannot open the database instance home page directly. However, if you have opened the database instance home page recently, then you can access it again using the **History** menu. Alternatively, you can access the database instance home page from the Databases page.
 
  - Lab: Manage Targets - Oracle Database and Listener (Re-add the Oracle Database 21c and the listener managed targets removed at the end of this lab before proceeding).
 
