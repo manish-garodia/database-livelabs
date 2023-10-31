@@ -9,7 +9,7 @@ Estimated time: 15 minutes
 ### Objectives
 
 Perform these tasks from Oracle Enterprise Manager:
- -   Plug an unplugged PDB into the root container
+ -   Plug an unplugged PDB into another root container
  -   View the newly created PDB
 
 ### Prerequisites
@@ -26,37 +26,33 @@ This lab assumes you have -
 
 Before plugging in the PDB, ensure that you have a PDB that is unplugged. You can plug the unplugged PDB into the same or another container.
 
-In this task, you will plug the unplugged PDB, namely *PDB2*, into another root container, *ocrl1*, and create a new PDB, namely *PDB3*, in your Oracle Database.
+In this task, you will plug the unplugged PDB, namely *PDB2*, into another root container, *orcl1*, and create a new PDB, namely *PDB3*, in your Oracle Database.
 
 You can open the Databases page from the menu **Targets** &gt; **Databases**.
 
-1.  On the Database pages, click the Database Instance name, for example *orcl.us.oracle.com*, to open the instance home page.
+1.  On the Database pages, click the Database Instance name, for example *orcl1.us.oracle.com*, to open the instance home page.
 
-	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-18-view-pdbs-db-list-03.png " ")
+	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-11-dbhome1.png " ")
 
-    The green upward arrow in the **Status** field indicates that the database instance is up and running.
+    The green upward arrows in the **Status** field indicates that the database instances are up and running.
 
 	[](include:n-db-page)
 
 1.  From the **Oracle Database** menu on the instance home page, select **Provisioning** &gt; **Provision Pluggable Databases**.
 
-	 ![Provision PDBs](./../intro-pdb-mgmt-db/images/manage-pdb-15-provision-pdb1.png " ")
+	 ![Provision PDBs](./images/plug-pdb-01-provision-pdb1.png " ")
 
 1.  The Provision Pluggable Databases Console opens and displays the options for various PDB operations.  
     Scroll down and select **Create New Pluggable Databases**.
 
-	 ![Create New PDBs](./../intro-pdb-mgmt-db/images/manage-pdb-12-pdb-ops-create.png " ")
+	 ![Create New PDBs](./images/plug-pdb-02-pdb-ops-create.png " ")
 
     Click **Launch** to start the PDB plug operation.
-
-	[](include:db-login)
-
-	 ![Database Login](./../intro-pdb-mgmt-db/images/manage-pdb-13-dblogin.png " ")
 
 1.  On the PDB Creation page, select the option *Plug an Unplugged PDB*.   
     This option creates a new PDB using an unplugged PDB.
 
-	 ![Plug an Unplugged PDB](./images/plug-pdb-01-plug-pdb.png " ")
+	 ![Plug an Unplugged PDB](./images/plug-pdb-03-plug-pdb.png " ")
 
     The PDB Creation page has other options also for creating a PDB. For this task, leave the other options.
 
@@ -64,7 +60,7 @@ You can open the Databases page from the menu **Targets** &gt; **Databases**.
 
 1.  Scroll down the page. Under **Container Database Host Credentials**, select the *Named* Credential option, if not already selected.
 
-	 ![CDB Host Named Credentials](./../intro-pdb-mgmt-db/images/manage-pdb-16-host-credentials.png " ")
+	 ![CDB Host Named Credentials](./images/plug-pdb-04-host-credentials.png " ")
 
 	 [](include:n-host-creds)
 
@@ -72,7 +68,7 @@ You can open the Databases page from the menu **Targets** &gt; **Databases**.
 
 1.  On the Identification page, note that a PDB name is automatically assigned.
 
-	 ![PDB Name - PDB3](./images/plug-pdb-02-pdb3-name.png " ")
+	 ![PDB Name - PDB3](./images/plug-pdb-05-pdb3-name.png " ")
 
     For this lab, specify the following:
 
@@ -89,7 +85,7 @@ You can open the Databases page from the menu **Targets** &gt; **Databases**.
 1.  Select the **Create PDB Administrator** option to create a new administrative user account for the PDB.   
     If you want to use the administrative user account of the source PDB, then do not select this option.
 
-	 ![PDB3 Administrator Credentials](./images/plug-pdb-03-pdb3admin.png " ")
+	 ![PDB3 Administrator Credentials](./images/plug-pdb-06-pdb3admin.png " ")
 
     Enter the login credentials for the new administrative user.
     - **Username** - *PDB3ADMIN*
@@ -106,55 +102,61 @@ You can open the Databases page from the menu **Targets** &gt; **Databases**.
 
      - **Target Host File System** - to select the PDB Template from the CDB host where you are plugging in the unplugged PDB.
 	 - **Create the PDB from PDB Archive** - to plug the PDB using the archive (TAR) file with data files and the metadata XML file.
-     - **Create the PDB using PDB File Set** - to plug the PDB using the DFB file with all data files and the metadata XML file.
+     - **Create the PDB using PDB File Set** - to plug the PDB using the DBF file with all data files and the metadata XML file.
      - **Create PDB using Metadata file** - to plug the PDB using the PDB metadata XML file and the existing data files.
      - **Software Library** - to specify the component in Oracle Software Library that contains the PDB template.
 
     For this lab, the page displays the default options *Target Host File System* and *Create the PDB from PDB Archive* selected. Use these options because you unplugged the PDB in the previous lab with the same options.
 
-	For creating the PDB, you must select **PDB Archive Location**. Click the magnifier icon next to this field to browse the PDB template file.
+	For creating the PDB, you must select **PDB Archive Location**. Click the magnifier icon next to this field to browse the PDB archive file.
 
      > **Note:** Though you can type the template file name and location in this field, Oracle recommends that you use the file browser.
 
-	 ![PDB Template Location](./images/plug-pdb-04-template-location.png " ")
+	 ![PDB Template Location](./images/plug-pdb-07-template-location.png " ")
 
-    The file browser window displays the files and templates associated with the PDBs.
+    The Remote File Browser window displays the files and templates associated with the PDBs.
 
-1.  Select the PDB template, *PDB2.tar.gz*, in the file browser window.
+1.  In this window, you can select the PDB archive file. For this lab, the archive file is located in Oracle home 1. 
 
-	 ![Select PDB2 Template](./images/plug-pdb-05-select-pdb2-template.png " ")
+	In the text box next to **Path**, enter the following and click the arrow next to the text box or press **Enter** to navigate to Oracle home 1 location.
 
-    This window supports single select, which means you can select only one PDB template.
+	```
+	<copy>/u01/app/oracle/product/23.0.0/dbhome_1/assistants/dbca/templates</copy>
+	```
 
-    Under the **Properties** column, click **Show** to view the details of the selected PDB template.
+	 ![Select PDB2 Archive](./images/plug-pdb-08-select-pdb2-archive.png " ")
 
-	 ![PDB2 Template Properties](./images/plug-pdb-06-pdb2-template-properties.png " ")
+	Select the PDB archive file, *PDB2.tar.gz*. This window supports single select, which means you can select only one file. 
+
+	Under the **Properties** column, click **Show** to view the details of the selected PDB template.
+
+	 ![PDB2 Template Properties](./images/plug-pdb-09-pdb2-archive-properties.png " ")
 
     Click **OK** to close the properties window. Click **OK** again on the file browser window. The window goes back to the Identification page.
 
-1.  Verify that the **PDB Archive Location** field displays the PDB template you selected.
+1.  Verify that the **PDB Archive Location** field displays the PDB archive file you selected. 
 
-	 ![PDB Template Selected](./images/plug-pdb-07-pdb2-template-selected.png " ")
+	 ![PDB Archive Selected](./images/plug-pdb-10-pdb2-archive-selected.png " ")
 
-    Click **Next** to proceed.
+    Notice that Oracle Enterprise Manager points to PDB archive file in Oracle home 1. Click **Next** to proceed.
 
-	Oracle Enterprise Manager performs validation for PDB identification and the metadata, such as the disk space, the file validity, the administrative user, and so on. On successful validation, Oracle Enterprise Manager goes to the PDB storage options.
+	Oracle Enterprise Manager performs validation for PDB identification and the metadata, such as disk space, file validity, administrative user, and so on. On successful validation, Oracle Enterprise Manager goes to the PDB storage options.
 
 1.  You can select storage options for the PDB, such as the storage type, location to store data files and temporary files, and so on.
 
-	 ![PDB2 Storage - File System](./images/plug-pdb-08-storage-fs.png " ")
+	 ![PDB2 Storage - File System](./images/plug-pdb-11-storage-fs.png " ")
 
     For this lab, leave the default storage options.
 
 	 [](include:storage)
 
-	 ![PDB3 Temporary Storage Location](./images/plug-pdb-09-tmp-dir.png " ")
+	 ![PDB3 Temporary Storage Location](./images/plug-pdb-12-tmp-dir.png " ")
 
     Click **Next** to proceed.
 
 1.  Oracle Enterprise Manager takes a while to validate and prompts to schedule the plug operation.
 
-	 ![Schedule PDB2 Plug Operation](./images/plug-pdb-10-pdb3-schedule.png " ")
+	 ![Schedule PDB2 Plug Operation](./images/plug-pdb-13-pdb3-schedule.png " ")
 
     Specify the following:
 
@@ -171,7 +173,7 @@ You can open the Databases page from the menu **Targets** &gt; **Databases**.
 
 1.  The Review page displays a summary of the PDB plug operation. For example, the container database name, the PDB name which you entered, the host details, the storage options, and so on.
 
-	 ![Plug PDB2 Review Summary](./images/plug-pdb-11-pdb3-review.png " ")
+	 ![Plug PDB2 Review Summary](./images/plug-pdb-14-pdb3-review.png " ")
 
     Verify the following on this page:
      - **PDB Creation Options** - *PDB Archive*
@@ -182,7 +184,7 @@ You can open the Databases page from the menu **Targets** &gt; **Databases**.
 
 1.  Oracle Enterprise Manager displays a confirmation window.
 
-	 ![Confirm Plugging PDB2](./images/plug-pdb-12-pdb3-submit-confirm.png " ")
+	 ![Confirm Plugging PDB2](./images/plug-pdb-15-pdb3-submit-confirm.png " ")
 
     Click **View Execution Details** to open the Procedure Activity page and view the status of the procedure.
 
@@ -190,11 +192,11 @@ You can open the Databases page from the menu **Targets** &gt; **Databases**.
 
     The Procedure Activity page contains the detailed steps of the PDB create operation. After the PDB is created, the **Status** field changes from *Running* to *Succeeded*.
 
-	 ![Plug PDB2 Procedure Activity](./images/plug-pdb-13-pdb3-procedure-activity.png " ")
+	 ![Plug PDB2 Procedure Activity](./images/plug-pdb-16-pdb3-procedure-activity.png " ")
 
 	[](include:provision)
 
-You have created *PDB3* by plugging in an unplugged PDB into the another CDB. The PDB is open in `Read/Write` mode. You can view this PDB in Oracle Enterprise Manager displayed under the database instance.
+You have created *PDB3* by plugging in an unplugged PDB into another CDB. The PDB is open in `Read/Write` mode. You can view this PDB in Oracle Enterprise Manager displayed under the database instance.
 
 ## Task 2: View the newly created PDB
 
@@ -204,15 +206,15 @@ In this task, you will view the new PDB, namely *PDB3*, in your database.
 
 1.  From the **Targets** menu, select **Databases** to open the Databases page.
 
-	 ![Target menu - Databases](./images/plug-pdb-14-target-menu.png " ")
+	 ![Target menu - Databases](./../intro-pdb-mgmt-db/images/manage-pdb-15-target-menu.png " ")
 
-1.  Click the expand/collapse triangle next to the instance name, for example *orcl.us.oracle.com*, where you created the PDB.
+1.  Click the expand/collapse triangle next to the instance name, for example *orcl1.us.oracle.com*, where you created the PDB.
 
-	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-19-view-pdbs-db-list-04.png " ")
+	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-17-view-pdbs-db-list-05.png " ")
 
-    The Databases page displays the new PDB, *PDB3*, in the database instance along with the existing PDB, *ORCL1PDB*. The green upward arrows in the **Status** field indicate that the database instance and the PDBs are up and running.
+    The Databases page displays the new PDB, *PDB3*, in the database instance along with the existing PDB, *ORCL1PDB*. The green upward arrows in the **Status** field indicate that the database instances and the PDBs are up and running.
 
-In this lab, you learned how to plug an unplugged PDB into another root container. Similarly, you can plug PDBs into a remote container.
+In this lab, you learned how to plug an unplugged PDB into another root container. Similarly, you can plug PDBs into the same or a remote container.
 
 You may now **proceed to the next lab**.
 
@@ -220,4 +222,13 @@ You may now **proceed to the next lab**.
 
  -   **Author**: Manish Garodia, Database User Assistance Development team
  -   **Contributors**: <if type="hidden">Suresh Rajan, Ashwini R, Jayaprakash Subramanian</if>
- -   **Last Updated By/Date**: Manish Garodia, August 2023
+ -   **Last Updated By/Date**: Manish Garodia, September 2023
+
+<!--
+
+	[](include:db-login)
+
+	 ![Database Login](./../intro-pdb-mgmt-db/images/manage-pdb-13-dblogin.png " ")
+
+
+-->

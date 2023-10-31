@@ -37,11 +37,11 @@ In this task, you will create a new PDB, namely *PDB1*, in the CDB from the seed
 
 1.  From the **Targets** menu, select **Databases** to open the Databases page.
 
-	 ![Target menu - Databases](./images/manage-pdb-01-target-menu-db.png " ")
+	 ![Target menu - Databases](./images/create-pdb-01-target-menu-db.png " ")
 
 1.  The Databases page displays the discovered database system targets, that is, the database instances on the host and the PDBs in each instance.
 
-	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-11-dbhome.png " ")
+	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-11-dbhome1.png " ")
 
     The green upward arrows in the **Status** field indicate that the database instances are up and running.
 
@@ -51,22 +51,22 @@ In this task, you will create a new PDB, namely *PDB1*, in the CDB from the seed
 
 1.  From the **Oracle Database** menu on the instance home page, select **Provisioning** &gt; **Provision Pluggable Databases**.
 
-	 ![Provision PDB menu](./../intro-pdb-mgmt-db/images/manage-pdb-15-provision-pdb1.png " ")
+	 ![Provision PDB menu](./images/create-pdb-02-provision-pdb-orcl.png " ")
 
 1.  The Provision Pluggable Databases Console opens and displays the options for various PDB operations.   
     Scroll down and select **Create New Pluggable Databases**.
 
-	 ![Provision PDB options](./../intro-pdb-mgmt-db/images/manage-pdb-12-pdb-ops-create.png " ")
+	 ![Provision PDB options](./images/create-pdb-03-pdb-ops-create.png " ")
 
     Click **Launch** to start the PDB create operation.
 
 	[](include:db-login)
 
-	 ![Database login](./../intro-pdb-mgmt-db/images/manage-pdb-13-dblogin.png " ")
+	 ![Database login](./../intro-pdb-mgmt-db/images/manage-pdb-13-dblogin-orcl.png " ")
 
 1.  Verify that the PDB Creation page displays the default option, *Create a New PDB*, selected. This option creates a new PDB from the seed.
 
-	 ![Create a new PDB](./images/create-pdb-03-create-pdb.png " ")
+	 ![Create a new PDB](./images/create-pdb-04-create-pdb.png " ")
 
     The PDB Creation page has other options also for creating PDBs. For this task, ignore the other options.
 
@@ -74,7 +74,7 @@ In this task, you will create a new PDB, namely *PDB1*, in the CDB from the seed
 
 1.  Scroll down the page. Under **Container Database Host Credentials**, select the *Named* Credential option, if not already selected.
 
-	 ![CDB Host Named Credentials](./../intro-pdb-mgmt-db/images/manage-pdb-16-host-credentials.png " ")
+	 ![CDB Host Named Credentials](./images/create-pdb-05-host-credentials.png " ")
 
 	[](include:n-host-creds)
 
@@ -82,7 +82,7 @@ In this task, you will create a new PDB, namely *PDB1*, in the CDB from the seed
 
 1.  On the Identification page, note that a PDB name is automatically assigned.
 
-	 ![PDB Name - PDB1](./images/create-pdb-05-pdb1-name.png " ")
+	 ![PDB Name - PDB1](./images/create-pdb-06-pdb1-name.png " ")
 
     For this lab, specify the following:
      - **PDB Name** - Delete the default text and enter a unique name for the PDB you are creating. For this task, enter *PDB1*.
@@ -93,7 +93,7 @@ In this task, you will create a new PDB, namely *PDB1*, in the CDB from the seed
 
 1.  Enter the login credentials for the administrative user.
 
-	 ![PDB1 Administrator Credentials](./images/create-pdb-06-pdb1admin.png " ")
+	 ![PDB1 Administrator Credentials](./images/create-pdb-07-pdb1admin.png " ")
 
     Specify the following:
      - **Username** - *PDBADMIN*   
@@ -108,19 +108,19 @@ In this task, you will create a new PDB, namely *PDB1*, in the CDB from the seed
 
 1.  You can select storage options for the PDB, such as the storage type, location to store data files and temporary files, and so on.
 
-	 ![PDB1 Storage - File System](./images/create-pdb-07-storage-fs.png " ")
+	 ![PDB1 Storage - File System](./images/create-pdb-08-storage-fs.png " ")
 
     For this lab, leave the default storage options.
 
 	 [](include:storage)
 
-	 ![PDB1 Temporary Storage Location](./images/create-pdb-08-storage-tmp-lib.png " ")
+	 ![PDB1 Temporary Storage Location](./images/create-pdb-09-storage-tmp-lib.png " ")
 
     Click **Next** to proceed.
 
 1.  Oracle Enterprise Manager takes a while to validate and prompts to schedule the create operation.
 
-	 ![Schedule PDB1 Create operation](./images/create-pdb-09-pdb1-schedule.png " ")
+	 ![Schedule PDB1 Create operation](./images/create-pdb-10-pdb1-schedule.png " ")
 
     Specify the following:
 
@@ -137,14 +137,14 @@ In this task, you will create a new PDB, namely *PDB1*, in the CDB from the seed
 
 1.  The Review page displays a summary of the PDB create operation. For example, the container database name, the PDB name that you entered, the host details, the storage options, and so on.
 
-	 ![Create PDB1 Review Summary](./images/create-pdb-10-pdb1-review.png " ")
+	 ![Create PDB1 Review Summary](./images/create-pdb-11-pdb1-review.png " ")
 
     Verify that the **PDB Creation Options** field displays *SEED PDB*.   
     Review the details and click **Submit** to start creating the PDB.
 
 1.  Oracle Enterprise Manager displays a confirmation message. 
 
-	 ![Confirm creating PDB1](./images/create-pdb-11-pdb1-create-confirm.png " ")
+	 ![Confirm creating PDB1](./images/create-pdb-12-pdb1-create-confirm.png " ")
 
     Click **View Execution Details** to open the Procedure Activity page and view the status of the procedure.
 
@@ -152,7 +152,7 @@ In this task, you will create a new PDB, namely *PDB1*, in the CDB from the seed
 
 	The Procedure Activity page contains detailed steps of the PDB operation. After the PDB is created, the **Status** field changes from *Running* to *Succeeded*.
 
-	 ![Create PDB1 Procedure Activity](./images/create-pdb-12-procedure-activity.png " ")
+	 ![Create PDB1 Procedure Activity](./images/create-pdb-13-procedure-activity.png " ")
 
 	[](include:provision)
 
@@ -166,11 +166,11 @@ In this task, you will clone a PDB using the full clone method to create a new P
 
 1.  From the **Targets** menu, select **Databases** to open the Databases page.
 
-	 ![Target menu - Databases](./../intro-pdb-mgmt-db/images/manage-pdb-17-target-menu.png " ")
+	 ![Target menu - Databases](./../intro-pdb-mgmt-db/images/manage-pdb-15-target-menu.png " ")
 
 1.  Click the database instance name, for example *orcl.us.oracle.com*, to open the instance home page. 
 
-	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-11-dbhome.png " ")
+	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-12-dbhome2.png " ")
 
 1.  From the **Oracle Database** menu, select **Provisioning** &gt; **Provision Pluggable Databases**.
 
@@ -178,13 +178,13 @@ In this task, you will clone a PDB using the full clone method to create a new P
 
 1.  Under PDB Operations select **Create New Pluggable Databases**.
 
-	 ![Create new PDBs](./../intro-pdb-mgmt-db/images/manage-pdb-12-pdb-ops-create.png " ")
+	 ![Create new PDBs](./images/create-pdb-03-pdb-ops-create.png " ")
 
     Click **Launch** to start the PDB clone operation.
 
 	[](include:n-db-login-opt)
 
-1.  For PDB Creation Options, select *Clone an Existing PDB* and then select *Full Clone*, if not already selected.
+1.  For PDB Creation Options, select *Clone an Existing PDB* and then select *Full Clone*.
 
     For creating a clone, you require a **Source PDB**. Click the magnifier icon next to this field to search and select the source PDB.
 
@@ -194,7 +194,7 @@ In this task, you will clone a PDB using the full clone method to create a new P
 
     The PDB Creation page also has other options for creating a PDB. For this task, ignore the other options. 
 
-1.  Oracle Enterprise Manager opens a Search and Select window. Select the source PDB that you want to clone.
+1.  Oracle Enterprise Manager opens a Search and Select window. It displays all PDBs from your database instances. Select the source PDB that you want to clone.
 
 	 ![Select source PDB](./images/clone-pdb-03-select-source-pdb.png " ")
 
@@ -285,11 +285,11 @@ In this task, you will view the new PDBs, namely *PDB1* and *PDB2*, in your data
 
 1.  From the **Targets** menu, select **Databases** to open the Databases page.
 
-	 ![Target menu - Databases](./../intro-pdb-mgmt-db/images/manage-pdb-17-target-menu.png " ")
+	 ![Target menu - Databases](./../intro-pdb-mgmt-db/images/manage-pdb-15-target-menu.png " ")
 
 1.  Click the expand/collapse triangle next to the instance name, for example *orcl.us.oracle.com*, where you created the PDBs.
 
-	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-18-view-pdbs-db-list-02.png " ")
+	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-16-view-pdbs-db-list-02.png " ")
 
     The Databases page displays the new PDBs, namely *PDB1* and *PDB2*, along with the existing PDB, *ORCLPDB*. The green upward arrows in the **Status** field indicate that the database instance and the PDBs are up and running. 
 
@@ -301,4 +301,4 @@ You may now **proceed to the next lab**.
 
  -   **Author**: Manish Garodia, Database User Assistance Development team
  -   **Contributors**: <if type="hidden">Suresh Rajan, Ashwini R, Jayaprakash Subramanian</if>
- -   **Last Updated By/Date**: Manish Garodia, August 2023
+ -   **Last Updated By/Date**: Manish Garodia, September 2023

@@ -45,12 +45,12 @@ The following image illustrates the activities that you can perform for managing
 
 In particular, this workshop aims at explaining the following for PDB management:
  - Different ways of creating new PDBs in a CDB
- - How to remove PDBs from the CDB
+ - How to remove PDBs from CDB
  - Administrative actions, such as close and open PDBs
 
 In this workshop, you will perform these activities using Oracle Enterprise Manager. However, you can also do these from the SQL prompt and from EM CLI.
 
-See the [Learn more](?lab=intro-pdb-mgmt-odb#Learnmore) section at the bottom of this lab for more information.
+See the [Learn more](?lab=intro-pdb-mgmt-odb#Learnmore) section in this lab for more information.
 
 ## PDB lifecycle management and administration
 
@@ -64,7 +64,7 @@ For creating PDBs, this workshop will walk you through the following:
 
  - **Option 1**: Create a PDB from scratch 
  - **Option 2**: Clone a source PDB in the local container
- - **Option 3**: Plug an unplugged PDB into the container
+ - **Option 3**: Plug an unplugged PDB into another container
 
 You will find more information about these concepts, that is, source PDB, local container, and unplugged PDB, in the subsequent sections.  
 
@@ -84,7 +84,7 @@ See [Creating a new PDB](https://docs.oracle.com/en/enterprise-manager/cloud-con
 
 **Clone a source PDB in local container**
 
-You can create PDBs in the container by cloning an existing PDB, which is the source PDB. This method copies the files that belong to the source PDB to a new location and associates the copied files with the new PDB.
+You can create PDBs in a container by cloning an existing PDB, which is the source PDB. This method copies the files that belong to the source PDB to a new location and associates the copied files with the new PDB.
 
 ![Clone local PDB](./images/manage-pdb-04-clone-local-pdb.png " ")
 
@@ -101,24 +101,24 @@ See [Cloning a PDB](https://docs.oracle.com/en/enterprise-manager/cloud-control/
 
 You can clone a PDB in Oracle Database using the following methods:
 
- - **Full Clone**
+ - **Full Clone**  
 	With this method, you can clone a PDB only to the source CDB, that is, the CDB where you are cloning the PDB. It is ideal for load testing, and is useful for long-term usage. However, this method takes longer and requires a large amount of space. 
 
- - **Snap Clone**
+ - **Snap Clone**  
 	Users often require clones of production databases for development and testing purposes. It can be difficult and time-consuming to create clones, especially if the databases are huge. With this method, you can create thin clones of large databases with little space in less time.
 
 	> **Note:** Snap Clone is a storage agnostic approach for creating quick and space-efficient clones of huge production databases. This method is ideal for functional testing and is useful for short-term purposes. The cloning process is quick and the clone PDB occupies less space. 
 
 **Plug an unplugged PDB**
 
-You can create a PDB in the container by plugging in an unplugged PDB. 
+You can create a PDB in a container by plugging in an unplugged PDB. 
 
 This method uses one of the following:
 
- - An unplugged PDB in the form of an *XML* metadata file.
+ - An unplugged PDB in the form of an *XML* metadata file.  
     This file describes the PDB and the files associated with the PDB.
 
- - An unplugged PDB in the form of a *.PDB* file.
+ - An unplugged PDB in the form of a *.PDB* file.  
     This file is a compressed archive of the XML file that describes the PDB and the files used by the PDB (such as data files and wallet file). Using this format, you can copy a single, compressed `.PDB` file (instead of multiple files) to a new location to plug the PDB into a CDB.
 
 You will find more information about unplugged PDBs in the subsequent section. 
@@ -142,7 +142,7 @@ To remove a PDB from a CDB, you can:
 
 **Unplug a PDB**
 
-A PDB is usable only when you plug it into a CDB. Unplugging a PDB disassociates the PDB from a CDB.
+A PDB is usable only when you plug it into a CDB. Unplugging a PDB disassociates the PDB from the CDB.
 
 You can unplug a PDB from a source container and plug it into a destination container on the local or a remote system. This process helps in moving PDBs across containers without losing data. 
 
@@ -187,13 +187,13 @@ From Oracle Enterprise Manager, you can perform various administrative activitie
 
 You can turn a PDB into the following states:
 
- - **Open**
+ - **Open**  
     The PDB is in read/write mode. Users can connect to the PDB, run queries, perform transactions, and generate redo logs. 
 
- - **Open Read-Only**
+ - **Open Read-Only**  
     The PDB is in read-only mode. You can connect to the PDB and run queries but cannot perform transactions or make changes to the database, such as create, insert, update, or delete operations.
 
- - **Close**
+ - **Close**  
     This is similar to shutdown mode. The PDB is not accessible for any queries or transactions.
 
 The following image illustrates the PDB open operation.
@@ -232,4 +232,4 @@ Click the next lab to **Get started**. 
 
  - **Author** - Manish Garodia, Database User Assistance Development team
  - **Contributors** - <if type="hidden">Suresh Rajan</if>
- - **Last Updated By/Date** - Manish Garodia, August 2023
+ - **Last Updated By/Date** - Manish Garodia, October 2023

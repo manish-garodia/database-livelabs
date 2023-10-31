@@ -35,9 +35,9 @@ In this task, you will delete the PDB, namely *PDB1*, from the root container us
 
 1.  On the Database pages, click the database instance name, for example *orcl.us.oracle.com*, to open the instance home page.
 
-	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-18-view-pdbs-db-list-02.png " ")
+	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-16-view-pdbs-db-list-02.png " ")
 
-    The green upward arrow in the **Status** field indicates that the database instance is up and running.
+    The green upward arrows in the **Status** field indicate that the database instance and the PDBs are up and running.
 
 	[](include:n-db-page)
 
@@ -54,7 +54,7 @@ In this task, you will delete the PDB, namely *PDB1*, from the root container us
 
 	[](include:db-login)
 
-	 ![Database Login](./../intro-pdb-mgmt-db/images/manage-pdb-13-dblogin.png " ")
+	 ![Database Login](./../intro-pdb-mgmt-db/images/manage-pdb-13-dblogin-orcl.png " ")
 
 1.  You can select one or more PDBs to delete. Click **Add** to search for the target PDB and add it to the delete list.
 
@@ -135,11 +135,11 @@ In this task, you will unplug the PDB, namely *PDB2*, from the root container u
 
 1.  From the **Targets** menu, select **Databases** to open the Databases page.
 
-	 ![Target menu - Databases](./../intro-pdb-mgmt-db/images/manage-pdb-17-target-menu.png " ")
+	 ![Target menu - Databases](./../intro-pdb-mgmt-db/images/manage-pdb-15-target-menu.png " ")
 
 1.  Click the database instance name, for example *orcl.us.oracle.com*, to open the instance home page.
 
-	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-11-dbhome.png " ")
+	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-12-dbhome2.png " ")
 
 1.  From the **Oracle Database** menu, select **Provisioning** &gt; **Provision Pluggable Databases**.
 
@@ -163,7 +163,7 @@ In this task, you will unplug the PDB, namely *PDB2*, from the root container u
 
 	 ![Search PDB2](./images/unplug-pdb-04-search-pdb2.png " ")
 
-    This window support single select, which means you can select only one target PDB.   
+    This window supports single select, which means you can select only one target PDB.   
     For this task, select *PDB2* and click **Select** to proceed. The window goes back to the Select PDB page.
 
 1.  Verify that the **Pluggable Database** field displays the PDB name you selected.
@@ -185,7 +185,7 @@ In this task, you will unplug the PDB, namely *PDB2*, from the root container u
 
 	 ![PDB Temporary Storage Location](./images/unplug-pdb-07-tmp-dir.png " ")
 
-     > **Note:** The PDB unplug operation generates a PDB template, which can be a PDB archive, a PDB file set, or a PDB Metadata file. You can select the location to store the PDB template as File System or Software Library. The Software Library option helps plug in PDBs from a central location.
+     > **Note:** The PDB unplug operation generates a PDB template, which can be a PDB archive, a PDB file set, or a PDB metadata file. You can select the location to store the PDB template as File System or Software Library. The Software Library option helps plug in PDBs from a central location.
 
 1.  Oracle Enterprise Manager prompts to schedule the unplug operation.
 
@@ -230,11 +230,11 @@ In this task, you will verify that you have removed the PDBs, namely *PDB1* an
 
 1.  From the **Targets** menu, select **Databases** to open the Databases page.
 
-	 ![Target menu - Databases](./../intro-pdb-mgmt-db/images/manage-pdb-17-target-menu.png " ")
+	 ![Target menu - Databases](./../intro-pdb-mgmt-db/images/manage-pdb-15-target-menu.png " ")
 
 1.  Click the expand/collapse triangle next to the instance name, for example *orcl.us.oracle.com*, from where you removed the PDBs.
 
-	 ![Databases home page](./../intro-pdb-mgmt-db/images/manage-pdb-19-view-pdbs-db-list-03.png " ")
+	 ![Databases home page](./images/remove-pdb-01-view-pdbs-db-list.png " ")
 
     Note that the database instance does not display *PDB1* and *PDB2* that you removed. The list now displays only one PDB, *ORCLPDB*.
 
@@ -246,4 +246,4 @@ You may now **proceed to the next lab**.
 
  -   **Author**: Manish Garodia, Database User Assistance Development team
  -   **Contributors**: <if type="hidden">Suresh Rajan, Ashwini R, Jayaprakash Subramanian</if>
- -   **Last Updated By/Date**: Manish Garodia, August 2023
+ -   **Last Updated By/Date**: Manish Garodia, September 2023

@@ -7,6 +7,6 @@
 
     - **Location** - Leave the default location to store the data files.
 
-    - **Temporary Working Directory** - You can specify a location where to store the temporary files generated during the PDB creation process. For this lab, leave the default location, */tmp*.
+    - **Temporary Working Directory** - You can specify a location to store the temporary files generated during the PDB creation process. For this lab, leave the default location, */tmp*.
 
     - **Post-Creation Scripts** - Oracle Database gives an option to run a custom SQL script after creating the PDB. For this lab, do not select this option. 
