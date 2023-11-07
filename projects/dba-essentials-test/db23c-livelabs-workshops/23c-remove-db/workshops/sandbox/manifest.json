@@ -1,0 +1,36 @@
+{
+  "workshoptitle": "DBA Essentials - Remove Oracle Database software and delete Oracle Database 23c",
+  "help": "livelabs-help-db_us@oracle.com",
+  "tutorials": [
+    {
+      "title": "Introduction",
+      "description": "The workshop on Oracle Database 21c Uninstallation.",
+      "publisheddate": "11/07/2023",
+      "filename": "./../../intro-deinstall/intro-deinstall.md"
+    },
+    {
+      "title": "Lab 1: Verify compute instance setup",
+      "description": "Verify Setup of compute instance",
+      "publisheddate": "09/29/2022",
+      "filename": "https://oracle-livelabs.github.io/common/labs/verify-compute/verify-compute-novnc.md"
+    },
+    {
+      "title": "Lab 2: Delete Oracle Database",
+      "description": "Only delete the database from your host but retain Oracle Database software and Oracle home.",
+      "publisheddate": "11/07/2023",
+      "filename": "./../../delete-db/delete-db.md"
+    },
+    {
+      "title": "Lab 3: Deinstall Oracle Database software and remove Oracle home",
+      "description": "How to remove Oracle Database software and delete Oracle Database and its components from your host.",
+      "publisheddate": "11/07/2023",
+      "filename": "./../../deinstall-db/deinstall-db.md"
+    },
+    {
+      "title": "Need help?",
+      "description": "Solutions to common problems and directions for receiving live help",
+      "publisheddate": "08/20/2022",
+      "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-livelabs.md"
+    }
+  ]
+}
