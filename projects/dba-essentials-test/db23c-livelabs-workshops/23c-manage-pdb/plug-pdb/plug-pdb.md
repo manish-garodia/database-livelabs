@@ -20,7 +20,7 @@ This lab assumes you have -
  -   Completed all previous labs successfully
  -   Logged in to Oracle Enterprise Manager in a web browser as *sysman*
 
-> **Note:** This lab contains many system-specific values. Such details might vary depending on the system you are using.
+> **Note:** This lab contains system-specific values and paths. These details might vary depending on the system you are using.
 
 ## Task 1: Plug an unplugged PDB into the root container
 
