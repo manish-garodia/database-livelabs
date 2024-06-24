@@ -9,14 +9,14 @@ Estimated workshop time: 45 mins
 ### Objectives
 
 In this workshop, you will do the following:
- - Delete an Oracle Database but retain Oracle home
- - Remove the database including the database software, its components, and Oracle home
+ - Delete an Oracle Database but retain Oracle home.
+ - Remove the database including the database software, its components, and Oracle home.
 
 ### Prerequisites
 
 This lab assumes you have -
  - An Oracle Cloud account
- - Oracle Database installed
+ - Oracle Database installed on your host
 
 ## About database removal
 
@@ -30,7 +30,7 @@ You can do the following:
 
 > **Note:**  This workshop uses two Oracle homes for demonstration purpose. It is not a requirement for Oracle Database to have two homes. You can delete or deinstall an Oracle Database from a single Oracle home. 
 
-## Oracle DBCA
+## Oracle Database Configuration Assistant (Oracle DBCA)
 
 Oracle DBCA is a tool that helps you manage the databases. You can perform various operations, such as create databases, configure existing databases, delete databases, and so on. 
 
@@ -54,25 +54,24 @@ The `deinstall` command resides in Oracle home under the subdirectory `deinstal
 For example -
 
 ```
-$ /opt/oracle/product/21c/dbhome_1/deinstall
+$ /u01/app/oracle/product/23.4.0/dbhome_1/deinstall
 ```
 
 The path may differ depending on the system you are using.
 
 If the database software in Oracle home is not running for any reason (let's say, due to an unsuccessful installation), then `deinstall` cannot determine the configuration. You must provide all the configuration details either interactively or in a response file. A response file contains configuration values for Oracle home that `deinstall` uses.
 
-> **Note:** If you have a standalone Oracle Database on a node in a cluster, and if multiple databases have the same Global Database Name (GDN), then you cannot use `deinstall` to remove only one database.
+> **Note**: If you have a standalone Oracle Database on a node in a cluster, and if multiple databases have the same Global Database Name (GDN), then you cannot use `deinstall` to remove only one database.
 
 The location of the `deinstall` log files depends on the number of Oracle homes on the host. For a single Oracle home, `deinstall` removes the *oraInventory* folder and saves the log files in the */tmp* directory.
 
 ### For multiple Oracle homes
 
-
-If the host contains more than one Oracle home, then the `deinstall` command responds as follows:
+If the host contains more than one Oracle home, then the `deinstall` command functions as follows:
 
  - Does not delete the inventory location
  - Saves the log files in the *oraInventory* folder
- - Removes the details of Oracle home, for example *OraDB21Home1*, from the `inventory.xml` file
+ - Removes details of the Oracle home from where you run `deinstall`, for example *OraDB23Home1*, from the `inventory.xml` file
 
 If you have removed all other Oracle homes from your host, then `deinstall` deletes the inventory directory also.
 
@@ -89,22 +88,21 @@ The `deinstall` command removes the following files and directory contents in t
 
 This is true for a single instance Oracle Database where the central inventory, `oraInventory`, contains no other registered Oracle homes besides the Oracle home that you are unconfiguring and removing.
 
-Oracle recommends that you configure your installations using an *Optimal Flexible Architecture (OFA)* configuration, and that you use the Oracle base and Oracle home locations exclusively for the Oracle software. If you have any user data in the Oracle base locations for the user account who owns the database software, then `deinstall` deletes this data.
+Oracle recommends that you configure your installations using an *Optimal Flexible Architecture (OFA)* guidelines, and that you use the Oracle base and Oracle home locations exclusively for the Oracle software. If you have any user data in the Oracle base locations for the user account who owns the database software, then `deinstall` deletes this data.
 
 > **Note**: The `deinstall` command deletes Oracle Database configuration files, user data, and fast recovery area (FRA) files even if they are located outside of the Oracle base directory path. 
 
-Click the next lab to **Get Started**.
+Click the next lab to **Get started**.
 
 ## Learn more
 
- - [Oracle Database 23c Installation Guide](https://docs.oracle.com/en/database/oracle/oracle-database/23/xeinl/index.html)
+ - [Removing Oracle Database Software](https://docs.oracle.com/en/database/oracle/oracle-database/23/ladbi/removing-oracle-database-software.html#GUID-5619EBF0-C89E-4349-AE6F-A8F8B3B06BD1)
 <if type="hidden">
- - [Blog on Introducing Oracle Database 21c](https://blogs.oracle.com/database/introducing-oracle-database-21c)
- - Workshop on how to [Install Oracle Database 21c on OCI Compute](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=871)
+ - Workshop on how to [Install Oracle Database 23ai on OCI Compute](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=871)
 </if>
 
 ## Acknowledgments
 
- - **Author** - Manish Garodia, Database User Assistance Development team
- - **Contributors** - <if type="hidden">Subrahmanyam Kodavaluru, Suresh Rajan, Prakash Jashnani, Malai Stalin, Subhash Chandra, Dharma Sirnapalli</if>
- - **Last Updated By/Date** - Manish Garodia, November 2023
+ - **Author** - Manish Garodia, Database User Assistance Development
+ - **Contributors** - Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru<if type="hidden">, Malai Stalin, Dharma Sirnapalli</if>
+ - **Last Updated By/Date** - Manish Garodia, June 2024

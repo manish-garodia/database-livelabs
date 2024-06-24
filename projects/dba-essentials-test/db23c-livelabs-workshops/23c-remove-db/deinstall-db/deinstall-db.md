@@ -10,7 +10,7 @@ Estimated time: 10 minutes
 
 Remove the Oracle Database software, delete Oracle Database, and remove *Oracle home 2* from your host system using the *deinstall* command.
 
-> **Note:** [](include:user-data)
+> **Note**: [](include:user-data)
 
 ### Prerequisites
 
@@ -21,22 +21,22 @@ This lab assumes you have -
 
 You are logged in to your host as *oracle*, the user who can remove Oracle Database.
 
-> **Note:** [](include:example-values)
+> **Note**: [](include:example-values)
 
 ## Task 1: Remove Oracle Database software and delete Oracle Database
 
-In this task, you will remove the database, *CDB2*, from Oracle home 2 using the *`deinstall`* command.
+In this task, you will remove the database, *orcl1*, from Oracle home 2 using the *`deinstall`* command.
 
-> **Note:** The `deinstall` command deletes Oracle Database configuration files, user data, and fast recovery area (FRA) files even if they are outside the Oracle base directory.
+> **Note**: The `deinstall` command deletes Oracle Database configuration files, user data, and fast recovery area (FRA) files even if they are outside the Oracle base directory.
 
-1. Open a terminal window and go to Oracle home 2 where the command resides.
+1. Open a terminal window and go to Oracle home 2 where the `deinstall` command resides.   
 	In the Livelabs environment, `deinstall` resides in the following directory.
 
     ```
-	$ <copy>cd /opt/oracle/product/23c/dbhome_2/deinstall</copy>
+	$ <copy>cd /u01/app/oracle/product/23.4.0/dbhome_2/deinstall</copy>
 	```
 
-	> **Caution:** Do not shut down the database or stop any processes for the database that you are removing before running `deinstall`.
+	> **Caution**: Do not shut down the database or stop any processes for the database that you are removing before running `deinstall`.
 
 1.  Run this command to start the deinstallation process.  
 
@@ -44,14 +44,14 @@ In this task, you will remove the database, *CDB2*, from Oracle home 2 using the
 	$ <copy>./deinstall</copy>
 	```
 
-    > **Note:** For every step, `deinstall` displays the values in square brackets `[ ]`. You can press **Enter** to use the default or specify a different value manually. 
+    > **Note**: For every step, `deinstall` displays the values in square brackets `[ ]`. You can press **Enter** to use the default or specify a different value manually. 
 
-	## Output
+	It returns the following.
 
 	```
 	Checking for required files and bootstrapping ...
 	Please wait ...
-	Location of logs /opt/oracle/oraInventory/logs/
+	Location of logs /u01/app/oracle/oraInventory/logs/
 
 	############ ORACLE DECONFIG TOOL START ############
 
@@ -60,21 +60,17 @@ In this task, you will remove the database, *CDB2*, from Oracle home 2 using the
 	## [START] Install check configuration ##
 
 
-	Checking for existence of the Oracle home location /opt/oracle/product/23c/dbhome_2
+	Checking for existence of the Oracle home location /u01/app/oracle/product/23.4.0/dbhome_2
 	Oracle Home type selected for deinstall is: Oracle Single Instance Database
-	Oracle Base selected for deinstall is: /opt/oracle
-	Checking for existence of central inventory location /opt/oracle/oraInventory
+	Oracle Base selected for deinstall is: /u01/app/oracle
+	Checking for existence of central inventory location /u01/app/oracle/oraInventory
 
 	## [END] Install check configuration ##
 
-	## [START] GIMR check configuration ##
-	Checking for existence of GIMR
-	GIMR Home not detected
-	## [END] GIMR check configuration ##
 
 	Network Configuration check config START
 
-	Network de-configuration trace file location: /opt/oracle/oraInventory/logs/netdc_check2023-11-02_10-32-43AM.log
+	Network de-configuration trace file location: /u01/app/oracle/oraInventory/logs/netdc_check20XX-06-17_10-32-43AM.log
 	```
 
 1.  The window prompts to specify the listeners that you want to unconfigure.
@@ -86,52 +82,52 @@ In this task, you will remove the database, *CDB2*, from Oracle home 2 using the
 
     For this task, press **Enter** to remove the current listener.
 
-	## Output
+	It returns the following.
 
 	```
 	Network Configuration check config END
 
 	Database Check Configuration START
 
-	Database de-configuration trace file location: /opt/oracle/oraInventory/logs/databasedc_check2023-11-02_10-35-37AM.log
+	Database de-configuration trace file location: /u01/app/oracle/oraInventory/logs/databasedc_check20XX-06-17_10-35-37AM.log
 	```
 
 1. The window provides an option to specify the database instances that you want to remove from the current Oracle home. 
 
-    > **Tip:** If you have multiple database instances in an Oracle home, then you can either remove a specific database instance or remove all database instances together using `deinstall`. To specify multiple databases, enter the database name followed by a command.
+    > **Tip**: If you have multiple database instances in an Oracle home, then you can either remove a specific database instance or remove all database instances together using `deinstall`. To specify multiple databases, enter the database name followed by a comma.
 
 	```
 	Use comma as separator when specifying list of values as input
 
-	Specify the list of database names that are configured in this Oracle home [CDB2]: **Enter**
+	Specify the list of database names that are configured in this Oracle home [orcl1]: **Enter**
 	```
 
 	For this task, press **Enter** to remove the default database instance from Oracle home 2.
 
-	## Output
+	It returns the following.
 
 	```
-	###### For Database 'CDB2' ######
+	###### For Database 'orcl1' ######
 
 	Single Instance Database
-	The diagnostic destination location of the database: /opt/oracle/diag/rdbms/cdb2
+	The diagnostic destination location of the database: /u01/app/oracle/diag/rdbms/orcl1
 	Storage type used by the Database: FS
-	Database file location: /opt/oracle/oradata/CDB2,/opt/oracle/recovery_area/CDB2
-	Fast recovery area location: /opt/oracle/recovery_area/CDB2
-	database spfile location: /opt/oracle/dbs/spfileCDB2.ora
+	Database file location: /u01/app/oracle/oradata/orcl1,/opt/oracle/recovery_area/orcl1
+	Fast recovery area location: /u01/app/oracle/recovery_area/orcl1
+	database spfile location: /u01/app/oracle/product/23.4.0/dbhome_2/dbs/spfileorcl1.ora
 	```
 
 1.  The `deinstall` command discovers the details of the databases automatically in the current Oracle home and asks if you want to modify them. The default option is *n*, which means no.
 
 	```
-	The details of database(s) CDB2 have been discovered automatically. Do you still want to modify the details of CDB2 database(s)? [n]: **Enter**
+	The details of database(s) orcl1 have been discovered automatically. Do you still want to modify the details of orcl1 database(s)? [n]: **Enter**
 	```
 
 	For this task, press **Enter** to continue with the default values.
 
-	> **Note:** To verify each detail and to specify this information manually, enter `y`. You can then provide the details of your database, for example, the database name, storage type, location for diagnostic destination, fast recovery area, spfile, and so on. 
+	> **Note**: To verify each detail and to specify this information manually, enter `y`. You can then provide the details of your database, for example, the database name, storage type, location for diagnostic destination, fast recovery area, spfile, and so on. 
 
-	## Output
+	It returns the following.
 
 	```
 	Database Check Configuration END
@@ -140,11 +136,11 @@ In this task, you will remove the database, *CDB2*, from Oracle home 2 using the
 
 
 	####################### DECONFIG CHECK OPERATION SUMMARY #######################
-	Oracle Home selected for deinstall is: /opt/oracle/product/23c/dbhome_2
-	Inventory Location where the Oracle home registered is: /opt/oracle/oraInventory
+	Oracle Home selected for deinstall is: /u01/app/oracle/product/23.4.0/dbhome_2
+	Inventory Location where the Oracle home registered is: /u01/app/oracle/oraInventory
 	Following Single Instance listener(s) will be de-configured: LISTENER
-	The following databases were selected for de-configuration. The databases will be deleted and will not be useful upon de-configuration : CDB2
-	Database unique name : CDB2
+	The following databases were selected for de-configuration. The databases will be deleted and will not be useful upon de-configuration : orcl1
+	Database unique name : orcl1
 	Storage used : FS
 	```
 
@@ -156,27 +152,25 @@ In this task, you will remove the database, *CDB2*, from Oracle home 2 using the
 
     Enter ***y*** to start removing the database.
 
-	> **Tip:** The default option is **n**, which means no. If you press Enter or type **n** here, then `deinstall` exits without removing the database.
+	> **Tip**: The default option is **n**, which means no. If you press Enter or type **n** here, then `deinstall` exits without removing the database.
 
     The deinstallation process creates log files and starts removing the database.
 
-	## Output
+	It returns the following.
 
 	```
-	A log of this session will be written to: '/opt/oracle/oraInventory/logs/deinstall_deconfig2023-11-02_10-37-24-AM.out'
-	Any error messages from this session will be written to: '/opt/oracle/oraInventory/logs/deinstall_deconfig2023-11-02_10-37-24-AM.err'
+	A log of this session will be written to: '/u01/app/oracle/oraInventory/logs/deinstall_deconfig20XX-06-17_10-37-24-AM.out'
+	Any error messages from this session will be written to: '/opt/oracle/oraInventory/logs/deinstall_deconfig20XX-06-17_10-37-24-AM.err'
 
 	######################## DECONFIG CLEAN OPERATION START ########################
-	## [START] GIMR configuration update ##
-	## [END] GIMR configuration update ##
-	Database de-configuration trace file location: /opt/oracle/oraInventory/logs/databasedc_clean2023-11-02_10-37-25AM.log
-	Database Clean Configuration START CDB2
+	Database de-configuration trace file location: /u01/app/oracle/oraInventory/logs/databasedc_clean20XX-06-17_10-37-25AM.log
+	Database Clean Configuration START orcl1
 	This operation may take few minutes.
-	Database Clean Configuration END CDB2
+	Database Clean Configuration END orcl1
 
 	Network Configuration clean config START
 
-	Network de-configuration trace file location: /opt/oracle/oraInventory/logs/netdc_clean2023-11-02_10-37-25AM.log
+	Network de-configuration trace file location: /u01/app/oracle/oraInventory/logs/netdc_clean20XX-06-17_10-37-25AM.log
 
 	De-configuring Single Instance listener(s): LISTENER
 
@@ -202,15 +196,15 @@ In this task, you will remove the database, *CDB2*, from Oracle home 2 using the
 
 
 	####################### DECONFIG CLEAN OPERATION SUMMARY #######################
-	Successfully de-configured the following database instances : CDB2
+	Successfully de-configured the following database instances : orcl1
 	Following Single Instance listener(s) were de-configured successfully: LISTENER
 	#######################################################################
 
 
 	############# ORACLE DECONFIG TOOL END #############
 
-	Using properties file /tmp/deinstall2023-11-02_10-37-05AM/response/deinstall_2023-11-02_10-37-24-AM.rsp
-	Location of logs /opt/oracle/oraInventory/logs/
+	Using properties file /tmp/deinstall20XX-06-17_10-37-05AM/response/deinstall_20XX-06-17_10-37-24-AM.rsp
+	Location of logs /u01/app/oracle/oraInventory/logs/
 
 	############ ORACLE DEINSTALL TOOL START ############
 
@@ -219,29 +213,28 @@ In this task, you will remove the database, *CDB2*, from Oracle home 2 using the
 
 
 	####################### DEINSTALL CHECK OPERATION SUMMARY #######################
-	A log of this session will be written to: '/opt/oracle/oraInventory/logs/deinstall_deconfig2023-11-02_10-37-24-AM.out'
-	Any error messages from this session will be written to: '/opt/oracle/oraInventory/logs/deinstall_deconfig2023-11-02_10-37-24-AM.err'
+	A log of this session will be written to: '/u01/app/oracle/oraInventory/logs/deinstall_deconfig20XX-06-17_10-37-24-AM.out'
+	Any error messages from this session will be written to: '/u01/app/oracle/oraInventory/logs/deinstall_deconfig20XX-06-17_10-37-24-AM.err'
 
 	######################## DEINSTALL CLEAN OPERATION START ########################
 	## [START] Preparing for Deinstall ##
 	Setting LOCAL_NODE to localhost
 	Setting CRS_HOME to false
-	Setting oracle.installer.invPtrLoc to /tmp/deinstall2023-11-02_10-37-05AM/oraInst.loc
+	Setting oracle.installer.invPtrLoc to /tmp/deinstall20XX-06-17_10-37-05AM/oraInst.loc
 	Setting oracle.installer.local to false
 
-	Removing directory '/opt/oracle/homes/OraDB23Home2' on node(s) 'localhost'
 	## [END] Preparing for Deinstall ##
 
 	Oracle Universal Installer clean START
 
 	Detach Oracle home 'OraDB23Home2' from the central inventory on the local node : Done
 
-	Delete directory '/opt/oracle/product/23c/dbhome_2' on the local node : Done
+	Delete directory '/u01/app/oracle/product/23.4.0/dbhome_2' on the local node : Done
 
-	The Oracle Base directory '/opt/oracle' will not be removed on local node. The directory is in use by Oracle Home '/opt/oracle/product/23c/dbhome_2'.
+	The Oracle Base directory '/u01/app/oracle' will not be removed on local node. The directory is in use by Oracle Home '/u01/app/oracle/product/23.4.0/dbhome_1'.
 
 	You can find a log of this session at:
-	'/opt/oracle/oraInventory/logs//Cleanup2023-11-02_10-40-22AM.log'
+	'/u01/app/oracle/oraInventory/logs/Cleanup20XX-06-17_10-40-22AM.log'
 
 	Oracle Universal Installer clean END
 
@@ -256,12 +249,12 @@ In this task, you will remove the database, *CDB2*, from Oracle home 2 using the
 
 
 	####################### DEINSTALL CLEAN OPERATION SUMMARY #######################
-	Successfully detached Oracle home 'OraDB21Home2' from the central inventory on the local node.
-	Successfully deleted directory '/opt/oracle/product/23c/dbhome_2' on the local node.
+	Successfully detached Oracle home 'OraDB23Home2' from the central inventory on the local node.
+	Successfully deleted directory '/u01/app/oracle/product/23.4.0/dbhome_2' on the local node.
 	Oracle Universal Installer cleanup was successful.
 
-	Review the permissions and contents of '/opt/oracle' on nodes(s) 'localhost'.
-	If there are no Oracle home(s) associated with '/opt/oracle', manually delete '/opt/oracle' and its contents.
+	Review the permissions and contents of '/u01/app/oracle' on nodes(s) 'localhost'.
+	If there are no Oracle home(s) associated with '/u01/app/oracle', manually delete '/u01/app/oracle' and its contents.
 	Oracle deinstall tool successfully cleaned up temporary directories.
 	#######################################################################
 
@@ -269,7 +262,7 @@ In this task, you will remove the database, *CDB2*, from Oracle home 2 using the
 	############# ORACLE DEINSTALL TOOL END #############
 	```
 
-	You have completed the deinstallation process and removed the database from your host.
+	You have completed the deinstallation process and removed the database, *`orcl1`*, from your host.
 
 You have successfully reached the end of this workshop on *Oracle Database Deinstallation*. 
 
@@ -279,6 +272,6 @@ In this workshop, you learned how to:
 
 ## Acknowledgments
 
- - **Author** - Manish Garodia, Database User Assistance Development team
- - **Contributors** - <if type="hidden">Subrahmanyam Kodavaluru, Suresh Rajan, Prakash Jashnani, Malai Stalin, Subhash Chandra, Dharma Sirnapalli</if>
- - **Last Updated By/Date** - Manish Garodia, November 2023
+ - **Author** - Manish Garodia, Database User Assistance Development
+ - **Contributors** - Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru<if type="hidden">Suresh Rajan, Malai Stalin, Dharma Sirnapalli</if>
+ - **Last Updated By/Date** - Manish Garodia, June 2024
