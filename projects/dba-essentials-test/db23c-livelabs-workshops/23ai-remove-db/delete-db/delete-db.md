@@ -87,12 +87,12 @@ In this task, you will delete the database, *orcl*, from Oracle home 1 using Ora
 1. The Select Database Operation window opens and displays the operations that you can perform on the database.   
 	For this task, select **Delete database** to start the deletion process, and click **Next**.
 
-	![Delete database](./images/delete-db23c-01-delete-db.png " ")
+	![Delete database](./images/delete-db23-01-delete-db.png " ")
 
 1. Oracle DBCA checks for all databases in the current Oracle home and displays them. You can select the database to delete from this list.   
 	For this task, select the database to delete, for example *`orcl`*, if not already selected. 
 
-	![Select database](./images/delete-db23c-02-select-db.png " ")
+	![Select database](./images/delete-db23-02-select-db.png " ")
 
 	You must specify the database administrator user credentials for this database. 
 	 - **User name**: The field displays the administrative user, *`SYS`*, by default
@@ -105,13 +105,13 @@ In this task, you will delete the database, *orcl*, from Oracle home 1 using Ora
 1. In the Management Options window, you can deregister the database from Oracle Enterprise Manager (EM).   
 	For this lab, leave this option unselected and click **Next**.
 
-	![Deregister from EM](./images/delete-db23c-03-deregister-em.png " ")
+	![Deregister from EM](./images/delete-db23-03-deregister-em.png " ")
 
 	> **Note**: To deregister a database with EM, you require some details, such as OMS host name, port number, and the EM administrative credentials. However, instead of specifying in this window, you can log in to the EM console using a web browser and remove the database from managed targets. 
 
 1. Before deleting the database, the Summary window displays the database configuration for final review. You can verify the details in this window.
 
-	![Review Summary](./images/delete-db23c-04-summary.png " ")
+	![Review Summary](./images/delete-db23-04-summary.png " ")
 
 	Click **Finish** to continue. 
 
@@ -119,11 +119,11 @@ In this task, you will delete the database, *orcl*, from Oracle home 1 using Ora
 
 	> **Note**: Clicking **No** will cancel the delete operation and exit Oracle DBCA. For this task, do not select this option. 
 
-	![Confirm database deletion](./images/delete-db23c-05-confirm-db-delete.png " ")
+	![Confirm database deletion](./images/delete-db23-05-confirm-db-delete.png " ")
 
 	Click **Yes** in the message window to start deleting the database. Oracle DBCA proceeds with the delete operation. 
 
-	![Finish database deletion](./images/delete-db23c-06-delete-success.png " ")
+	![Finish database deletion](./images/delete-db23-06-delete-success.png " ")
 
 	On completion, Oracle DBCA displays the Finish window.
 
