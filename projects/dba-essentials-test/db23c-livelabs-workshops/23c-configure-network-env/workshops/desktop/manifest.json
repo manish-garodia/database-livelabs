@@ -1,7 +1,8 @@
 {
-  "workshoptitle": "DBA Essentials - Configure network environment for Oracle Database 23c",
+  "workshoptitle": "DBA Essentials - Configure network environment for Oracle Database 23ai",
   "help": "livelabs-help-db_us@oracle.com",
   "include": {
+        "example-values": "./../../intro-configure-network/files/example-values.txt",
         "set-env-var": "./../../intro-configure-network/files/set-env-var.txt"
     },
   "tutorials": [
@@ -12,9 +13,9 @@
       "filename": "./../../intro-configure-network/intro-configure-network.md"
     },
     {
-      "title": "Using noVNC remote desktop",
-      "description": "Using noVNC Remote Desktop",
-      "publisheddate": "06/30/2022",
+      "title": "Use noVNC remote desktop",
+      "description": "Use noVNC Remote Desktop",
+      "publisheddate": "03/22/2024",
       "filename": "https://oracle-livelabs.github.io/common/labs/remote-desktop/using-novnc-remote-desktop.md"
     },
     {
@@ -26,7 +27,7 @@
     {
       "title": "Need help?",
       "description": "Solutions to common problems and directions for receiving live help",
-      "publisheddate": "08/20/2022",
+      "publisheddate": "05/24/2024",
       "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-livelabs.md"
     }
   ]

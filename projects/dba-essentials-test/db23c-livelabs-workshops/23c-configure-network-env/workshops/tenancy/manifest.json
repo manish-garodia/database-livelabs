@@ -1,7 +1,8 @@
 {
-  "workshoptitle": "DBA Essentials - Configure network environment for Oracle Database 23c",
+  "workshoptitle": "DBA Essentials - Configure network environment for Oracle Database 23ai",
   "help": "livelabs-help-db_us@oracle.com",
   "include": {
+        "example-values": "./../../intro-configure-network/files/example-values.txt",
         "set-env-var": "./../../intro-configure-network/files/set-env-var.txt"
     },
   "tutorials": [
@@ -14,7 +15,7 @@
     {
       "title": "Get started",
       "description": "Get a Free Trial",
-      "publisheddate": "10/07/2022",
+      "publisheddate": "03/22/2024",
       "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/cloud-login.md"
     },
     {
@@ -39,7 +40,7 @@
     {
       "title": "Need help?",
       "description": "Solutions to common problems and directions for receiving live help",
-      "publisheddate": "02/21/2023",
+      "publisheddate": "05/24/2024",
       "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"
     }
   ]

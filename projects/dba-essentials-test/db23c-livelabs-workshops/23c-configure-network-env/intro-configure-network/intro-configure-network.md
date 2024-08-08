@@ -32,7 +32,7 @@ This lab assumes you have -
  - An Oracle Cloud account
  - Oracle Database installed
 
-## About listener configuration
+## About Listener configuration
 
 After installing Oracle Database, you have a fully functional database with a client/server network environment. *Oracle Net* is a software layer that resides on the client and the database. It establishes and maintains the connection between client applications and the database over a network. 
 
@@ -50,7 +50,7 @@ For example, the listener status returns a service name *orcl* which represents 
 
 ```
 ...
-Service "orcl" has 1 instance(s).
+Service "orcl.us.oracle.com" has 1 instance(s).
   Instance "orcl", status READY, has 1 handler(s) for this service...
 ```
 
@@ -77,7 +77,7 @@ The following example gives a glimpse of the `listener.ora` file. Here, the li
 LISTENER =
   (DESCRIPTION_LIST =
     (DESCRIPTION =
-      (ADDRESS = (PROTOCOL = TCP)(HOST = sale-server.us.oracle.com)(PORT = 1523))
+      (ADDRESS = (PROTOCOL = TCP)(HOST = localhost.us.oracle.com)(PORT = 1523))
       (ADDRESS = (PROTOCOL = IPC)(KEY = EXTPROC1523))
     )
   )
@@ -85,7 +85,7 @@ LISTENER =
 ...
 ```
 
-> **Tip**: You can configure multiple listeners, each with a unique name, in the same `listener.ora` file. However, Oracle recommends that you run only one listener for each node in customer environments.
+> **Tip**: You can configure multiple listeners, each with a unique name, in the same `listener.ora` file. However, Oracle recommends that you run only one listener for each node in a customer environment.
 
 *Listener Registration (LREG)* is an instance background process that performs dynamic registration of services and databases with the listener.
 
@@ -102,13 +102,13 @@ The elements involved in client connections to Oracle Database are:
  - **Naming methods**   
    While connecting to an Oracle Database service, the client application uses a resolution method, called the *naming method*. This method resolves the connect identifier to a connect descriptor.
 
-The following example shows a connect descriptor that enables a client to connect to Oracle Database with the service name *CDB1*. 
+The following example shows a connect descriptor that enables a client to connect to Oracle Database with the service name *orcl*. 
 
 ```
 ...
 
 DESCRIPTION=
-   (ADDRESS=(PROTOCOL=tcp)(HOST=my-server)(PORT=1523))
+   (ADDRESS=(PROTOCOL=TCP)(HOST=localhost.us.oracle.com)(PORT=1523))
    (CONNECT_DATA=
       (SERVICE_NAME=orcl))
 ...
@@ -121,7 +121,7 @@ Oracle Net Services provide user interface tools and command-line utilities to c
  - **Oracle Net Configuration Assistant (NETCA)**
  - **Oracle Net Manager**
 
-Oracle Enterprise Manager Cloud Control (EM) combines configuration functionality across multiple file systems, along with listener administrative control to provide an integrated environment for configuring and managing Oracle Net Services.
+Oracle Enterprise Manager (EM) combines configuration functionality across multiple file systems, along with listener administrative control to provide an integrated environment for configuring and managing Oracle Net Services.
 
 **About Oracle Net Configuration Assistant (NETCA)**   
 Oracle Net Configuration Assistant (NETCA) is a standalone tool that helps you configure listeners and naming methods. 
@@ -136,15 +136,15 @@ Use NETCA for initial network configuration right after the database installatio
 **About Oracle Net Manager**   
 Oracle Net Manager provides configuration functionality for Oracle home on a local client or a server host. It offers built-in wizards and utilities to test connectivity, migrate data from one naming method to another, and create additional network components.
 
-### Listener control utilty
+### Listener Control utility
 
-The Listener control utility enables you to administer listeners.
+The Listener Control utility helps you to administer listeners. You can use the Listener Control utility commands to perform basic management functions on one or more listeners. 
 
-While running listener commands, specify the listener name as an argument. 
- - If you omit the listener name in the command, then the listener set with the command `SET CURRENT_LISTENER` is used. 
- - If you have not set the listener with that command, then the command uses the default listener, `LISTENER`.
+If you have multiple listeners running, then specify the listener name along with the command at the Listener Control utility prompt. 
+ - If you omit the listener name in the command, then the utility uses the listener set with the command `SET CURRENT_LISTENER`. 
+ - If you have not set the listener with this command, then the command uses the default listener, `LISTENER`.
 
-When you administer a listener remotely, you can run all listener commands except `START`. However, listener control utility only starts the listener on the same system where the utility runs.
+When you administer a listener remotely, you can run all listener commands except `START`. The Listener Control utility can start the listener on the same system where the utility runs.
 
 Click the next lab to **Get started**.
 
@@ -156,15 +156,6 @@ Click the next lab to **Get started**.
 
 ## Acknowledgments
 
- - **Author**: Manish Garodia, Database User Assistance Development team
- - **Contributors**: Binika Kumar, Bhaskar Mathur, Malai Stalin<if type="hidden">Suresh Rajan, Subhash Chandra, Dharma Sirnapalli, Subrahmanyam Kodavaluru, Manisha Mati</if>
- - **Last Updated By/Date**: Manish Garodia, April 2023
-
-<!--
-
-This workshop focuses on the network configurations for Oracle Database , which includes listener configuration, listener operations, and HTTPS ports for Container Database (CDB) and Pluggable Database (PDB).
-
-
-
-
--->
+ - **Author** - Manish Garodia, Database User Assistance Development
+ - **Contributors**: Binika Kumar, Bhaskar Mathur, Malai Stalin<if type="hidden">Suresh Rajan, Subhash Chandra, Dharma Sirnapalli, Subrahmanyam Kodavaluru</if>
+ - **Last Updated By/Date** - Manish Garodia, August 2024
