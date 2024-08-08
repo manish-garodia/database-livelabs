@@ -24,9 +24,9 @@ This lab assumes you have -
 
 1.  Save in your downloads folder.
 
-We recommend using this stack to create a self-contained/dedicated VCN with your instance(s). Skip to [Task 3](?lab=prepare-setup#Task3:Setupcompute) to follow our recommendations. If you would rather use an exiting VCN, then proceed to the next task as indicated below to update your existing VCN with the required Egress rules.
+We recommend using this stack to create a self-contained/dedicated VCN with your instance(s). Skip to [Task 3](?lab=prepare-setup#Task3:Setupcompute) to follow our recommendations. If you would rather use an existing VCN, then proceed to the next task as indicated below to update your existing VCN with the required Egress rules.
 
-## Task 2: Add security rules to an existing VCN   
+## Task 2: Add security rules to an existing VCN
 
 This workshop requires a certain number of ports to be available, a requirement that can be met by using the default ORM stack execution that creates a dedicated VCN. In order to use an existing VCN, the following ports should be added to Egress rules.
 
@@ -34,16 +34,17 @@ This workshop requires a certain number of ports to be available, a requirement 
 | :------------- | :------------------------------------ |
 | 22             | SSH                                   |
 | 6080           | noVNC Remote Desktop                  |
+{: title="Add ports to VCN"}
 
-1.  Go to **Networking** &gt; **Virtual Cloud Networks**
-1.  Choose your network
-1.  Under **Resources**, select **Security Lists**
-1.  Click on **Default Security Lists** under the **Create Security List** button
-1.  Click the **Add Ingress Rule** button
+1.  Go to **Networking** &gt; **Virtual Cloud Networks**.
+1.  Choose your network.
+1.  Under **Resources**, select **Security Lists**.
+1.  Click on **Default Security Lists** under the **Create Security List** button.
+1.  Click the **Add Ingress Rule** button.
 1.  Enter the following:  
     - Source CIDR: 0.0.0.0/0
     - Destination Port Range: *Refer to the table*
-1.  Click the **Add Ingress Rules** button
+1.  Click the **Add Ingress Rules** button.
 
 ## Task 3: Setup compute
 
