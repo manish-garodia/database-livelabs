@@ -1,5 +1,5 @@
 {
-  "workshoptitle": "DBA Essentials - Install Oracle Database 23ai software and create a database",
+  "workshoptitle": "Install Oracle Database 23ai software and create a database",
   "help": "livelabs-help-db_us@oracle.com",
   "include": {
         "adm-users": "./../../intro-install/files/adm-users.txt", 
@@ -16,7 +16,7 @@
   "tutorials": [
     {
       "title": "Introduction",
-      "description": "The workshop on Oracle Database Installation.",
+      "description": "The workshop on Oracle Database 23ai Installation.",
       "publisheddate": "03/19/2023",
       "filename": "./../../intro-install/intro-install.md"
     },

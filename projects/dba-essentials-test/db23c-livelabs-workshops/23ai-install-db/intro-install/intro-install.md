@@ -64,7 +64,7 @@ When you run the installer, you can select from the following options.
  - **Create and configure a single instance database** - to install the Oracle Database software and create an Oracle Database.
  - **Set Up Software Only** - to install only the database software but not create any database. You can create the database later using Oracle DBCA.
 
-Depending on the type of installation, the installer can run Oracle DBCA internally or you can start Oracle DBCA after the installation.
+Depending on the type of installation, the installer can run Oracle DBCA internally or you can run Oracle DBCA after the installation.
 
 Consider the scenarios:
 

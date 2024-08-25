@@ -154,10 +154,10 @@ In this task, you will select *Advanced configuration* to create an Oracle Datab
 1.  You can select the database type and template suitable for your Oracle Database in the Deployment Type window.
 
     For this lab, leave the defaults and click **Next**.
-     - **Type**: *Oracle Single Instance database*
-	 - **Template**: *General Purpose or Transaction Processing*
+     - **Database type**: *Oracle Single Instance database*
+	 - **Template name**: *General Purpose or Transaction Processing*
 
-    This template includes basic configuration for the database, such as database components, initialization parameters, data files, control files, and redo log groups. 
+    This template includes basic configuration for the database, such as database components, initialization parameters, data files, control files, and redo log groups.
 
     ![Select database template](./images/dbca23-adv-03-template.png " ")
 
@@ -277,8 +277,6 @@ In this task, you will select *Advanced configuration* to create an Oracle Datab
     ![Select database create options](./images/dbca23-adv-12-create-options.png " ")
 
 1.  Before installing the database, the Summary window displays the database configuration for final review. You can verify the details in this window.
-
-    The values may differ depending on the system you are using.
 
     ![Review Summary](./images/dbca23-adv-13-summary-top.png " ")
 
