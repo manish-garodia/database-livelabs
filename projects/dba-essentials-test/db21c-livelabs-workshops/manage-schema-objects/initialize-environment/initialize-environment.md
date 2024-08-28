@@ -74,7 +74,7 @@ In this task, you will verify that that the required components, such as Listene
 	If still unsuccessful, then run the following script to start ORDS. 
 
     ```
-    $ <copy>. ~/run_ords.sh</copy>
+    $ <copy>source ~/run_ords.sh</copy>
     ```
 
 Your environment is now ready. You can access the Oracle Database Actions login page in a web browser.
