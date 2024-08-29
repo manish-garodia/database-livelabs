@@ -12,7 +12,7 @@ Estimated time: 10 minutes
 ### Objectives
 
  - Ensure that the following are running:
-	- Database Listener - *LISTENER*
+	- Database Listener - *LISTENER_ORCL*
 	- Oracle Database Instance - *orcl*
 	- Oracle REST Data Services (ORDS) - *ords*
  - Log in to Oracle Database Actions in a web browser.
@@ -27,7 +27,7 @@ This lab assumes you have -
 
 In this task, you will verify that that the required components, such as Listener, Oracle Database, and ORDS, are running on the host. 
 
-1. 	Verify that the non-standard listener service, *oracle-db-listener*, is running.
+1. 	Verify that the listener service, *oracle-db-listener*, is running.
 
     ```
     $ <copy>sudo systemctl status oracle-db-listener</copy>
@@ -133,7 +133,7 @@ You can manage the startup services using various options, for example, start, s
 		$ <copy>systemctl status oracle-database</copy>
 		```
 
-1. Listener Service (Non-Standard)
+1. Listener Service (Non-Standard Listener)
 
     - Start
 
