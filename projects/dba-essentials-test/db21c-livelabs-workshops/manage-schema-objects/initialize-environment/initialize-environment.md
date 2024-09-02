@@ -25,7 +25,7 @@ This lab assumes you have -
 
 ## Task 1: Verify that the dependent components are running
 
-In this task, you will verify that that the required components, such as Listener, Oracle Database, and ORDS, are running on the host. 
+In this task, you will verify that the required components, such as Listener, Oracle Database, and ORDS, are running on the host. 
 
 1. 	Verify that the listener service, *oracle-db-listener*, is running.
 
@@ -35,7 +35,7 @@ In this task, you will verify that that the required components, such as Listene
 
     ![Listener Service Status](./images/listener-service-status.png " ")
 
-	If the listener service is not running, you can restart it with the following command. 
+	The status *active* indicates that the listener service is running. If the listener service is not running, you can restart it with the following command. 
 
     ```
     $ <copy>sudo systemctl restart oracle-db-listener</copy>
@@ -49,7 +49,7 @@ In this task, you will verify that that the required components, such as Listene
 
     ![Oracle Database services status](./images/db-service-status.png " ")
 
-	If the database service is not running, you can restart it with the following command. 
+	The status *active* indicates that the database service is running. If the database service is not running, you can restart it with the following command. 
 
     ```
     $ <copy>sudo systemctl restart oracle-database</copy>
@@ -65,7 +65,7 @@ In this task, you will verify that that the required components, such as Listene
 
 	> **Note**: You can access the Database Actions login page in a web browser only if ORDS is running. 
 
-	If the ords service is not running, you can restart it with the following command. 
+	The status *active* indicates that the ords service is running. If the ords service is not running, you can restart it with the following command. 
 
     ```
     $ <copy>sudo systemctl restart ords</copy>
