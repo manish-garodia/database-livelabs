@@ -2,6 +2,8 @@
 
 # View <if type="emcc">and manage</if> initialization parameters
 
+***Reproduce err: Match lab title with navigation pane***
+
 ## Introduction
 
 <!-- Condition: EMCC, ORDS -->
@@ -181,6 +183,8 @@ You may now **proceed to the next lab.**
 <if type="emcc">
 
 ## **duplicate from here**
+
+***Reproduce Err: Images not showing up***
 
 [](include:em-task-manage-initialization-params)
 

@@ -104,7 +104,12 @@ When an Oracle Database starts, it reads the initialization parameter values fro
 <!-- Building-Block: ORDS -->
 
 <if type="db-actions">
-## Appendix 2: About Oracle Database Actions
+## Appendix 2: About [](var:prod_db_actions_full)
+
+***Reproduce Error: variables do not expand in navigation pane***
+
+
+## Appendix 3: About Oracle Database Actions
 
 [](include:ords-intro-about-db-actions)
 
