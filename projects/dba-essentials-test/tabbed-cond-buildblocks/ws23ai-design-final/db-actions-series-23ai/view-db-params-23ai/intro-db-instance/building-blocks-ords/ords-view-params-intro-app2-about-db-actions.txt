@@ -1,0 +1,13 @@
+<!--
+    {
+        "name":"ORDS Introduction - Appendix 2: About Oracle Database Actions",
+        "description":"ORDS Introduction - Appendix 2: About Oracle Database Actions",
+        "date":"Sep/09/2024"
+    }
+-->
+
+[](var:prod_db_actions_full) is a web-based interface for on-premises Oracle Database that uses [](var:prod_ords) (ORDS) to provide many of the database development, management, and administration features of desktop-based Oracle SQL Developer in Autonomous Databases. 
+
+The main features include running SQL statements and scripts in the worksheet, exporting data, creating RESTful web services, managing JSON collections, monitoring databases, and creating Data Modeler diagrams. You can use it without downloading or installing additional software on your system. 
+
+> [](var:prod_db_actions) was earlier known as SQL Developer Web.
