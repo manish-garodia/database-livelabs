@@ -1,0 +1,52 @@
+{
+  "workshoptitle": "View parameters of Oracle Database 23ai using Database Actions",
+  "include": {
+        "em-intro-about": "./../../../dbae-23ai-ws4b-mg/intro-instance-memory/building-blocks-em/em-manage-instance-intro-about-this-workshop.txt",
+        "em-intro-db-instance": "./../../../dbae-23ai-ws4b-mg/intro-instance-memory/building-blocks-em/em-manage-instance-intro-app1-db-instance.txt",
+        "em-intro-shutdown-db": "./../../../dbae-23ai-ws4b-mg/intro-instance-memory/building-blocks-em/em-manage-instance-intro-app1-shutdown-db-instance.txt",
+        "em-intro-start-db": "./../../../dbae-23ai-ws4b-mg/intro-instance-memory/building-blocks-em/em-manage-instance-intro-app1-start-db-instance.txt",
+        "em-intro-auto-mem-mgmt": "./../../../dbae-23ai-ws4b-mg/intro-instance-memory/building-blocks-em/em-manage-instance-intro-app2-auto-mem-mgmt.txt",
+        "em-intro-db-mem-mgmt": "./../../../dbae-23ai-ws4b-mg/intro-instance-memory/building-blocks-em/em-manage-instance-intro-app2-mem-mgmt-db-instance.txt",
+        "em-task-manage-initialization-params": "./../../../dbae-23ai-ws4b-mg/intro-instance-memory/building-blocks-em/em-manage-instance-task-manage-initialization-params.txt",
+        "ords-intro-about-db-actions": "./../../intro-instance-memory/building-blocks-ords/ords-manage-instance-intro-app2-about-db-actions.txt",
+        "ords-task-manage-init-params": "./../../intro-instance-memory/building-blocks-ords/ords-manage-instance-task-manage-initialization-params.txt"
+    },
+  "variables": ["./variables.json"],
+  "help": "livelabs-help-db_us@oracle.com",
+  "tutorials": [
+    {
+      "title": "Introduction",
+      "description": "Introduction.",
+      "filename": "./../../../dbae-23ai-ws4b-mg/intro-instance-memory/intro-instance-memory.md",
+      "type":{
+        "db-actions":"Database Actions",
+        "emcc":"Oracle Enterprise Manager"
+      }
+    },
+    {
+      "title": "Lab 1: Verify compute instance setup",
+      "description": "Verify Setup of compute instance",
+      "filename": "https://oracle-livelabs.github.io/common/labs/verify-compute/verify-compute-ssh-and-novnc.md"
+    },
+    {
+      "title": "Lab 2: Initialize environment",
+      "description": "How to initialize and start all the workshop components.",
+      "publisheddate": "10/13/2021",
+      "filename": "./../../initialize-environment/initialize-environment.md"
+    },
+    {
+      "title": "Lab 3: View initialization parameters",
+      "description": "How to view the initialization parameters of Oracle Database Actions using Database Actions.",
+      "filename": "./../../../dbae-23ai-ws4b-mg/manage-initialization-parameters/manage-initialization-parameters.md",
+      "type":{
+        "db-actions":"Database Actions",
+        "emcc":"Oracle Enterprise Manager"
+      }
+    },
+    {
+      "title": "Need help?",
+      "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+      "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-livelabs.md"
+    }
+  ]
+}

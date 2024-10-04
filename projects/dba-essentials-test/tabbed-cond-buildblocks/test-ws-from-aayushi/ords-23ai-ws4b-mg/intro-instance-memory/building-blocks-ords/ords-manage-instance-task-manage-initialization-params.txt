@@ -1,0 +1,52 @@
+<!--
+    {
+        "name":"ORDS Task - View Initialization Parameters",
+        "description":"ORDS Task - View Initialization Parameters",
+        "date":"Sep/09/2024"
+    }
+-->
+
+1.  From the Launchpad, click the **Selector** icon at the upper left corner to open the menu.
+
+    ![Database Actions Launchpad](./../../ords-23ai-ws4b-mg/view-initialization-parameters/images/launchpad.png " ")
+
+1.  Under Monitoring section, click **Parameters** to go to the Parameters page.
+
+    ![Monitoring Section](./../../ords-23ai-ws4b-mg/view-initialization-parameters/images/monitoring-section.png " ")
+
+1. The Parameters page displays information about initialization parameters.
+
+    ![Parameters Page](./../../ords-23ai-ws4b-mg/view-initialization-parameters/images/parameters-page.png " ") 
+
+	You can view the following information about initialization parameters:
+    - **Name**: The name of the initialization parameter.
+    - **Value**: The value of the initialization parameter.
+    - **Type**: This field contains a number for each initialization parameter. The numbers represent a specific data types, for example:
+		- *1* - Boolean
+		- *2* - String
+		- *3* - Integer
+		- *4* - Parameter file
+		- *5* - Reserved
+		- *6* - Big Integer
+
+    - **Is System Modifiable**: This field indicates whether you can modify the initialization parameter using the ALTER SESSION command. It has the following values:
+
+		- *DEFERRED*: indicates that you can modify the parameter using the ALTER SESSION command regardless of the type of parameter file used, SPFile or PFile. The update takes effect from subsequent sessions, that is, the next time the database instance starts.
+		- *IMMEDIATE*: indicates that you can modify the parameter using the ALTER SESSION command with immediate effect regardless of the type of parameter file used, SPFile or PFile.
+		- *FALSE*: indicates that you cannot modify the parameter using the ALTER SESSION command unless the database instance starts using a server parameter file. The update takes effect from subsequent sessions.
+
+	> You can modify the values of an intialization parameter .
+
+	The Parameters page also includes a search filter. <<== ***[MG]: Which search box are you talking about?***
+
+1. View the details of a parameter *processes*.
+
+	For this task, select the following:
+	- Under Column, click the drop-down list and select the option *Name*.
+	- Under Operator, select *equals* if not already selected. 
+	- Under Value, select the parameter that you want to view, for example *processes*.
+    ![Result](./../../ords-23ai-ws4b-mg/view-initialization-parameters/images/search-result.png " ")
+
+	Click the magnifier icon next to the **Value** field to display the search result. 
+
+	Similarly, you can view details of other initialization parameters. Click the cross mark next to the checkbox to clear the saerch filter or to view another parameter. 
