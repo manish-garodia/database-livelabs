@@ -2,7 +2,7 @@
 
 ## About this workshop
 
-After you install Oracle Database on your host, you can connect to the database and perform database administration. In this workshop, you will connect to the SQL prompt and also use Oracle Enterprise Manager Cloud Control (EM) to administer your Oracle Database.
+After installing Oracle Database on a host, you can connect to the database and perform database administration. In this workshop, you will connect to the SQL prompt and also use *Oracle Enterprise Manager Cloud Control (EM)* to administer your Oracle Database.
 
 **What is Oracle Enterprise Manager?**   
 Oracle Enterprise Manager is Oracle’s on-premises management solution providing centralized monitoring, administration, and lifecycle management functionality for the complete IT infrastructure. It offers a single dashboard to monitor and manage your entire computing environment from a web-based console.
@@ -31,9 +31,9 @@ This lab assumes you have -
 
 ## View details of Oracle Database
 
-To start with database administration, you can connect to the SQL prompt and run basic commands to view container details. For example check current user, and view Container Database (CDB) and Pluggable Databases (PDBs), check version and status, and so on. 
+To start with database administration, you can connect to the SQL prompt and run basic commands to view container details. For example, check current user, and view Container Database (CDB) and Pluggable Databases (PDBs), check version and status, and so on. 
 
-> **Note:** For connecting to Oracle Database, you do not require a password in the following scenarios.
+> **Note**: For connecting to Oracle Database, you do not require a password in the following scenarios.
  - Oracle Database resides on the local host.
  - The current user (for this lab, it is *oracle* user) is a member of the OSDBA group.   
  The *oracle* user has the privileges required to perform tasks for database administration.
@@ -46,7 +46,7 @@ The following figure shows a sample EM configuration and illustrates how the cor
 
 ![EM Architecture](images/em-architecture.png)
 
-> **Note:** This figure depicts a load balancer and multiple Oracle Management Service (OMS) instances only to indicate how to deploy Oracle Enterprise Manager in a large organization. They are not prerequisites for an Oracle Enterprise Manager system installation.
+> **Note**: This figure depicts a load balancer and multiple Oracle Management Service (OMS) instances only to indicate how to deploy Oracle Enterprise Manager in a large organization. They are not prerequisites for an Oracle Enterprise Manager system installation.
 
 If you do not have the load balancer, then Management Agents communicate directly with the OMS instances.
 
@@ -94,16 +94,16 @@ You can discover entities and add them to Oracle Enterprise Manager as *targets*
 
 For adding targets, Oracle Enterprise Manager provides various options, such as installing an agent, using the guided discovery process, or adding targets manually.
 
- - **Install an agent** - This is an autodiscovery process in which you install a management agent on an unmanaged host and convert it to a managed host. You can then search for targets on that host and add them to EM.
+ - **Install an agent** - This is an automatic discovery process in which you install a management agent on an unmanaged host and convert it to a managed host. You can then search for targets on that host and add them to EM.
 
-	> **Note:** With this process, if you add any new components to your infrastructure in the future, Oralce Enterprise Manager automatically finds and brings them under management.  
+	> **Note**: With this process, if you add any new components to your infrastructure in the future, Oracle Enterprise Manager automatically finds and brings them under management.  
 
  - **Use guided discovery** - This process takes you through a discovery wizard that displays the specifications prefilled by default. The wizard searches for targets, such as Oracle Databases, listeners, and other deployed components or applications on the host. It helps you promote these targets to managed status.
 	> The guided discovery process is a quick way to add targets in Oracle Enterprise Manager. 
 
  - **Add targets manually** - This is a declarative process in which you explicitly specify the monitoring properties required to discover the targets.
 
-	> The manual process is useful if both autodiscovery and the guided process failed to discover a target.
+	> The manual process is useful if both automatic discovery and the guided process failed to discover the target.
 
 After adding a target, for example Oracle Database, you can access the home page of the target. From the target home page, you can monitor and manage it in Oracle Enterprise Manager or perform administrative tasks. Besides, you can view the history of pages you visited and bookmark pages as favorites in Oracle Enterprise Manager.
 
@@ -122,6 +122,6 @@ Click the next lab to **Get started**.
 
 ## Acknowledgments
 
- - **Author**: Manish Garodia, Database User Assistance Development team
+ - **Author** - Manish Garodia, Database User Assistance Development
  - **Contributors** - Daniela Hansell, Ashwini R, Jayaprakash Subramanian<if type="hidden">Suresh Rajan, Steven Lemme</if>
- - **Last Updated By/Date** - Manish Garodia, May 2023
+ - **Last Updated By/Date** - Manish Garodia, October 2024
