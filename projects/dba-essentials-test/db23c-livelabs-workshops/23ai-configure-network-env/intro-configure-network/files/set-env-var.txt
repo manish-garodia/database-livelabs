@@ -28,6 +28,6 @@ In this task, you will set the following environment variables for your Oracle D
 
 	> **Note**: Oracle SID is case-sensitive.
 
-	This command sets the variables *`$ORACLE_SID`* and the *`$ORACLE_BASE`* location. It also sets the *`$ORACLE_HOME`* path, for example, *`/u01/app/oracle/product/23.4.0/dbhome_1`*.
+	This command sets the variables *`$ORACLE_SID`* and *`$ORACLE_BASE`*. It also sets the *`$ORACLE_HOME`* path, for example, *`/u01/app/oracle/product/23.4.0/dbhome_1`*.
 
 You have set the environment variables for your Oracle Database in the currently active terminal. You can now connect to Oracle Database and run the SQL commands.
