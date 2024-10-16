@@ -77,7 +77,7 @@ In this task, you will verify that the required components, such as Listener, Or
     $ <copy>source ~/run_ords.sh</copy>
     ```
 
-Your environment is now ready. You can access the Oracle Database Actions login page in a web browser.
+If the dependent components are running, you can access the Oracle Database Actions login page in a web browser.
 
 ## Task 2: Log in to Oracle Database Actions
 
@@ -92,16 +92,20 @@ If you have reserved a Livelabs environment, then the remote desktop session wil
 	<copy>http://oms1:8080/ords/sql-developer</copy>
 	```
 
+1. Specify the user credentials for Oracle Database Actions. 
+
     ![ORDS login](./images/ords-login.png " ")
 
-1. Specify the user credentials for Oracle Database Actions. For this lab, the credentials are:
+	For this lab, the credentials are:
 
 	- **Username**: *HR*
 	- **Password**: *oracle*
 
 	Click **Sign in** to log in to the Oracle Database Actions console. 
 
-On successful login, you can perform the tasks using Database Actions.
+    ![ORDS landing page](./images/ords-landing.png " ")
+
+On successful login, the browser the Database Actions landing page. Your environment is now ready. 
 
 ## Appendix 1: Manage startup services
 
@@ -208,4 +212,4 @@ You may now **proceed to the next lab**.
 
  - **Author**: Manish Garodia, Database User Assistance Development
  - **Contributors**: Aayushi Arora, Manisha Mati
- - **Last Updated By/Date**: Manish Garodia, September 2024
+ - **Last Updated By/Date**: Manish Garodia, October 2024
