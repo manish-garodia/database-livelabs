@@ -407,4 +407,4 @@ You may now **proceed to the next lab**.
 
  - **Author**: Manish Garodia, Database User Assistance Development
  - **Contributors**: Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru
- - **Last Updated By/Date**: Manish Garodia, June 2024
+ - **Last Updated By/Date**: Manish Garodia, October 2024
