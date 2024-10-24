@@ -97,12 +97,11 @@ Click the next lab to **Get started**.
 ## Learn more
 
  - [Removing Oracle Database Software](https://docs.oracle.com/en/database/oracle/oracle-database/23/ladbi/removing-oracle-database-software.html#GUID-5619EBF0-C89E-4349-AE6F-A8F8B3B06BD1)
-<if type="hidden">
- - Workshop on how to [Install Oracle Database 23ai on OCI Compute](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=871)
-</if>
+
+ - Workshop on how to [Install Oracle Database 23ai on OCI Compute](https://livelabs.oracle.com/pls/apex/r/dbpm/livelabs/view-workshop?wid=4055)
 
 ## Acknowledgments
 
  - **Author** - Manish Garodia, Database User Assistance Development
- - **Contributors** - Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru<if type="hidden">, Malai Stalin, Dharma Sirnapalli</if>
- - **Last Updated By/Date** - Manish Garodia, June 2024
+ - **Contributors** - Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru, Manisha Mati
+ - **Last Updated By/Date** - Manish Garodia, October 2024

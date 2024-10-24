@@ -46,6 +46,8 @@ In this task, you will remove the database, *orcl1*, from Oracle home 2 using th
 
     > **Note**: For every step, `deinstall` displays the values in square brackets `[ ]`. You can press **Enter** to use the default or specify a different value manually. 
 
+	## Output
+
 	It returns the following.
 
 	```
@@ -104,6 +106,8 @@ In this task, you will remove the database, *orcl1*, from Oracle home 2 using th
 
 	For this task, press **Enter** to remove the default database instance from Oracle home 2.
 
+	## Output
+
 	It returns the following.
 
 	```
@@ -126,6 +130,8 @@ In this task, you will remove the database, *orcl1*, from Oracle home 2 using th
 	For this task, press **Enter** to continue with the default values.
 
 	> **Note**: To verify each detail and to specify this information manually, enter `y`. You can then provide the details of your database, for example, the database name, storage type, location for diagnostic destination, fast recovery area, spfile, and so on. 
+
+	## Output
 
 	It returns the following.
 
@@ -155,6 +161,8 @@ In this task, you will remove the database, *orcl1*, from Oracle home 2 using th
 	> **Tip**: The default option is **n**, which means no. If you press Enter or type **n** here, then `deinstall` exits without removing the database.
 
     The deinstallation process creates log files and starts removing the database.
+
+	## Output
 
 	It returns the following.
 
@@ -273,5 +281,5 @@ In this workshop, you learned how to:
 ## Acknowledgments
 
  - **Author** - Manish Garodia, Database User Assistance Development
- - **Contributors** - Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru<if type="hidden">Suresh Rajan, Malai Stalin, Dharma Sirnapalli</if>
- - **Last Updated By/Date** - Manish Garodia, June 2024
+ - **Contributors** - Prakash Jashnani, Subhash Chandra, Subrahmanyam Kodavaluru, Manisha Mati
+ - **Last Updated By/Date** - Manish Garodia, October 2024

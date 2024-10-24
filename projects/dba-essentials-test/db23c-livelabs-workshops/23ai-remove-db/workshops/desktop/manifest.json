@@ -9,7 +9,7 @@
     {
       "title": "Introduction",
       "description": "Workshop on Oracle Database Uninstallation.",
-      "publisheddate": "11/07/2023",
+      "publisheddate": "14/10/2024",
       "filename": "./../../intro-deinstall/intro-deinstall.md"
     },
     {
@@ -21,13 +21,13 @@
     {
       "title": "Lab 1: Delete an Oracle Database",
       "description": "Only delete the database from your host but retain Oracle Database software and Oracle home.",
-      "publisheddate": "11/07/2023",
+      "publisheddate": "14/10/2024",
       "filename": "./../../delete-db/delete-db.md"
     },
     {
       "title": "Lab 2: Deinstall Oracle Database and remove Oracle home",
       "description": "How to remove Oracle Database software and delete Oracle Database and its components from your host.",
-      "publisheddate": "11/07/2023",
+      "publisheddate": "14/10/2024",
       "filename": "./../../deinstall-db/deinstall-db.md"
     },
     {
