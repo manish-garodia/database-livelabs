@@ -23,45 +23,41 @@ This lab assumes you have -
  -   Completed all previous labs successfully
  -   Logged in to Oracle Enterprise Manager in a web browser as *sysman* 
 
+> **Note**: [](include:example-values)
+
 ## Task 1: View user accounts in Oracle Database
 
-Logging in to Oracle Enterprise Manager as the *sysman* user gives you the privileges to view and manage user accounts in Oracle Database. In Oracle Enterprise Manager, go to the respective container, CDB or PDB, and view the users in that container. 
+As the *sysman* user, you have the privileges to view and manage user accounts in Oracle Database from Oracle Enterprise Manager. You can go to the respective container, CDB or PDB, and view the users in that container. 
 
 In this task, you will view the details of the user account *DBUSER* in the PDB.
 
 1.  From the **Targets** menu, select **Databases** to open the Databases page.  
 
-    ![Target menu](./../manage-db-roles/images/pdb-roles-01-db-menu.png " ")  
+    ![Target menu](./images/pdb-users-00-db-menu.png " ")  
 
 	The Databases page displays all database systems added to Oracle Enterprise Manager as managed targets.
 
 1.  Click the expand/collapse triangle next to the database instance name, for example *orcl.us.oracle.com*, and then expand Pluggable Databases. The list displays all PDBs under the selected container.
-	The values may differ depending on the system you are using.
 
     ![Databases home](./../manage-db-roles/images/pdb-roles-02-dbhome.png " ")  
 
 	Click the PDB name, *ORCLPDB*, to open the PDB home page.
 
-1.  From the **Security** menu on the PDB home page, select **Users** to access the users in the PDB.  
-    The values may differ depending on the system you are using.  
+1.  From the **Security** menu on the PDB home page, select **Users** to access the users in the PDB.
 
     ![Users menu](./images/pdb-users-01-users-menu.png " ")  
 
-    Oracle Enterprise Manager may redirect to the Database Login page.
-
-	> **Note**: If you are already logged in to the database, then the login page does not appear.
-
-1.  Select the *Named* Credential option, if not already selected, and click **Login** to connect to the Oracle Database. The values may differ depending on the system you are using.  
+    Oracle Enterprise Manager may redirect to the Database Login page. Select the *Named* Credential option, if not already selected, and click **Login** to connect to the Oracle Database.
 
     ![Database login](./../manage-db-roles/images/pdb-roles-04-pdb-login.png " ")
 
-	> **Tip**: To learn how to set up Named Credentials, see the lab [Initialize environment](?lab=initialize-environment).
+	> **Note**: If you are already logged in to the database, then the login page does not appear.
 
-    The Users page opens and displays all user accounts in the PDB. The values may differ depending on the system you are using.  
+1.	The Users page opens and displays all user accounts in the PDB.
 
     ![PDB users](./images/pdb-users-02-all-users.png " ")  
 
-    The table displays the following information for all users:  
+    View all users information in the given table:  
      - **UserName** - the user name
      - **Account Status** - whether the user account is *LOCKED* or *OPEN*
      - **Expiration Date** - when the user account expires
@@ -71,7 +67,7 @@ In this task, you will view the details of the user account *DBUSER* in the PDB.
      - **Common User** - whether the user is common across all containers in the database
      - **Created** - the creation date of the user account  
 
-    The table has the first user account selected by default.  
+    The table has a user account selected by default.  
 
      > **Tip:** The *DEFAULT* profile assigns the default password policy to a user account. 
 
@@ -79,15 +75,13 @@ In this task, you will view the details of the user account *DBUSER* in the PDB.
     In the **Object Name** field, enter *dbuser* and click **Go** to search for the user.   
 	The field is not case-sensitive. The table displays the *DBUSER* user account selected.
 
-	Click **View** to see the details of the selected user.  
-    The values may differ depending on the system you are using.  
+	Click **View** to see the details of the selected user.
 
     ![Search user](./images/pdb-users-03-search-user.png " ")  
 
     Alternatively, you may scroll down the table and click the user name to view its details.  
 
-1.  The View User page displays the details of the selected user.   
-    The values may differ depending on the system you are using.  
+1.  The View User page displays the details of the selected user.
 
     ![View user details](./images/pdb-users-04-view-user-details.png " ")  
 
@@ -113,15 +107,13 @@ To create a user in Oracle Database, go to the container where you want to creat
 
 In this task, you will create a user account *appuser* in the PDB and grant the *appdev* role to the user.
 
-1.  On the Users page, click **Create** to start creating a user account in the PDB.  
-    The values may differ depending on the system you are using.  
+1.  On the Users page, click **Create** to start creating a user account in the PDB.
 
     ![Users page](./images/pdb-users-05-users-start-create.png " ")  
 
      > **Note:** The **Create Like** option creates a new user account in the database by duplicating an existing user. For this lab, do not use this option. 
 
-1.  On the Create User page in the **General** tab, enter the details of new user.   
-    The values may differ depending on the system you are using.  
+1.  On the Create User page in the **General** tab, enter the details of new user.
 
     ![Create user general tab](./images/pdb-users-06-create-user.png " ")  
 
@@ -149,14 +141,13 @@ In this task, you will create a user account *appuser* in the PDB and grant th
 
      See [Oracle Database Security Guide](https://docs.oracle.com/en/database/oracle/oracle-database/23/dbseg/keeping-your-oracle-database-secure.html#GUID-ED169179-BB00-4C1E-9C2D-C7C30CC4E6CA) for more information about secure passwords.  
 
-1.  Go to the **Roles** tab and click **Edit List** to select the roles.   
-    The values may differ depending on the system you are using.  
+1.  Go to the **Roles** tab and click **Edit List** to select the roles.
 
     ![Edit roles](./images/pdb-users-07-user-role-edit-list.png " ")  
 
      > **Note:** The roles table displays the default role, *CONNECT*. The other buttons are not relevant for this lab.  
 
-1.  The Modify Roles page displays the **Available Roles** that you can grant to your user. The values may differ depending on the system you are using.  
+1.  The Modify Roles page displays the **Available Roles** that you can grant to your user.
 
      > **Note:** You can double-click an available role to add it to the selected roles list. Similarly, double-click a role to remove it from the selected roles list. To select multiple items, press the **ctrl** button on your keyboard and select the roles.  
 
@@ -165,8 +156,7 @@ In this task, you will create a user account *appuser* in the PDB and grant th
     For this lab, select the role *APPDEV* in **Available Roles** and then click the **Move** button.  
 	[](include:remove-role) 
 
-1.  The **Selected Roles** list now displays the *APPDEV* role you selected in the previous step.  
-    The values may differ depending on the system you are using.   
+1.  The **Selected Roles** list now displays the *APPDEV* role you selected in the previous step.
 
     ![Selected roles](./images/pdb-users-09-selected-role.png " ")  
 
@@ -175,7 +165,7 @@ In this task, you will create a user account *appuser* in the PDB and grant th
     Click **OK** to grant the selected role.  
 
 1.  The **Roles** tab displays the *APPDEV* role and **Default** column selected.  
-    Click **Admin Option** for the role *APPDEV*. This option enables the user to grant roles to other users and roles in the container.   
+    Click **Admin Option** for both *APPDEV* and *CONNECT* roles. This option enables the user to grant roles to other users and roles in the container.   
 
     ![Grant roles](./images/pdb-users-10-user-role-with-admin.png " ")  
 
@@ -206,37 +196,32 @@ You can unlock the user account from Oracle Enterprise Manager to enable databas
 
 In this task, you will unlock the user account *APPUSER* in the PDB that you created in the previous task. 
 
-1.  On the Users page, select the user *APPUSER* from the table and click **Edit** to open the Edit User page.   
-    The values may differ depending on the system you are using.  
+1.  On the Users page, select the user *APPUSER* from the table and click **Edit** to open the Edit User page.
 
     ![Select appuser](./images/pdb-users-13-select-appuser.png " ")  
 
-1.  On the Edit User page in the **General** tab, change the **Status** field to *Unlocked*.   
-    The values may differ depending on the system you are using.  
+1.  On the Edit User page in the **General** tab, change the **Status** field to *Unlocked*.
 
     ![Edit appuser](./images/pdb-users-14-user-unlock.png " ")  
 
     Note that you cannot modify the user name.  
 
-1.  Click **Show SQL** to view the SQL statement for this task.   
-    The values may differ depending on the system you are using.  
+1.  Click **Show SQL** to view the SQL statement for this task.
 
     ![Show SQL to unlock user](./images/pdb-users-15-show-sql-user-unlock.png " ")  
 
     Click **Return** to go back to the Edit User page.   
 
 1.  Click **Apply** to unlock the user account.   
-    Oracle Enterprise Manager displays an update message that you have modified the user successfully.  
-    The values may differ depending on the system you are using.  
+    Oracle Enterprise Manager displays an update message that you have modified the user successfully.
 
     ![User unlocked](./images/pdb-users-16-user-unlocked.png " ")  
 
-1.  From the **Security** menu in PDB, select **Users** to go back to the Users page. The values may differ depending on the system you are using.  
+1.  From the **Security** menu in PDB, select **Users** to go back to the Users page.
 
     ![Users menu](./images/pdb-users-17-users-menu.png " ")  
 
-    The Users page displays the **Account Status** for *APPUSER* as *OPEN*.   
-    The values may differ depending on the system you are using.  
+    The Users page displays the **Account Status** for *APPUSER* as *OPEN*.
 
     ![User status](./images/pdb-users-18-all-users.png " ")  
 
@@ -255,20 +240,17 @@ You are currently logged in to PDB as the database administrative user, *sys*. 
 
 In this task, you will log out of PDB and log back in as *appuser*, the user that you created in this lab.
 
-1.  Check the current user that is logged in to the PDB. Verify that it is *sys*.  
-    The values may differ depending on the system you are using.  
+1.  Check the current user that is logged in to the PDB. Verify that it is *sys*.
 
     ![Current user sys](./images/pdb-users-19-current-user-sys.png " ")  
 
-1.  On the top-right, click the Oracle Enterprise Manager profile menu *SYSMAN* &gt; and click **Log Out** to open the log out options.  
-    The values may differ depending on the system you are using.  
+1.  On the top-right, click the Oracle Enterprise Manager profile menu *SYSMAN* &gt; and click **Log Out** to open the log out options.
 
     ![EM profile menu](./images/pdb-users-20-profile-menu.png " ")  
 
     The Logout window opens and displays the current users that are logged in to the PDB and to Oracle Enterprise Manager. The window shows the default log out option, *ORCLPDB*, selected.  
 
-1.  Leave the default log out option as *ORCLPDB* and click **Logout** to log out of PDB.   
-    The values may differ depending on the system you are using.  
+1.  Leave the default log out option as *ORCLPDB* and click **Logout** to log out of PDB.
 
     ![Log out of PDB](./images/pdb-users-21-logout-pdb.png " ")  
 
@@ -277,15 +259,13 @@ In this task, you will log out of PDB and log back in as *appuser*, the user tha
      > **Caution:** Do not log out of Oracle Enterprise Manager.   
 
 1.  To log in as another user, on the PDB home page go to one of the object's page.   
-	For this task, from the **Schema** menu, select **Database Objects** &gt; click **Tables** to access the tables page.    
-    The values may differ depending on the system you are using.  
+	For this task, from the **Schema** menu, select **Database Objects** &gt; click **Tables** to access the tables page.
 
     ![Tables menu](./images/pdb-users-22-schema-menu.png " ")  
 
     Oracle Enterprise Manager redirects to the Database Login page.  
 
-1.  This time select the *New* Credential option to enter the login credentials.   
-    The values may differ depending on the system you are using.  
+1.  This time select the *New* Credential option to enter the login credentials.
 
     ![Database login](./images/pdb-users-23-login-new.png " ")  
 
@@ -301,8 +281,7 @@ In this task, you will log out of PDB and log back in as *appuser*, the user tha
     Click **Login** to connect to the PDB.  
     The Tables page appears but contains no data because you have not created any schema.  
 
-1.  Verify the current user that is logged in to the PDB.  
-    The values may differ depending on the system you are using.  
+1.  Verify the current user that is logged in to the PDB.
 
     ![Current user appuser](./images/pdb-users-24-appuser.png " ")  
 
@@ -322,15 +301,6 @@ In this workshop, you learned how to:
 
 ## Acknowledgments
 
- -   **Author**: Manish Garodia, Database User Assistance Development team
- -   **Contributors**: <if type="hidden">Ashwini R, Jayaprakash Subramanian</if>    
- -   **Last Updated By/Date**: Manish Garodia, April 2023
-
-<!--
-
-     > **Note:** The roles table displays no records because Oracle Database does not grant any default roles automatically. The other buttons are not relevant for this lab.  
-
-In this workshop, you learned how to view existing roles and create new roles in the PDB. You also learned how to view existing users and create new user accounts in the PDB. Moreover, you learned how to modify roles, unlock  user accounts, and log in to your Oracle Database as another user.
-
-
--->
+ - **Author** - Manish Garodia, Database User Assistance Development
+ - **Contributors** - Ashwini R, Jayaprakash Subramanian, Manisha Mati
+ - **Last Updated By/Date** - Manish Garodia, October 2024

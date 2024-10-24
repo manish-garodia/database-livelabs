@@ -171,6 +171,6 @@ Click the next lab to **Get started**. 
 
 ## Acknowledgments
 
- -   **Author** - Manish Garodia, Database User Assistance Development team
- -   **Contributors** - <if type="hidden">Team Database UAD</if>
- -   **Last Updated By/Date** - Manish Garodia, May 2023
+ - **Author** - Manish Garodia, Database User Assistance Development
+ - **Contributors** - Ashwini R, Jayaprakash Subramanian, Manisha Mati
+ - **Last Updated By/Date** - Manish Garodia, October 2024
