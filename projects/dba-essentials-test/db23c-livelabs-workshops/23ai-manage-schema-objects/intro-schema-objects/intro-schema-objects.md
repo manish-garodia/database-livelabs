@@ -1,4 +1,4 @@
-﻿# Schema objects
+﻿# Schema objects in Oracle Database
 
 ## About this workshop
 
