@@ -23,9 +23,9 @@
       "filename": "./../../intro-pdb-mgmt-db/intro-pdb-mgmt-db.md"
     },
     {
-      "title": "Lab 1: Verify compute instance setup",
-      "description": "Verify Setup of compute instance",
-      "publisheddate": "09/29/2022",
+      "title": "Lab 1: Access the NoVNC Remote Desktop",
+      "description": "How to set up a NoVNC remote desktop connection to the compute instance provisioned using Oracle resources",
+      "publisheddate": "10/07/2024",
       "filename": "https://oracle-livelabs.github.io/common/labs/verify-compute/verify-compute-novnc.md"
     },
     {

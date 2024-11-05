@@ -38,7 +38,7 @@ You can open the Databases page from the menu **Targets** &gt; **Databases**.
 
     The green upward arrows in the **Status** field indicate that the database instances and the PDBs are up and running.
 
-	[](include:n-db-page)
+	> **Note**: [](include:n-db-page)
 
 1.  From the **Oracle Database** menu on the instance home page, select **Provisioning** &gt; **Provision Pluggable Databases**.
 
@@ -58,13 +58,13 @@ You can open the Databases page from the menu **Targets** &gt; **Databases**.
 
     The PDB Creation page has other options also for creating a PDB. For this task, leave the other options.
 
-	[](include:n-buttons)
+	> **Note**: [](include:n-buttons)
 
 1.  Scroll down the page. Under **Container Database Host Credentials**, select the *Named* Credential option, if not already selected.
 
 	 ![CDB Host Named Credentials](./images/plug-pdb-04-host-credentials.png " ")
 
-	 [](include:n-host-creds)
+	> **Note**: [](include:n-host-creds)
 
     Click **Next** to proceed.
 
@@ -76,7 +76,7 @@ You can open the Databases page from the menu **Targets** &gt; **Databases**.
 
      - **PDB Name** - Delete the default text and enter a unique name for the PDB you are plugging. For this task, enter *PDB3*.
 
-		 [](include:n-pdb-name)
+		> **Note**: [](include:n-pdb-name)
 
      - **Create as Clone** - Select this option.   
     This option ensures that Oracle Database generates a unique DBID, GUID, and other identifiers for the new PDB.
@@ -95,7 +95,7 @@ You can open the Databases page from the menu **Targets** &gt; **Databases**.
     - **Password** - Set a password, for example, *mypassword*   
 	Ensure to note the password because you will require it when you log in to the PDB as *PDB3ADMIN*.
 
-	 [](include:n-pdbadmin)
+	> **Note**: [](include:n-pdbadmin)
 
 	Oracle Enterprise Manager provides an option **Lock All Existing PDB Users** to lock and expire all users in the newly created PDB, except the PDB administrator. For this lab, do not select this option.
 

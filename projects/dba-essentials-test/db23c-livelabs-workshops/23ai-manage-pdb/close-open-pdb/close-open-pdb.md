@@ -36,7 +36,7 @@ You can open the Databases page from the menu **Targets** &gt; **Databases**.
 
     The green upward arrows in the **Status** field indicate that the database instances and the PDBs are up and running.
 
-	[](include:n-db-page)
+	> **Note**: [](include:n-db-page)
 
 1.  From the **Oracle Database** menu on the instance home page, select **Control** &gt; **Open/Close Pluggable Database**.
 
@@ -116,7 +116,7 @@ In this task, you will open the PDBs, namely *ORCL1PDB* and *PDB3*, in the CDB. 
 
 	 ![Control menu - Open/Close PDBs](./images/manage-pdb-13-control-menu-down.png " ")
 
-	[](include:n-db-login-opt)
+	> **Note**: [](include:n-db-login-opt)
 
 	 Oracle Enterprise Manager opens the Open and Close PDB page.
 

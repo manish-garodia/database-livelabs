@@ -10,7 +10,7 @@ Estimated time: 30 minutes
 
 Oracle Enterprise Manager provides various options to create PDBs in a CDB. For example, you can create PDBs from the seed (*PDB$SEED*) or clone from another PDB. However, the process of creating PDBs and the steps involved are similar no matter which option you select. Oracle Enterprise Manager takes you through a wizard to perform the PDB create operation.
 
-> **Note** Another way of creating PDBs is by plugging in an unplugged PDB. To plug a PDB into the CDB, you must have a PDB that is unplugged. You will learn more about these tasks in the subsequent labs.
+> **Note**: Another way of creating PDBs is by plugging in an unplugged PDB. To plug a PDB into the CDB, you must have a PDB that is unplugged. You will learn more about these tasks in the subsequent labs.
 
 ### Objectives
 
@@ -45,7 +45,7 @@ In this task, you will create a new PDB, namely *PDB1*, in the CDB from the seed
 
     The green upward arrows in the **Status** field indicate that the database instances and the PDBs are up and running.
 
-	[](include:n-db-page)
+	> **Note**: [](include:n-db-page)
 
     Click the database instance name, for example *orcl.us.oracle.com*, to open the instance home page.
 
@@ -70,13 +70,13 @@ In this task, you will create a new PDB, namely *PDB1*, in the CDB from the seed
 
     The PDB Creation page has other options also for creating PDBs. For this task, ignore the other options.
 
-	[](include:n-buttons)
+	> **Note**: [](include:n-buttons)
 
 1.  Scroll down the page. Under **Container Database Host Credentials**, select the *Named* Credential option, if not already selected.
 
 	 ![CDB Host Named Credentials](./images/create-pdb-05-host-credentials.png " ")
 
-	[](include:n-host-creds)
+	> **Note**: [](include:n-host-creds)
 
     Click **Next** to proceed.
 
@@ -86,7 +86,7 @@ In this task, you will create a new PDB, namely *PDB1*, in the CDB from the seed
 
     For this lab, specify the following:
      - **PDB Name** - Delete the default text and enter a unique name for the PDB you are creating. For this task, enter *PDB1*.
-		 [](include:n-pdb-name)
+		> **Note**: [](include:n-pdb-name)
 
      - **Create Multiple Copies** - Do not select this option. For this lab, create only one PDB in the database.   
     You can create up to *252* PDBs in a CDB.
@@ -102,7 +102,7 @@ In this task, you will create a new PDB, namely *PDB1*, in the CDB from the seed
      - **Password** - Set a password, for example, *mypassword*   
     Ensure to note the password because you will require it when you log in to the PDB as *PDBADMIN*.
 
-	 [](include:n-pdbadmin)
+	> **Note**: [](include:n-pdbadmin)
 
     Click **Next** to proceed.
 
@@ -183,7 +183,7 @@ In this task, you will clone a PDB using the full clone method to create a new P
 
     Click **Launch** to start the PDB clone operation.
 
-	[](include:n-db-login-opt)
+	> **Note**: [](include:n-db-login-opt)
 
 1.  For PDB Creation Options, select *Clone an Existing PDB* and then select *Full Clone*.
 
@@ -233,7 +233,7 @@ In this task, you will clone a PDB using the full clone method to create a new P
      - **Password** - Set a password, for example, *mypassword*   
     Ensure to note the password because you will require it when you log in to the PDB as *PDB2ADMIN*.
 
-	 [](include:n-pdbadmin)
+	> **Note**: [](include:n-pdbadmin)
 
 	Optionally, Oracle Enterprise Manager may display a section for the Source CDB Login Credentials. If you are cloning the source PDB into the same root container, then EM does not display this section.
 

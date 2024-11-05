@@ -39,7 +39,7 @@ In this task, you will delete the PDB, namely *PDB1*, from the root container us
 
     The green upward arrows in the **Status** field indicate that the database instances and the PDBs are up and running.
 
-	[](include:n-db-page)
+	> **Note**: [](include:n-db-page)
 
 1.  From the **Oracle Database** menu on the instance home page, select **Provisioning** &gt; **Provision Pluggable Databases**.
 
@@ -60,7 +60,7 @@ In this task, you will delete the PDB, namely *PDB1*, from the root container us
 
 	 ![Select PDBs](./images/delete-pdb-03-add-pdb.png " ")
 
-	[](include:n-buttons)
+	> **Note**: [](include:n-buttons)
 
 1. 	Oracle Enterprise Manager opens a Search and Select window. Select the target PDB that you want to delete.
 
@@ -85,7 +85,7 @@ In this task, you will delete the PDB, namely *PDB1*, from the root container us
 
 	 ![CDB Host Credentials](./images/delete-pdb-06-host-credentials.png " ")
 
-	[](include:n-host-creds)
+	> **Note**: [](include:n-host-creds)
 
     Leave the default value for **Temporary Working Directory** and click **Next** to proceed.
 
@@ -151,7 +151,7 @@ In this task, you will unplug the PDB, namely *PDB2*, from the root container u
 
     Click **Launch** to start the PDB unplug operation.
 
-	[](include:n-db-login-opt)
+	> **Note**: [](include:n-db-login-opt)
 
 1.  Select the PDB that you want to unplug. Click the magnifier icon next to the **Pluggable Database** field to search for the target PDB.
 
