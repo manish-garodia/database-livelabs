@@ -10,7 +10,7 @@ Estimated workshop time: 2 hours 45 minutes
 
 Watch this video to learn about the *highlights of Oracle Database 23ai*.
 
-[](youtube:TRDDsStoMxc)
+[](youtube:4yobT4rtmeo)
 
 ### Objectives
 

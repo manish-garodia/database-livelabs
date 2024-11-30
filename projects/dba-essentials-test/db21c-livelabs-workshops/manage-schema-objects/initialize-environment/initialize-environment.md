@@ -105,7 +105,7 @@ If you have reserved a Livelabs environment, then the remote desktop session wil
 
     ![ORDS landing page](./images/ords-landing.png " ")
 
-On successful login, the browser the Database Actions landing page. Your environment is now ready. 
+On successful login, the browser displays the Database Actions landing page. Your environment is now ready. 
 
 ## Appendix 1: Manage startup services
 

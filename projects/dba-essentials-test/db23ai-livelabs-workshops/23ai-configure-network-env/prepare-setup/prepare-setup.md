@@ -24,7 +24,7 @@ This lab assumes you have -
 
 1.  Save in your downloads folder.
 
-We recommend using this stack to create a self-contained/dedicated VCN with your instance(s). Skip to *Task 3* to follow our recommendations. If you would rather use an existing VCN, then proceed to the next task as indicated below to update your existing VCN with the required Egress rules.
+We recommend using this stack to create a self-contained/dedicated VCN with your instance(s). Skip to [Task 3](?lab=prepare-setup#Task3:Setupcompute) to follow our recommendations. If you would rather use an existing VCN, then proceed to the next task as indicated below to update your existing VCN with the required Egress rules.
 
 ## Task 2: Add security rules to an existing VCN
 
@@ -34,7 +34,7 @@ This workshop requires a certain number of ports to be available, a requirement 
 | :------------- | :------------------------------------ |
 | 22             | SSH                                   |
 | 6080           | noVNC Remote Desktop                  |
-{: title="Add ports to VCN"}
+{: title="Enable ports"}
 
 1.  Go to **Networking** &gt; **Virtual Cloud Networks**.
 1.  Choose your network.
@@ -58,5 +58,5 @@ You may now **proceed to the next lab**.
 ## Acknowledgments
 
  - **Author** - Rene Fontcha, LiveLabs Platform Lead, NA Technology
- - **Contributors** - Meghana Banka, Manish Garodia
- - **Last Updated By/Date** - Rene Fontcha, LiveLabs Platform Lead, NA Technology, April 2022
+ - **Contributors** - Meghana Banka, Manish Garodia, Manisha Mati
+ - **Last Updated By/Date** - Manish Garodia, October 2024
